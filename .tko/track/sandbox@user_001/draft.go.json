@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_16-25-38",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,118 +37,42 @@\n ) %7B%0A\n-%09var a int%0A%09var b int%0A%0A%09fmt.Scan(&a, &b)%0A%0A%09var soma = a + b%0A%09var sub = a - b%0A%09fmt.Printf(%22%25d%5Cn%25d%5Cn%22, soma, sub\n+    var%0A    //fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_16-30-24",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar a int\n\tvar b int\n\n\tfmt.Scan(&a, &b)\n\n\tvar soma = a + b\n\tvar sub = a - b\n\tfmt.Printf(\"%d\\n%d\\n\", soma, sub)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

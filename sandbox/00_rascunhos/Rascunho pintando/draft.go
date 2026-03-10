@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var a int
+	var b int
+
+	fmt.Scan(&a, &b)
+
+	var soma = a + b
+	var sub = a - b
+	fmt.Printf("%d\n%d\n", soma, sub)
+}

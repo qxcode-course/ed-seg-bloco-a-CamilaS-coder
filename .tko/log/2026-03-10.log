@@ -1,0 +1,8 @@
+2026-03-10 16:23:54, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-03-10 16:25:38, EXEC, v:1, k:sandbox@user_001, mode:FULL, size:6, fail:COMP
+2026-03-10 16:25:43, EXEC, v:1, k:sandbox@user_001, mode:FREE
+2026-03-10 16:26:31, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-03-10 16:27:27, MOVE, v:1, k:sandbox@user_001, mode:PICK
+2026-03-10 16:30:24, EXEC, v:1, k:sandbox@user_001, mode:FULL, rate:100, size:14
+2026-03-10 16:30:33, MOVE, v:1, k:sandbox@user_001, mode:BACK
+2026-03-10 16:30:50, SELF, v:1, k:sandbox@user_001, self:1, rate:100, study:10, friend:NO

@@ -1,0 +1,27 @@
+version: '0.2'
+sources:
+- name: sandbox
+  target: sandbox
+  type: local
+  writeable: true
+  quests: null
+  tasks: null
+- name: ed
+  target: https://github.com/qxcodeed/arcade.git
+  type: git
+  writeable: false
+  cache_timestamp: '2026-03-10 16:19:13'
+  quests: null
+  tasks: null
+expanded: []
+tasks:
+  sandbox@user_001: '{self:1, rate:100, study:10, friend:NO}'
+flags:
+  painel: 2
+  quests: 2
+  tracks: 1
+  tasks: 0
+  task_graph_mode: 0
+  show_time: 0
+lang: go
+selected: sandbox@sandbox
