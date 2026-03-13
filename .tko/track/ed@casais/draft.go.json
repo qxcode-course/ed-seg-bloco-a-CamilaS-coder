@@ -57,8 +57,43 @@
         },
         {
             "label": "2026-03-13_17-16-48",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var n int\n    var i int\n    fmt.Scan(&n)\n\n    animais := make([]int, n)\n    var casais []int\n   // var vet  []int\n\n    for i = 0;  i < n; i ++ {\n        fmt.Scan(&animais[i])\n    }\n\n    for i = 0; i < len(animais); i ++ {\n        if animais[i] == animais[i] && animais[i] < 0 {\n\n            casais = append(casais, 0)\n            \n        }\n\n    }\n    fmt.Println(len(casais))\n    \n}\n",
+            "content": "@@ -281,16 +281,44 @@\n imais%5Bi%5D\n+ == animais%5Bi%5D && animais%5Bi%5D\n  %3C 0 %7B%0A%0A\n",
             "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-23-12",
+            "content": "@@ -10,37 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09//%22math%22%0A)%0A\n func\n@@ -66,22 +66,8 @@\n int%0A\n-    var j int%0A\n     \n@@ -272,95 +272,29 @@\n     \n-for j = 0; j %3C len(animais); j++ %7B%0A%0A            if animais%5Bi%5D + animais%5Bj%5D ==\n+if animais%5Bi%5D %3C\n  0 %7B%0A%0A\n-    \n     \n@@ -332,61 +332,8 @@\n  0)%0A\n-%0A            %7D%0A        %7D%0A        // if animais%5Bi%5D %7B%0A%0A\n     \n@@ -348,19 +348,16 @@\n %0A       \n- //\n  %7D%0A%0A    \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-30-04",
+            "content": "@@ -74,24 +74,38 @@\n   var i int%0A\n+    var j int%0A\n     fmt.Scan\n@@ -302,28 +302,95 @@\n     \n-if animais%5Bi%5D %3C\n+for j = 0; j %3C len(animais); j++ %7B%0A%0A            if animais%5Bi%5D + animais%5Bj%5D ==\n  0\n+ \n %7B%0A%0A\n+    \n     \n@@ -424,16 +424,69 @@\n ais, 0)%0A\n+%0A            %7D%0A        %7D%0A        // if animais%5Bi%5D %7B%0A%0A\n         \n@@ -497,16 +497,19 @@\n %0A       \n+ //\n  %7D%0A%0A    \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-13_17-32-22",
+            "content": "@@ -24,16 +24,18 @@\n %09%22fmt%22%0A%09\n+//\n %22math%22%0A)\n@@ -301,60 +301,8 @@\n s%5Bi%5D\n- == int(math.Abs(float64(animais%5Bi%5D))) && animais%5Bi%5D\n  %3C 0\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-13_17-35-24",
+            "content": "@@ -362,16 +362,20 @@\n         \n+    \n casais =\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-13_17-35-41",
+            "content": "@@ -24,18 +24,16 @@\n %09%22fmt%22%0A%09\n-//\n %22math%22%0A)\n@@ -80,24 +80,8 @@\n int%0A\n-    var abs int%0A\n     \n@@ -236,17 +236,8 @@\n    %7D\n-%0A    //if\n %0A%0A  \n@@ -274,17 +274,16 @@\n  i ++ %7B%0A\n-%0A\n         \n@@ -300,112 +300,32 @@\n %5Bi%5D \n-%3C 0 %7B%0A            abs = -animais%5Bi%5D%0A        %7D else %7B%0A            abs = animais%5Bi%5D%0A        %7D%0A%0A        if \n+== int(math.Abs(float64(\n anim\n@@ -334,15 +334,11 @@\n s%5Bi%5D\n- == abs\n+)))\n  && \n@@ -351,18 +351,18 @@\n s%5Bi%5D %3C 0\n- \n %7B\n+%0A\n %0A       \n@@ -362,20 +362,16 @@\n         \n-    \n casais =\n@@ -389,16 +389,29 @@\n ais, 0)%0A\n+            %0A\n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-13_17-41-58",
+            "content": "@@ -77,11 +77,8 @@\n ar i\n-, j\n  int\n@@ -82,16 +82,27 @@\n int%0A    \n+var abs int\n %0A    fmt\n@@ -112,24 +112,54 @@\n an(&n)%0A%0A\n+    animais := make(%5B%5Dint, n)%0A\n     var \n descasad\n@@ -150,25 +150,21 @@\n     var \n-des\n casa\n-do\n+i\n s %5B%5Dint%0A\n@@ -170,23 +170,25 @@\n %0A   \n+//\n  var \n-casais = 0\n+vet  %5B%5Dint\n %0A%0A  \n@@ -199,16 +199,17 @@\n r i = 0;\n+ \n  i %3C n; \n@@ -213,37 +213,14 @@\n n; i\n+ \n ++ %7B%0A\n-        var animais int%0A\n     \n@@ -244,51 +244,37 @@\n mais\n+%5Bi%5D\n )\n-%0A\n %0A    \n+%7D%0A\n     \n-encontrou := false%0A%0A    \n+//if%0A%0A\n     for \n j = \n@@ -273,50 +273,49 @@\n for \n-j\n+i\n  = 0; \n-j\n+i\n  %3C len(\n-descasado\n+animai\n s); \n-j\n+i \n ++ %7B%0A\n+%0A\n         \n     \n@@ -314,40 +314,25 @@\n     \n-    if descasados%5Bj%5D == -animais\n+if animais%5Bi%5D %3C 0\n  %7B%0A \n@@ -346,115 +346,72 @@\n     \n-    casais++%0A                descasados%5Bj%5D = 0 %0A                encontrou = true%0A                break%0A    \n+abs = -animais%5Bi%5D%0A        %7D else %7B%0A            abs = animais%5Bi%5D%0A\n     \n@@ -415,17 +415,17 @@\n        %7D\n- \n+%0A\n %0A       \n@@ -429,32 +429,46 @@\n     \n-%7D%0A%0A        if !encontrou\n+if animais%5Bi%5D == abs && animais%5Bi%5D %3C 0\n  %7B%0A \n@@ -482,18 +482,13 @@\n     \n- des\n casa\n-do\n+i\n s = \n@@ -498,27 +498,17 @@\n end(\n-des\n casa\n-dos, animais\n+is, 0\n )%0A  \n@@ -519,48 +519,14 @@\n   %7D%0A\n+%0A\n     %7D\n-%0A%0A    //animais := make(%5B%5Dint, n)%0A%0A\n %0A   \n@@ -542,15 +542,20 @@\n tln(\n+len(\n casais)\n+)\n %0A   \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-13_17-54-32",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t//\"math\"\n)\nfunc main() {\n\n    var n int\n    var i, j int\n    \n    fmt.Scan(&n)\n\n    var descasados []int\n    var casais = 0\n\n    for i = 0; i < n; i++ {\n        var animais int\n        fmt.Scan(&animais)\n\n        encontrou := false\n\n        for j = 0; j < len(descasados); j++ {\n            if descasados[j] == -animais {\n                casais++\n                descasados[j] = 0 \n                encontrou = true\n                break\n            } \n        }\n\n        if !encontrou {\n             descasados = append(descasados, animais)\n        }\n    }\n\n    //animais := make([]int, n)\n\n\n    fmt.Println(casais)\n    \n}\n",
+            "lines": "42"
         }
     ]
 }

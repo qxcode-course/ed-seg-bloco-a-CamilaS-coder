@@ -1,27 +1,42 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+	//"math"
+)
 func main() {
 
     var n int
-    var i int
+    var i, j int
+    
     fmt.Scan(&n)
 
-    animais := make([]int, n)
-    var casais []int
-   // var vet  []int
+    var descasados []int
+    var casais = 0
 
-    for i = 0;  i < n; i ++ {
-        fmt.Scan(&animais[i])
-    }
+    for i = 0; i < n; i++ {
+        var animais int
+        fmt.Scan(&animais)
 
-    for i = 0; i < len(animais); i ++ {
-        if animais[i] == animais[i] && animais[i] < 0 {
+        encontrou := false
 
-            casais = append(casais, 0)
-            
+        for j = 0; j < len(descasados); j++ {
+            if descasados[j] == -animais {
+                casais++
+                descasados[j] = 0 
+                encontrou = true
+                break
+            } 
         }
 
+        if !encontrou {
+             descasados = append(descasados, animais)
+        }
     }
-    fmt.Println(len(casais))
+
+    //animais := make([]int, n)
+
+
+    fmt.Println(casais)
     
 }

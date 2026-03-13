@@ -16,3 +16,14 @@
 2026-03-13 17:16:48, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:27
 2026-03-13 17:16:51, MOVE, v:1, k:ed@casais, mode:BACK
 2026-03-13 17:17:16, SELF, v:1, k:ed@casais, self:1, rate:100, study:30, friend:No, concept:1, problem:1
+2026-03-13 17:22:53, MOVE, v:1, k:ed@casais, mode:PICK
+2026-03-13 17:22:56, EXEC, v:1, k:ed@casais, mode:FULL, rate:100
+2026-03-13 17:23:12, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:27
+2026-03-13 17:30:04, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:39
+2026-03-13 17:32:22, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:31
+2026-03-13 17:35:24, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:31
+2026-03-13 17:35:41, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:31
+2026-03-13 17:41:58, EXEC, v:1, k:ed@casais, mode:FULL, rate:0, size:38
+2026-03-13 17:54:32, EXEC, v:1, k:ed@casais, mode:FULL, rate:100, size:42
+2026-03-13 17:54:34, MOVE, v:1, k:ed@casais, mode:BACK
+2026-03-13 17:55:02, SELF, v:1, k:ed@casais, self:1, rate:100, study:30, friend:No, concept:1, problem:1, refactor:1

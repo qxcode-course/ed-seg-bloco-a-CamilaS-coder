@@ -15,20 +15,20 @@ sources:
   tasks: null
 expanded:
 - ed@main-quest
-- ed@revisão
 - sandbox@sandbox:00_rascunhos
+- ed@revisão
 tasks:
   sandbox@user_001: '{self:1, rate:100, study:10, friend:NO}'
   ed@pintando: '{self:1, rate:100, study:10, friend:No}'
   ed@mumia: '{self:1, rate:100, study:10, friend:No}'
   ed@fuga: '{self:1, rate:100, study:30, friend:No, problem:1}'
-  ed@casais: '{self:1, rate:100, study:30, friend:No, concept:1, problem:1}'
+  ed@casais: '{self:1, rate:100, study:30, friend:No, concept:1, problem:1, refactor:1}'
 flags:
-  painel: 1
+  painel: 2
   quests: 2
   tracks: 2
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@pedra
+selected: ed@casais
