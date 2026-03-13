@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-12_21-13-05",
+            "content": "@@ -123,257 +123,8 @@\n F++%0A\n-        if F == 15 %7B%0A            F = 0%0A        %7D%0A%0A        if F == P %7B%0A            fmt.Println(%22N%22)%0A        %7D else %7B%0A            fmt.Println(%22S%22)%0A        %7D%0A        %0A    %7D else if D == -1%7B%0A        F--%0A        if F == 0 %7B%0A            F = 15%0A        %7D%0A%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-12_21-15-50",
+            "content": "@@ -95,160 +95,8 @@\n D)%0A%0A\n-    // var i = F%0A%0A    // for %7B%0A    //     if D == 1 %7B%0A    //         i++%0A    //     %7D%0A    //     if i == 1 %7B%0A    //         i = 0%0A    //     %7D%0A    // %7D%0A\n     \n@@ -140,9 +140,9 @@\n == 1\n-6\n+5\n  %7B%0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-12_21-22-17",
+            "content": "@@ -507,17 +507,17 @@\n    F = 1\n-6\n+5\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-12_21-22-40",
+            "content": "@@ -90,24 +90,27 @@\n &F, &D)%0A%0A   \n+ //\n  var i = F%0A%0A\n@@ -112,16 +112,19 @@\n = F%0A%0A   \n+ //\n  for %7B%0A \n@@ -130,30 +130,18 @@\n     \n-   \n- i += D%0A   \n+//\n      if \n i %3E \n@@ -140,83 +140,42 @@\n  if \n-i %3E\n+D ==\n  1\n-5\n  %7B%0A    \n-        i = 0%0A        %7D else if i %3C 0 %7B%0A            i = 15%0A   \n+//         i++%0A    //\n     \n@@ -181,24 +181,18 @@\n   %7D%0A    \n-    %0A   \n+//\n      if \n@@ -200,158 +200,58 @@\n  == \n-H\n+1\n  %7B%0A    \n-        fmt.Println(%22S%22)%0A            break%0A        %7D else if i == P %7B%0A            fmt.Println(%22N%22)%0A            break%0A   \n+//         i = 0%0A    //\n      %7D%0A\n-%0A%0A%0A\n+ \n    \n+//\n  %7D%0A   \n- //\n  if \n@@ -267,25 +267,19 @@\n     \n-//\n     \n- \n F++%0A   \n- //\n     \n@@ -291,27 +291,24 @@\n  == 16 %7B%0A   \n- //\n          F =\n@@ -309,27 +309,24 @@\n    F = 0%0A   \n- //\n      %7D%0A%0A    \n@@ -316,35 +316,32 @@\n 0%0A        %7D%0A%0A   \n- //\n      if F == P %7B\n@@ -336,35 +336,32 @@\n  if F == P %7B%0A   \n- //\n          fmt.Pri\n@@ -365,35 +365,32 @@\n Println(%22N%22)%0A   \n- //\n      %7D else %7B%0A  \n@@ -382,35 +382,32 @@\n     %7D else %7B%0A   \n- //\n          fmt.Pri\n@@ -411,35 +411,32 @@\n Println(%22S%22)%0A   \n- //\n      %7D%0A        %0A\n@@ -438,19 +438,16 @@\n     %0A   \n- //\n  %7D else \n@@ -457,27 +457,24 @@\n D == -1%7B%0A   \n- //\n      F--%0A   \n@@ -469,27 +469,24 @@\n      F--%0A   \n- //\n      if F ==\n@@ -489,27 +489,24 @@\n F == 0 %7B%0A   \n- //\n          F =\n@@ -508,27 +508,24 @@\n   F = 16%0A   \n- //\n      %7D%0A%0A    \n@@ -524,23 +524,20 @@\n  %7D%0A%0A    \n-//\n     \n- \n if F == \n@@ -539,27 +539,24 @@\n F == P %7B%0A   \n- //\n          fmt\n@@ -568,27 +568,24 @@\n tln(%22N%22)%0A   \n- //\n      %7D else \n@@ -585,27 +585,24 @@\n %7D else %7B%0A   \n- //\n          fmt\n@@ -614,27 +614,24 @@\n tln(%22S%22)%0A   \n- //\n      %7D%0A    /\n@@ -628,19 +628,16 @@\n    %7D%0A   \n- //\n  %7D%0A%0A    \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-12_21-28-44",
+            "content": "@@ -135,50 +135,15 @@\n = D%0A\n-%0A\n        \n- var p = (i + 16) %25 16%0A%0A        //\n  if \n@@ -150,35 +150,32 @@\n i %3E 15 %7B%0A       \n- //\n      i = 0%0A     \n@@ -176,19 +176,16 @@\n %0A       \n- //\n  %7D else \n@@ -203,23 +203,20 @@\n         \n-//\n     \n- \n i = 15%0A \n@@ -218,29 +218,34 @@\n  15%0A        \n-// %7D%0A\n+%7D%0A        \n %0A        if \n@@ -240,25 +240,25 @@\n %0A        if \n-p\n+i\n  == H %7B%0A    \n@@ -318,17 +318,17 @@\n else if \n-p\n+i\n  == P %7B%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-03-12_21-32-40",
+            "content": "@@ -163,16 +163,125 @@\n ) %25 16%0A%0A\n+        // if i %3E 15 %7B%0A        //     i = 0%0A        // %7D else if i %3C 0 %7B%0A        //     i = 15%0A        // %7D%0A%0A\n         \n@@ -432,21 +432,16 @@\n %0A%0A    %7D%0A\n-    %0A\n     // i\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-12_21-33-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, P, F, D int\n    \n    fmt.Scan(&H, &P, &F, &D)\n\n    var i = F\n\n    for {\n        i += D\n\n        var p = (i + 16) % 16\n\n        if p == H {\n            fmt.Println(\"S\")\n            break\n        } else if p == P {\n            fmt.Println(\"N\")\n            break\n        }\n\n\n\n    }\n    \n    // if D == 1 {\n    //     F++\n    //     if F == 16 {\n    //         F = 0\n    //     }\n\n    //     if F == P {\n    //         fmt.Println(\"N\")\n    //     } else {\n    //         fmt.Println(\"S\")\n    //     }\n        \n    // } else if D == -1{\n    //     F--\n    //     if F == 0 {\n    //         F = 16\n    //     }\n\n    //     if F == P {\n    //         fmt.Println(\"N\")\n    //     } else {\n    //         fmt.Println(\"S\")\n    //     }\n    // }\n\n    //fmt.Println(\"qxcode\")\n}\n",
+            "lines": "53"
+        }
+    ]
+}

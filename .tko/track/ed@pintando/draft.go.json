@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-12_20-31-05",
+            "content": "@@ -264,19 +264,11 @@\n rint\n-(%22%25.2f%5Cn%22, \n+ln(\n Area\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-12_20-30-36",
+            "content": "@@ -266,16 +266,18 @@\n nt(%22%25.2f\n+%5Cn\n %22, Area)\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-12_20-32-32",
+            "content": "@@ -264,17 +264,14 @@\n rint\n-f\n (%22%25.2f\n-%5Cn\n %22, A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-12_20-31-57",
+            "content": "@@ -63,23 +63,19 @@\n a, b, c \n-float32\n+int\n %0A    fmt\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-12_20-32-18",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c float32\n    fmt.Scan(&a, &b, &c)\n\n    var p = float32(a + b + c) / float32(2)\n\n    var A = p * (p - float32(a)) * (p - float32(b)) * (p - float32(c))\n\n    var Area = math.Sqrt(float64(A))\n    fmt.Printf(\"%.2f\\n\", Area)\n}\n",
+            "lines": "14"
+        }
+    ]
+}
