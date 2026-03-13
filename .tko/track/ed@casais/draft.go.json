@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-13_16-54-19",
+            "content": "@@ -113,29 +113,8 @@\n , n)\n-%0A    var casais %5B%5Dint\n %0A%0A  \n@@ -187,136 +187,24 @@\n    f\n-or i = 0; i %3C n; i ++ %7B%0A        if i == -i %7B%0A            vet := append(casais, 0)%0A            fmt.Print(vet)%0A        %7D%0A    %7D%0A    \n+mt.Print(animais)\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-13_17-01-42",
+            "content": "@@ -134,29 +134,8 @@\n %5Dint\n-%0A   // var vet  %5B%5Dint\n %0A%0A  \n@@ -222,18 +222,9 @@\n i %3C \n-animais%5Bn%5D\n+n\n ; i \n@@ -261,23 +261,21 @@\n         \n-casais \n+vet :\n = append\n@@ -298,16 +298,30 @@\n         \n+fmt.Print(vet)\n %0A       \n@@ -327,37 +327,14 @@\n   %7D%0A\n-%0A\n     %7D%0A\n-    fmt.Print(casais)%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-13_17-08-17",
+            "content": "@@ -247,17 +247,17 @@\n animais%5B\n-i\n+n\n %5D; i ++ \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-13_17-08-51",
+            "content": "@@ -243,20 +243,18 @@\n i %3C \n-len(\n animais\n-)\n+%5Bi%5D\n ; i \n@@ -279,17 +279,16 @@\n == -i %7B%0A\n-%0A\n         \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-13_17-11-18",
+            "content": "@@ -275,33 +275,15 @@\n  if \n-animais%5Bi%5D == animais%5B\n+i == \n -i\n-%5D\n  %7B%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-11-12",
+            "content": "@@ -289,17 +289,16 @@\n  == \n--\n animais%5B\n i%5D %7B\n@@ -293,16 +293,17 @@\n animais%5B\n+-\n i%5D %7B%0A%0A  \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-11-29",
+            "content": "@@ -289,9 +289,19 @@\n  == \n-1\n+-animais%5Bi%5D\n  %7B%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-11-51",
+            "content": "@@ -289,21 +289,9 @@\n  == \n--(animais%5Bi%5D)\n+1\n  %7B%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-15-13",
+            "content": "@@ -285,16 +285,18 @@\n s%5Bi%5D == \n+-(\n animais%5B\n@@ -301,26 +301,9 @@\n s%5Bi%5D\n- && animais%5Bi%5D %3C 0\n+)\n  %7B%0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-16-04",
+            "content": "@@ -404,20 +404,15 @@\n int(\n-len(\n casais)\n-)\n %0A   \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-16-35",
+            "content": "@@ -403,10 +403,8 @@\n rint\n-ln\n (len\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-13_17-16-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var n int\n    var i int\n    fmt.Scan(&n)\n\n    animais := make([]int, n)\n    var casais []int\n   // var vet  []int\n\n    for i = 0;  i < n; i ++ {\n        fmt.Scan(&animais[i])\n    }\n\n    for i = 0; i < len(animais); i ++ {\n        if animais[i] == animais[i] && animais[i] < 0 {\n\n            casais = append(casais, 0)\n            \n        }\n\n    }\n    fmt.Println(len(casais))\n    \n}\n",
+            "lines": "27"
+        }
+    ]
+}
