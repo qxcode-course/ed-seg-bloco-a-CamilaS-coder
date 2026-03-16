@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_10-16-35",
+            "content": "@@ -154,17 +154,16 @@\n &a, &b)%0A\n-%0A\n         \n@@ -171,16 +171,18 @@\n mt.Print\n+ln\n (a, b)%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-16_10-17-15",
+            "content": "@@ -167,76 +167,8 @@\n     \n-if(a %3C 10 %7C%7C b %3C 10) %7B%0A            fmt.Print(i)%0A        %7D%0A        //\n fmt.\n@@ -187,12 +187,10 @@\n     %7D%0A%0A%0A\n-%0A%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-16_10-21-47",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-import %22math%22%0A\n func\n@@ -82,30 +82,8 @@\n (&n)\n-%0A    var pontuacao int\n %0A%0A  \n@@ -202,119 +202,20 @@\n     \n-continue%0A        %7D%0A        %0A        conta := float64(a) - float64(b)%0A%0A        pontuacao = int(math.Abs(conta))%0A\n+fmt.Print(i)\n %0A   \n@@ -219,16 +219,17 @@\n         \n+%7D\n %0A       \n@@ -229,26 +229,18 @@\n         \n-%0A%0A        \n+//\n fmt.Prin\n@@ -245,17 +245,12 @@\n int(\n-pontuacao\n+a, b\n )%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-16_10-44-24",
+            "content": "@@ -118,28 +118,8 @@\n  int\n-%0A     var melhor int\n %0A%0A  \n@@ -350,81 +350,8 @@\n ))%0A%0A\n-        if pontuacao %3C melhor %7B%0A            melhor = pontuacao%0A        %7D%0A\n     \n@@ -387,14 +387,17 @@\n int(\n-melhor\n+pontuacao\n )%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-03-16_10-45-21",
+            "content": "@@ -368,35 +368,8 @@\n ta))\n-%0A        melhor = pontuacao\n %0A%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-16_10-45-45",
+            "content": "@@ -124,10 +124,8 @@\n     \n-//\n var \n@@ -138,25 +138,8 @@\n  int\n-%0A     var aux int\n %0A%0A  \n@@ -377,20 +377,14 @@\n     \n-%0A        aux\n+melhor\n  = p\n@@ -416,19 +416,22 @@\n uacao %3C \n-aux\n+melhor\n  %7B%0A     \n@@ -437,19 +437,22 @@\n         \n-aux\n+melhor\n  = pontu\n@@ -507,11 +507,14 @@\n int(\n-aux\n+melhor\n )%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-16_10-49-00",
+            "content": "@@ -116,24 +116,26 @@\n ao int%0A     \n+//\n var melhor i\n@@ -138,26 +138,24 @@\n or int%0A     \n-//\n var aux int%0A\n@@ -384,16 +384,24 @@\n conta))%0A\n+        \n %0A       \n@@ -405,26 +405,109 @@\n     \n-melhor = pontuacao\n+aux = pontuacao%0A%0A        if pontuacao %3C aux %7B%0A            aux = pontuacao%0A        %7D%0A        %0A        \n %0A%0A  \n@@ -522,22 +522,19 @@\n t.Print(\n-melhor\n+aux\n )%0A    %7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-03-16_10-50-51",
+            "content": "@@ -135,29 +135,26 @@\n hor \n-= 101\n+int\n %0A     \n+//\n var \n-indice\n+aux\n  int\n@@ -397,107 +397,8 @@\n     \n-if pontuacao %3C melhor %7B%0A            melhor = pontuacao%0A            indice = i%0A        %7D%0A%0A        //\n melh\n@@ -435,14 +435,14 @@\n int(\n-indice\n+melhor\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-03-16_10-55-02",
+            "content": "@@ -486,62 +486,9 @@\n     \n-    fmt.Print(indice)%0A        %7D%0A        %0A        break\n+%7D\n %0A%0A  \n@@ -515,16 +515,42 @@\n tuacao%0A%0A\n+        fmt.Print(indice)%0A\n     %7D%0A%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-16_10-55-55",
+            "content": "@@ -516,36 +516,32 @@\n     \n-    break%0A        %7D%0A        \n+%7D%0A        %0A        break\n %0A%0A  \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-16_10-56-12",
+            "content": "@@ -490,20 +490,43 @@\n     \n-//%0A        %7D\n+fmt.Print(indice)%0A            break\n %0A   \n@@ -522,32 +522,33 @@\n   break%0A        \n+%7D\n %0A        %0A      \n@@ -533,32 +533,33 @@\n      %7D%0A        %0A\n+%0A\n         //melhor\n@@ -575,49 +575,14 @@\n cao%0A\n-        %0A    %7D%0A    %0A    fmt.Print(indice)\n+%0A    %7D\n %0A%0A%0A%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-16_10-57-06",
+            "content": "@@ -561,16 +561,20 @@\n  %0A    %7D%0A\n+    \n %0A    fmt\n@@ -583,10 +583,8 @@\n rint\n-ln\n (ind\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-16_10-57-19",
+            "content": "@@ -520,35 +520,8 @@\n     \n-fmt.Println(%22sem ganhador%22)\n %0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-16_10-57-59",
+            "content": "@@ -516,18 +516,16 @@\n         \n-//\n fmt.Prin\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-16_10-58-30",
+            "content": "@@ -595,71 +595,8 @@\n  %7D%0A%0A\n-    if indice == 0 %7B%0A        fmt.Println(%22sem ganhador%22)%0A    %7D%0A\n     \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-16_10-59-05",
+            "content": "@@ -612,10 +612,9 @@\n  == \n--1\n+0\n  %7B%0A \n@@ -654,21 +654,16 @@\n )%0A    %7D%0A\n-    %0A\n     fmt.\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-16_11-00-15",
+            "content": "@@ -658,33 +658,18 @@\n    %7D\n- else %7B%0A        \n %0A   \n+ %0A\n     \n- \n fmt.\n@@ -689,20 +689,8 @@\n e)%0A%0A\n-    %7D%0A    %0A%0A\n %0A%0A%0A%7D\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-16_11-01-28",
+            "content": "@@ -146,20 +146,22 @@\n     \n+var \n indice \n-:= -1\n+int\n %0A%0A  \n@@ -662,16 +662,24 @@\n  else %7B%0A\n+        \n %0A       \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-16_11-02-21",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n\n    var n int\n    var i int\n    fmt.Scan(&n)\n    var pontuacao int\n     var melhor = 101\n     indice := -1\n\n    for i = 0; i < n; i++ {\n        var a, b int\n        fmt.Scan(&a, &b)\n\n        if(a < 10 || b < 10) {\n            continue\n        }\n        \n        conta := float64(a) - float64(b)\n\n        pontuacao = int(math.Abs(conta))\n\n        if pontuacao < melhor {\n            melhor = pontuacao\n            indice = i\n            //\n        }\n        \n        //fmt.Println(\"sem ganhador\")\n        //melhor = pontuacao\n        \n    }\n\n    if indice == -1 {\n        fmt.Println(\"sem ganhador\")\n    } else {\n\n        fmt.Println(indice)\n\n    }\n    \n\n\n\n\n}\n",
+            "lines": "48"
+        }
+    ]
+}
