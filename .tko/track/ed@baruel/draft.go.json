@@ -2,8 +2,313 @@
     "patches": [
         {
             "label": "2026-03-16_11-04-45",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -37,198 +37,32 @@\n ) %7B%0A\n-%0A    var figAlb, figBaruel int%0A    fmt.Scan(&figAlb, &figBaruel)%0A    var i int%0A%0A    for i = 0; i %3C figBaruel; i++%7B%0A        var fig int%0A        fmt.Scan(&fig)%0A        //fmt.Println(fig)%0A    %7D%0A\n+    fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-16_11-59-11",
+            "content": "@@ -115,45 +115,8 @@\n  int\n-%0A    var figVet %5B%5Dint%0A    var aux int\n %0A%0A  \n@@ -203,135 +203,10 @@\n     \n-figVet = append(figVet, fig)%0A%0A    %7D%0A%0A    for i = 0; i %3C len(figVet); i++%7B%0A        if(figVet%5Bi%5D == figVet%5Bi + 1%5D) %7B%0A            \n+//\n fmt.\n@@ -214,36 +214,21 @@\n rint\n+ln\n (fig\n-Vet%5Bi%5D)%0A        %7D%0A    %7D%0A\n+)%0A    %7D\n %0A%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-16_16-20-19",
+            "content": "@@ -141,10 +141,8 @@\n     \n-//\n var \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-16_16-20-38",
+            "content": "@@ -141,16 +141,18 @@\n     \n+//\n var aux \n %5B%5Din\n@@ -147,18 +147,16 @@\n var aux \n-%5B%5D\n int%0A%0A   \n@@ -369,26 +369,18 @@\n     \n-aux = append(aux, \n+fmt.Print(\n figV\n@@ -407,27 +407,7 @@\n  %7D%0A%0A\n-    fmt.Print(aux)%0A%0A\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-16_16-25-44",
+            "content": "@@ -116,22 +116,8 @@\n int%0A\n-    var j int%0A\n     \n@@ -302,33 +302,32 @@\n len(figVet); i++\n- \n %7B%0A        for j \n@@ -324,59 +324,11 @@\n     \n-for j = i+1; j %3C len(figVet); i++ %7B%0A            if \n+if(\n figV\n@@ -347,17 +347,18 @@\n Vet%5B\n-j%5D %7B%0A    \n+i + 1%5D) %7B%0A\n     \n@@ -398,22 +398,8 @@\n i%5D)%0A\n-            %7D%0A\n     \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-17_10-14-14",
+            "content": "@@ -365,17 +365,17 @@\n igVet); \n-j\n+i\n ++ %7B%0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-17_10-16-17",
+            "content": "@@ -415,26 +415,16 @@\n %5D %7B%0A    \n-        %7D%0A\n         \n@@ -456,16 +456,30 @@\n Vet%5Bi%5D)%0A\n+            %7D%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-17_10-20-58",
+            "content": "@@ -425,30 +425,24 @@\n       %7D%0A    \n-    %7D%0A\n         aux \n@@ -466,16 +466,26 @@\n Vet%5Bi%5D)%0A\n+        %7D%0A\n     %7D%0A%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-17_10-21-19",
+            "content": "@@ -415,24 +415,40 @@\n %5D %7B%0A        \n+    %7D%0A        %7D%0A\n         aux \n@@ -476,32 +476,8 @@\n i%5D)%0A\n-            %7D%0A        %7D%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-17_10-21-41",
+            "content": "@@ -130,30 +130,8 @@\n int%0A\n-    var apareceu bool%0A\n     \n@@ -346,303 +346,8 @@\n  j =\n- 0 ; j %3C i - 1; j++%7B%0A            if figVet%5Bi%5D == figVet%5Bj%5D %7B%0A                apareceu = true%0A                continue%0A            %7D%0A%0A            if !apareceu %7B%0A                aux = append(aux, figVet%5Bi%5D)%0A            %7D%0A        %7D%0A    %7D%0A%0A    // for i = 0; i %3C len(figVet); i++ %7B%0A    //     for j =\n  i+1\n@@ -370,27 +370,24 @@\n ); j++ %7B%0A   \n- //\n          if \n@@ -410,27 +410,24 @@\n Vet%5Bj%5D %7B%0A   \n- //\n             \n@@ -455,27 +455,24 @@\n gVet%5Bi%5D)%0A   \n- //\n          %7D%0A \n@@ -478,23 +478,17 @@\n     \n-//\n     \n- \n %7D%0A   \n- //\n  %7D%0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-17_10-37-43",
+            "content": "@@ -573,39 +573,8 @@\n i%5D)%0A\n-                fmt.Print(aux)%0A\n     \n@@ -819,12 +819,31 @@\n   // %7D%0A%0A\n+    fmt.Print(aux)%0A\n %0A%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-17_10-37-59",
+            "content": "@@ -181,16 +181,18 @@\n var aux \n+%5B%5D\n int%0A%0A   \n@@ -499,13 +499,21 @@\n    %7D\n- else\n+%0A%0A           \n  if \n@@ -521,16 +521,17 @@\n apareceu\n+ \n %7B%0A      \n@@ -543,18 +543,41 @@\n      aux\n-++\n+ = append(aux, figVet%5Bi%5D)\n %0A       \n@@ -606,33 +606,32 @@\n )%0A            %7D%0A\n-%0A\n         %7D%0A    %7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-17_10-39-52",
+            "content": "@@ -374,16 +374,14 @@\n  j %3C\n-=\n  i - 1\n- \n ; j+\n@@ -475,68 +475,35 @@\n     \n-break%0A                %0A            %7D%0A%0A        %7D %0A           \n+continue%0A            %7D else\n  if \n@@ -575,24 +575,35 @@\n            %7D\n+%0A%0A        %7D\n %0A    %7D%0A%0A    \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-17_10-43-23",
+            "content": "@@ -473,18 +473,16 @@\n         \n-//\n break%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-17_10-43-34",
+            "content": "@@ -351,33 +351,8 @@\n + %7B%0A\n-        apareceu = false%0A\n     \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-17_10-44-11",
+            "content": "@@ -626,20 +626,16 @@\n rint(aux\n- - 1\n )%0A      \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-17_10-44-45",
+            "content": "@@ -626,16 +626,20 @@\n rint(aux\n+ - 1\n )%0A      \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-17_10-45-00",
+            "content": "@@ -498,16 +498,18 @@\n         \n+//\n break%0A  \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-17_10-45-18",
+            "content": "@@ -520,94 +520,64 @@\n     \n-%7D%0A%0A\n     \n+%0A\n     \n-%7D %0A%0A    if !apareceu%7B%0A        if figVet%5Bi%5D == figVet%5Bj%5D %7B%0A            aux++\n+        %7D%0A%0A        %7D %0A            if !apareceu%7B\n %0A   \n@@ -585,20 +585,15 @@\n     \n-%7D%0A\n        \n- //\n  aux\n@@ -603,15 +603,16 @@\n     \n+  \n-%7D%0A\n     \n-%0A\n+  \n     \n@@ -626,17 +626,34 @@\n nt(aux)%0A\n-%0A\n+            %7D%0A    \n %7D%0A%0A    /\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-17_10-51-30",
+            "content": "@@ -640,17 +640,17 @@\n   %7D%0A\n+    \n %0A    \n-%0A%7D%0A%0A\n fmt.\n@@ -661,16 +661,19 @@\n t(aux)%0A%0A\n+%7D%0A%0A\n     // f\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-17_10-51-52",
+            "content": "@@ -388,19 +388,32 @@\n for \n-range i - 1\n+j = 0 ; j %3C= i - 1 ; j++\n %7B%0A  \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-17_10-54-19",
+            "content": "@@ -388,31 +388,19 @@\n for \n- j = 0; j %3C=\n+range\n  i - 1\n-; j++\n %7B%0A  \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-17_10-55-14",
+            "content": "@@ -552,55 +552,8 @@\n eu%7B%0A\n-        for k := 0; k %3C len(figVet); k++ %7B%0A    \n     \n@@ -583,15 +583,13 @@\n Vet%5B\n-k\n+j\n %5D %7B%0A\n-%0A \n     \n@@ -600,22 +600,14 @@\n     \n-    \n aux++%0A\n-    \n     \n@@ -616,25 +616,32 @@\n   %7D%0A        \n-%7D\n+// aux++\n %0A    %7D%0A%0A    \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-03-17_11-04-16",
+            "content": "@@ -130,22 +130,8 @@\n int%0A\n-    var k int%0A\n     \n@@ -185,20 +185,16 @@\n aux int%0A\n-    \n %0A    for\n@@ -305,27 +305,15 @@\n ig)%0A\n-        \n %0A    %7D%0A\n-    \n %0A   \n@@ -521,31 +521,17 @@\n   %7D%0A\n-            %0A  \n+%0A\n         \n   %7D \n@@ -530,30 +530,12 @@\n     \n-  \n %7D %0A\n-            \n %0A\n-    \n     \n@@ -560,42 +560,19 @@\n     \n-    contador := 0%0A%0A            for\n+for k := 0;\n  k %3C\n@@ -583,16 +583,22 @@\n (figVet)\n+; k++ \n %7B%0A      \n@@ -627,24 +627,25 @@\n figVet%5Bk%5D %7B%0A\n+%0A\n             \n@@ -649,24 +649,19 @@\n         \n-contador\n+aux\n ++%0A     \n@@ -679,28 +679,35 @@\n       %7D%0A    \n+%7D%0A%0A\n     \n+%0A%7D%0A%0A\n fmt.Print(co\n@@ -708,32 +708,12 @@\n int(\n-contador)%0A    %7D%0A%0A    %0A%7D%0A\n+aux)\n %0A%0A  \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-03-17_11-09-33",
+            "content": "@@ -187,18 +187,16 @@\n int%0A    \n-//\n var aux \n@@ -656,15 +656,8 @@\n  for\n- k = 0;\n  k %3C\n@@ -672,13 +672,8 @@\n Vet)\n-; k++\n %7B%0A  \n@@ -766,40 +766,8 @@\n   %7D%0A\n-        extras := contador - 1%0A%0A\n     \n@@ -784,14 +784,16 @@\n int(\n-extras\n+contador\n )%0A  \n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-03-17_11-12-01",
+            "content": "@@ -191,16 +191,18 @@\n     \n+//\n var aux \n %5B%5Din\n@@ -197,18 +197,16 @@\n var aux \n-%5B%5D\n int%0A    \n@@ -570,16 +570,20 @@\n         \n+    \n %7D %0A     \n@@ -728,53 +728,8 @@\n %5D %7B%0A\n-                aux = append(aux, figVet%5Bk%5D)%0A\n     \n@@ -784,18 +784,16 @@\n         \n-//\n extras :\n@@ -808,25 +808,16 @@\n or - 1%0A%0A\n-        %0A\n         \n@@ -826,19 +826,22 @@\n t.Print(\n-aux\n+extras\n )%0A    %7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-17_11-19-03",
+            "content": "@@ -860,26 +860,24 @@\n        %0A    \n-%7D%0A\n     fmt.Prin\n@@ -882,16 +882,22 @@\n int(aux)\n+%0A    %7D\n %0A%0A    %0A%7D\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-17_11-19-25",
+            "content": "@@ -797,40 +797,8 @@\n r++%0A\n-                 fmt.Print(aux)%0A\n     \n@@ -865,16 +865,35 @@\n   %0A    %7D\n+%0A    fmt.Print(aux)\n %0A%0A    %0A%7D\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-17_11-19-47",
+            "content": "@@ -187,18 +187,16 @@\n int%0A    \n-//\n var aux \n@@ -736,18 +736,16 @@\n         \n-//\n aux = ap\n@@ -801,33 +801,47 @@\n                 \n-%7D\n+ fmt.Print(aux)\n %0A            %7D%0A \n@@ -845,22 +845,30 @@\n %7D%0A      \n+  %7D%0A\n       \n+  //\n extras :\n@@ -885,38 +885,8 @@\n  - 1\n-%0A            fmt.Print(extras)\n %0A%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-17_11-21-35",
+            "content": "@@ -868,118 +868,20 @@\n - 1%0A\n-%0A            for range extras %7B%0A                fmt.Print(figVet%5Bi%5D)%0A            %7D%0A            %0A            //\n+            \n fmt.\n@@ -908,21 +908,8 @@\n    %0A\n-           %0A%0A\n     \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-17_11-29-05",
+            "content": "@@ -896,17 +896,16 @@\n xtras %7B%0A\n-%0A\n         \n@@ -928,16 +928,19 @@\n t(figVet\n+%5Bi%5D\n )%0A      \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-03-17_11-31-01",
+            "content": "@@ -933,16 +933,8 @@\n gVet\n-%5Bi%5D, %22 %22\n )%0A  \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-32-06",
+            "content": "@@ -926,10 +926,8 @@\n rint\n-ln\n (fig\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-32-19",
+            "content": "@@ -922,16 +922,18 @@\n mt.Print\n+ln\n (figVet%5B\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-32-29",
+            "content": "@@ -970,32 +970,34 @@\n    %0A            \n+//\n fmt.Println()%0A%0A \n@@ -993,11 +993,15 @@\n rint\n-ln(\n+(extras\n )%0A%0A \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-33-20",
+            "content": "@@ -974,36 +974,47 @@\n             \n-%0A   \n+fmt.Println()%0A%0A\n         \n  %0A          \n@@ -993,35 +993,33 @@\n ntln()%0A%0A        \n- %0A \n+%0A\n            %0A    \n@@ -1018,61 +1018,15 @@\n    %0A\n-            %0A        %7D%0A        %0A        fmt.Println()\n+%0A    %7D%0A\n %0A   \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-33-39",
+            "content": "@@ -663,17 +663,16 @@\n = 0; k %3C\n-=\n  len(fig\n@@ -1045,18 +1045,16 @@\n         \n-//\n fmt.Prin\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-34-06",
+            "content": "@@ -663,16 +663,17 @@\n = 0; k %3C\n+=\n  len(fig\n@@ -944,38 +944,8 @@\n  %22)%0A\n-                fmt.Println()%0A\n     \n@@ -1034,24 +1034,48 @@\n  %7D%0A        %0A\n+        //fmt.Println()%0A\n     %0A%7D%0A%0A%0A   \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-34-40",
+            "content": "@@ -893,16 +893,17 @@\n e extras\n+ \n %7B%0A%0A     \n@@ -955,37 +955,39 @@\n     \n-%7D%0A            //fmt.Println()\n+    fmt.Println()%0A            %7D\n %0A   \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-37-17",
+            "content": "@@ -187,29 +187,8 @@\n int%0A\n-    primeiro := true%0A\n     \n@@ -899,157 +899,50 @@\n as%7B%0A\n-                if !primeiro %7B%0A                    fmt.Print(%22 %22)%0A                %7D else %7B%0A                    fmt.Print(figVet%5Bi%5D)%0A                %7D\n+%0A                fmt.Print(figVet%5Bi%5D, %22 %22)\n %0A   \n@@ -956,32 +956,34 @@\n   %7D%0A            \n+//\n fmt.Println()%0A  \n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-03-17_11-43-24",
+            "content": "@@ -1092,18 +1092,16 @@\n         \n-//\n fmt.Prin\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-42-33",
+            "content": "@@ -935,16 +935,17 @@\n      if \n+!\n primeiro\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-42-55",
+            "content": "@@ -935,17 +935,16 @@\n      if \n-!\n primeiro\n@@ -980,19 +980,8 @@\n int(\n-figVet%5Bi%5D, \n %22 %22)\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-43-19",
+            "content": "@@ -982,24 +982,29 @@\n nt(figVet%5Bi%5D\n+, %22 %22\n )%0A          \n@@ -1049,37 +1049,32 @@\n .Print(figVet%5Bi%5D\n-, %22 %22\n )%0A              \n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-43-47",
+            "content": "@@ -1095,32 +1095,34 @@\n   %7D%0A            \n+//\n fmt.Println()%0A  \n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-43-57",
+            "content": "@@ -1083,32 +1083,58 @@\n %7D%0A            %7D%0A\n+            fmt.Println()%0A\n             %0A   \n@@ -1201,38 +1201,16 @@\n        %0A\n-        fmt.Println()%0A\n     %0A%7D%0A%0A\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-44-16",
+            "content": "@@ -1183,27 +1183,16 @@\n         \n-%0A    %7D%0A    \n fmt.Prin\n@@ -1197,16 +1197,23 @@\n intln()%0A\n+    %0A%7D%0A\n %0A%0A    //\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-44-36",
+            "content": "@@ -977,19 +977,25 @@\n t.Print(\n-%22 %22\n+figVet%5Bi%5D\n )%0A      \n@@ -1190,17 +1190,16 @@\n  %0A    %7D%0A\n-%0A\n     fmt.\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-03-17_11-47-45",
+            "content": "@@ -1042,24 +1042,29 @@\n nt(figVet%5Bi%5D\n+, %22 %22\n )%0A          \n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-03-17_11-47-59",
+            "content": "@@ -1070,41 +1070,8 @@\n   %7D%0A\n-                primeiro = false%0A\n     \n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-03-17_11-47-43",
+            "content": "@@ -1048,24 +1048,38 @@\n Vet%5Bi%5D)%0A    \n+            %7D%0A\n             \n@@ -1099,34 +1099,16 @@\n = false%0A\n-                %7D%0A\n         \n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-03-17_11-48-00",
+            "content": "@@ -902,40 +902,26 @@\n     \n- \n for \n-x := 0; x %3C\n+range\n  extras\n-; x++ \n %7B%0A\n-%0A\n     \n@@ -995,26 +995,36 @@\n            %7D\n-%0A%0A\n+ else %7B%0A    \n             \n@@ -1060,24 +1060,28 @@\n             \n+    \n primeiro = f\n@@ -1077,32 +1077,50 @@\n rimeiro = false%0A\n+                %7D%0A\n             %7D%0A  \n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-03-17_11-50-15",
+            "content": "@@ -1091,32 +1091,57 @@\n e%0A            %7D%0A\n+            %0A            \n %0A        %7D%0A     \n@@ -1133,26 +1133,30 @@\n         \n-%7D%0A\n+    %0A \n         \n %0A       \n@@ -1147,25 +1147,31 @@\n         \n-%0A\n+   %0A   \n         \n %0A    %7D%0A%0A\n@@ -1166,73 +1166,45 @@\n     \n-%0A\n+ %0A  \n     \n+  \n %7D\n-%0A\n %0A    \n-fmt.Println()%0A%0A    for y := 0; y %3C figAlb; y++ %7B\n+    %0A        \n %0A    \n+%7D%0A%0A\n     \n@@ -1216,22 +1216,12 @@\n rint\n-(figAlb)%0A    %7D\n+ln()\n %0A%0A%0A \n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-03-17_11-53-08",
+            "content": "@@ -1209,16 +1209,9 @@\n rint\n-f(%22%25d%22, \n+(\n figA\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-03-17_11-54-14",
+            "content": "@@ -1166,20 +1166,32 @@\n for \n-range\n+y := 0; y %3C\n  figAlb\n+; y++ \n %7B%0A  \n@@ -1205,17 +1205,24 @@\n mt.Print\n-(\n+f(%22%25d%22, \n figAlb)%0A\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-03-17_11-56-05",
+            "content": "@@ -208,29 +208,8 @@\n rue%0A\n-    var contador int%0A\n     \n@@ -1166,53 +1166,22 @@\n for \n-y := 0; y %3C\n+range\n  figAlb\n-; y++ \n %7B%0A\n-        contador++%0A\n     \n@@ -1194,24 +1194,22 @@\n t.Print(\n-contador\n+figAlb\n )%0A    %7D%0A\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-03-17_11-59-24",
+            "content": "@@ -225,24 +225,26 @@\n dor int%0A    \n+//\n var aux %5B%5Din\n@@ -1240,60 +1240,33 @@\n     \n-aux = append(aux, contador)%0A    %7D%0A    fmt.Print(aux)\n+fmt.Print(contador)%0A    %7D\n %0A%0A%0A \n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-03-17_12-00-30",
+            "content": "@@ -1272,197 +1272,12 @@\n   %7D%0A\n-%0A\n     \n-for g := 0; g %3C len(figVet); g++ %7B%0A        for x := 0; x %3C len(aux); x++ %7B%0A            if figVet%5Bg%5D != aux%5Bx%5D %7B%0A                fmt.Print(aux%5Bx%5D)%0A            %7D%0A        %7D %0A    %7D%0A%0A    //\n fmt.\n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-03-17_12-04-14",
+            "content": "@@ -247,27 +247,8 @@\n int%0A\n-    var aux2 %5B%5Dint%0A\n     \n@@ -1373,17 +1373,17 @@\n gVet%5Bg%5D \n-=\n+!\n = aux%5Bx%5D\n@@ -1405,28 +1405,18 @@\n     \n-aux2 = append(aux2, \n+fmt.Print(\n aux%5B\n@@ -1447,32 +1447,34 @@\n   %7D %0A    %7D%0A%0A    \n+//\n fmt.Print(aux)%0A%0A\n",
+            "lines": "87"
+        },
+        {
+            "label": "2026-03-17_12-09-12",
+            "content": "@@ -1392,17 +1392,17 @@\n gVet%5Bg%5D \n-!\n+=\n = aux%5Bx%5D\n@@ -1497,17 +1497,16 @@\n rint(aux\n-2\n )%0A%0A%0A    \n",
+            "lines": "88"
+        },
+        {
+            "label": "2026-03-17_12-08-19",
+            "content": "@@ -247,18 +247,16 @@\n int%0A    \n-//\n var aux2\n@@ -1280,32 +1280,224 @@\n ontador)%0A    %7D%0A%0A\n+    for g := 0; g %3C len(figVet); g++ %7B%0A        for x := 0; x %3C len(aux); x++ %7B%0A            if figVet%5Bg%5D != aux%5Bx%5D %7B%0A                aux2 = append(aux2, aux%5Bx%5D)%0A            %7D%0A        %7D %0A    %7D%0A%0A\n     fmt.Print(au\n@@ -1497,16 +1497,17 @@\n rint(aux\n+2\n )%0A%0A%0A    \n",
+            "lines": "88"
+        },
+        {
+            "label": "2026-03-17_12-10-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var figAlb, figBaruel int\n    fmt.Scan(&figAlb, &figBaruel)\n    var i int\n    var j int\n    var k int\n    var apareceu bool\n    var figVet []int\n    primeiro := true\n    var contador int\n    var aux []int\n    //var aux2 []int\n    \n    for i = 0; i < figBaruel; i++{\n        var fig int\n        fmt.Scan(&fig)\n        figVet = append(figVet, fig)\n        \n    }\n    \n    for i = 0; i < len(figVet); i++ {\n        apareceu = false\n        for  j = 0; j <= i - 1; j++{\n            if figVet[i] == figVet[j] {\n                apareceu = true\n                break\n            }\n            \n        } \n            \n        if !apareceu{\n            contador := 0\n\n            for k = 0; k < len(figVet); k++{\n            if figVet[i] == figVet[k] {\n                //aux = append(aux, figVet[k])\n                 contador++\n                }\n            }\n            extras := contador - 1\n\n             for x := 0; x < extras; x++ {\n\n                if !primeiro {\n                    fmt.Print(\" \")\n                }\n\n                fmt.Print(figVet[i])\n                primeiro = false\n            }\n\n        }\n        \n        \n    }\n\n    fmt.Println()\n\n    for y := 0; y < figAlb; y++ {\n        contador++\n        aux = append(aux, contador)\n    }\n\n    fmt.Print(aux)\n\n\n    // for i = 0; i < len(figVet); i++ {\n    //     for j = i+1; j < len(figVet); j++ {\n    //         if figVet[i] == figVet[j] {\n    //             aux = append(aux, figVet[i])\n    //         }\n    //     }\n    // }\n\n\n\n}\n",
+            "lines": "80"
         }
     ]
 }

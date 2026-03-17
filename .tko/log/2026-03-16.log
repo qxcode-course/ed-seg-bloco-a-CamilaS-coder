@@ -36,3 +36,18 @@
 2026-03-16 11:07:26, MOVE, v:1, k:ed@gomos, mode:DOWN
 2026-03-16 11:07:33, MOVE, v:1, k:ed@gomos, mode:PICK
 2026-03-16 11:08:01, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-03-16 11:10:31, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-03-16 11:10:48, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-16 11:11:49, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-03-16 11:13:42, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-16 11:13:18, SELF, v:1, k:ed@casais, self:1, rate:100, study:30, friend:No, concept:1, problem:1
+2026-03-16 11:13:46, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-03-16 11:14:35, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-16 11:15:09, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-03-16 11:15:29, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-03-16 11:39:46, EXEC, v:1, k:projetos@rep-git-ed, mode:FREE, size:213
+2026-03-16 11:59:11, EXEC, v:1, k:ed@baruel, mode:FULL, rate:0, size:15
+2026-03-16 16:20:19, EXEC, v:1, k:ed@baruel, mode:FULL, rate:0, size:25, fail:COMP
+2026-03-16 16:20:38, EXEC, v:1, k:ed@baruel, mode:FULL, rate:0, size:25
+2026-03-16 16:24:00, EXEC, v:1, k:ed@baruel, mode:FULL, rate:0
+2026-03-16 16:25:44, EXEC, v:1, k:ed@baruel, mode:FULL, rate:0, size:27
