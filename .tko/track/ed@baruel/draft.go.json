@@ -307,8 +307,153 @@
         },
         {
             "label": "2026-03-17_12-10-41",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var figAlb, figBaruel int\n    fmt.Scan(&figAlb, &figBaruel)\n    var i int\n    var j int\n    var k int\n    var apareceu bool\n    var figVet []int\n    primeiro := true\n    var contador int\n    var aux []int\n    //var aux2 []int\n    \n    for i = 0; i < figBaruel; i++{\n        var fig int\n        fmt.Scan(&fig)\n        figVet = append(figVet, fig)\n        \n    }\n    \n    for i = 0; i < len(figVet); i++ {\n        apareceu = false\n        for  j = 0; j <= i - 1; j++{\n            if figVet[i] == figVet[j] {\n                apareceu = true\n                break\n            }\n            \n        } \n            \n        if !apareceu{\n            contador := 0\n\n            for k = 0; k < len(figVet); k++{\n            if figVet[i] == figVet[k] {\n                //aux = append(aux, figVet[k])\n                 contador++\n                }\n            }\n            extras := contador - 1\n\n             for x := 0; x < extras; x++ {\n\n                if !primeiro {\n                    fmt.Print(\" \")\n                }\n\n                fmt.Print(figVet[i])\n                primeiro = false\n            }\n\n        }\n        \n        \n    }\n\n    fmt.Println()\n\n    for y := 0; y < figAlb; y++ {\n        contador++\n        aux = append(aux, contador)\n    }\n\n    fmt.Print(aux)\n\n\n    // for i = 0; i < len(figVet); i++ {\n    //     for j = i+1; j < len(figVet); j++ {\n    //         if figVet[i] == figVet[j] {\n    //             aux = append(aux, figVet[i])\n    //         }\n    //     }\n    // }\n\n\n\n}\n",
+            "content": "@@ -1294,18 +1294,16 @@\n  %7D%0A%0A    \n-//\n fmt.Prin\n",
             "lines": "80"
+        },
+        {
+            "label": "2026-03-17_15-48-59",
+            "content": "@@ -1294,237 +1294,8 @@\n  %7D%0A%0A\n-    for i := 0; i %3C len(figVet); i++ %7B%0A        for j := 0; j %3C len(aux); j++ %7B%0A            if figVet%5Bi%5D == aux%5Bj%5D %7B%0A                continue%0A            %7D else %7B%0A                fmt.Print(figVet%5Bi%5D)%0A            %7D%0A        %7D%0A    %7D%0A\n     \n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-03-17_15-53-51",
+            "content": "@@ -1478,21 +1478,24 @@\n t.Print(\n-aux%5Bj\n+figVet%5Bi\n %5D)%0A     \n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-03-17_15-54-18",
+            "content": "@@ -1486,38 +1486,16 @@\n aux%5Bj%5D)%0A\n-                break%0A\n         \n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-03-17_15-54-36",
+            "content": "@@ -1394,17 +1394,17 @@\n gVet%5Bi%5D \n-!\n+=\n = aux%5Bj%5D\n@@ -1402,24 +1402,70 @@\n == aux%5Bj%5D %7B%0A\n+                continue%0A            %7D else %7B%0A\n             \n@@ -1528,25 +1528,24 @@\n %7D%0A        %7D%0A\n-%0A\n     %7D%0A    //\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-03-17_15-56-25",
+            "content": "@@ -1144,52 +1144,8 @@\n  %7D%0A%0A\n-        %7D else %7B%0A            fmt.Print(%22N%22)%0A\n     \n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-03-17_15-59-55",
+            "content": "@@ -1132,32 +1132,76 @@\n %0A            %7D%0A%0A\n+        %7D else %7B%0A            fmt.Print(%22N%22)%0A\n         %7D%0A      \n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-03-17_16-00-19",
+            "content": "@@ -102,268 +102,25 @@\n el)%0A\n-%0A\n     \n-figVet := make(%5B%5Dint, figBaruel)%0A    //repetidas := make(map%5Bint%5Dint)%0A%0A    for i := range figVet %7B%0A        fmt.Scan(&figVet%5Bi%5D)%0A    %7D%0A    fmt.Print(figVet)%0A    %0A%0A    // var figAlb, figBaruel int%0A    // fmt.Scan(&figAlb, &figBaruel)%0A    // var i int%0A    //\n+var i int%0A   \n  var\n@@ -125,27 +125,24 @@\n ar j int%0A   \n- //\n  var k int%0A \n@@ -139,27 +139,24 @@\n ar k int%0A   \n- //\n  var aparece\n@@ -161,27 +161,24 @@\n ceu bool%0A   \n- //\n  var figVet \n@@ -186,19 +186,16 @@\n %5Dint%0A   \n- //\n  primeir\n@@ -203,27 +203,24 @@\n  := true%0A   \n- //\n  var contado\n@@ -228,19 +228,16 @@\n  int%0A   \n- //\n  var aux\n@@ -246,19 +246,16 @@\n %5Dint%0A   \n- //\n  //var a\n@@ -264,35 +264,32 @@\n 2 %5B%5Dint%0A    %0A   \n- //\n  for i = 0; i %3C \n@@ -303,27 +303,24 @@\n el; i++%7B%0A   \n- //\n      var fig\n@@ -323,27 +323,24 @@\n  fig int%0A   \n- //\n      fmt.Sca\n@@ -346,27 +346,24 @@\n an(&fig)%0A   \n- //\n      figVet \n@@ -396,19 +396,16 @@\n     %0A   \n- //\n  %7D%0A    %0A\n@@ -403,27 +403,24 @@\n   %7D%0A    %0A   \n- //\n  for i = 0; \n@@ -441,27 +441,24 @@\n ); i++ %7B%0A   \n- //\n      aparece\n@@ -466,27 +466,24 @@\n  = false%0A   \n- //\n      for  j \n@@ -504,34 +504,32 @@\n 1; j++%7B%0A    \n-//\n         \n  if figVet%5Bi\n@@ -508,33 +508,32 @@\n ++%7B%0A            \n- \n if figVet%5Bi%5D == \n@@ -540,34 +540,32 @@\n figVet%5Bj%5D %7B%0A    \n-//\n              apa\n@@ -556,25 +556,24 @@\n             \n- \n apareceu = t\n@@ -575,27 +575,24 @@\n u = true%0A   \n- //\n             \n@@ -593,35 +593,32 @@\n        break%0A   \n- //\n          %7D%0A     \n@@ -624,27 +624,24 @@\n         %0A   \n- //\n      %7D %0A    \n@@ -653,23 +653,20 @@\n    %0A    \n-//\n     \n- \n if !apar\n@@ -670,27 +670,24 @@\n pareceu%7B%0A   \n- //\n          con\n@@ -697,27 +697,24 @@\n or := 0%0A%0A   \n- //\n          for\n@@ -743,34 +743,32 @@\n ); k++%7B%0A    \n-//\n         \n  if figVet%5Bi\n@@ -747,33 +747,32 @@\n ++%7B%0A            \n- \n if figVet%5Bi%5D == \n@@ -782,27 +782,24 @@\n Vet%5Bk%5D %7B%0A   \n- //\n             \n@@ -829,27 +829,24 @@\n gVet%5Bk%5D)%0A   \n- //\n             \n@@ -857,27 +857,24 @@\n ntador++%0A   \n- //\n             \n@@ -871,35 +871,32 @@\n            %7D%0A   \n- //\n          %7D%0A    /\n@@ -894,26 +894,24 @@\n   %7D%0A    \n-//\n         \n  extras \n@@ -902,17 +902,16 @@\n         \n- \n extras :\n@@ -925,27 +925,24 @@\n dor - 1%0A%0A   \n- //\n           fo\n@@ -969,27 +969,24 @@\n ; x++ %7B%0A%0A   \n- //\n             \n@@ -1000,27 +1000,24 @@\n imeiro %7B%0A   \n- //\n             \n@@ -1035,27 +1035,24 @@\n int(%22 %22)%0A   \n- //\n             \n@@ -1054,27 +1054,24 @@\n       %7D%0A%0A   \n- //\n             \n@@ -1091,27 +1091,24 @@\n gVet%5Bi%5D)%0A   \n- //\n             \n@@ -1124,27 +1124,24 @@\n  = false%0A   \n- //\n          %7D%0A%0A\n@@ -1144,23 +1144,20 @@\n  %7D%0A%0A    \n-//\n     \n- \n %7D%0A      \n@@ -1171,29 +1171,23 @@\n     %0A   \n- //\n  %7D%0A%0A   \n- //\n  fmt.Pri\n@@ -1193,27 +1193,24 @@\n intln()%0A%0A   \n- //\n  for y := 0;\n@@ -1227,27 +1227,24 @@\n b; y++ %7B%0A   \n- //\n      contado\n@@ -1251,23 +1251,20 @@\n r++%0A    \n-//\n     \n- \n aux = ap\n@@ -1290,21 +1290,15 @@\n %0A   \n- //\n  %7D%0A%0A   \n- //\n  for\n@@ -1328,27 +1328,24 @@\n ); i++ %7B%0A   \n- //\n      for j :\n@@ -1368,27 +1368,24 @@\n ); j++ %7B%0A   \n- //\n          if \n@@ -1405,27 +1405,24 @@\n aux%5Bj%5D %7B%0A   \n- //\n             \n@@ -1440,27 +1440,24 @@\n aux%5Bj%5D)%0A    \n-// \n             \n@@ -1457,24 +1457,257 @@\n        break\n+%0A            %7D%0A        %7D%0A%0A    %7D%0A    //fmt.Print(aux)%0A%0A%0A    // for i = 0; i %3C len(figVet); i++ %7B%0A    //     for j = i+1; j %3C len(figVet); j++ %7B%0A    //         if figVet%5Bi%5D == figVet%5Bj%5D %7B%0A    //             aux = append(aux, figVet%5Bi%5D)\n %0A    //     \n@@ -1721,25 +1721,24 @@\n    //     %7D%0A\n-%0A\n     // %7D%0A%0A%0A%0A\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-03-19_17-35-04",
+            "content": "@@ -102,26 +102,9 @@\n el)%0A\n-    var valor = 0\n %0A\n+\n     \n@@ -136,24 +136,26 @@\n Baruel)%0A    \n+//\n repetidas :=\n@@ -241,193 +241,8 @@\n   %7D%0A\n-%0A    for _, fig := range figVet %7B%0A%0A        valor, _ = repetidas%5Bfig%5D%0A%0A        if valor %3E 0 %7B%0A            repetidas%5Bfig%5D--%0A        %7D else %7B%0A            repetidas%5Bfig%5D++%0A        %7D%0A    %7D%0A%0A\n     \n@@ -251,25 +251,22 @@\n t.Print(\n-repetidas\n+figVet\n )%0A    %0A%0A\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-03-19_17-39-28",
+            "content": "@@ -329,19 +329,16 @@\n %0A       \n- //\n  if valo\n@@ -344,35 +344,32 @@\n or %3E 0 %7B%0A       \n- //\n      repetidas%5Bf\n@@ -381,19 +381,16 @@\n %0A       \n- //\n  %7D else \n@@ -399,23 +399,20 @@\n         \n-//\n     \n- \n repetida\n@@ -427,19 +427,16 @@\n %0A       \n- //\n  %7D%0A    %7D\n@@ -464,15 +464,8 @@\n idas\n-%5Bvalor%5D\n )%0A  \n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-03-19_17-43-06",
+            "content": "@@ -106,15 +106,18 @@\n     \n+var \n valor \n-:\n = 0%0A\n@@ -188,20 +188,16 @@\n nt%5Dint)%0A\n-    \n %0A    for\n@@ -252,20 +252,16 @@\n )%0A    %7D%0A\n-    \n %0A    for\n@@ -286,24 +286,16 @@\n igVet %7B%0A\n-        \n %0A       \n@@ -325,24 +325,27 @@\n ig%5D%0A%0A       \n+ //\n  if valor %3E \n@@ -348,36 +348,39 @@\n r %3E 0 %7B%0A        \n+//\n     \n+ \n repetidas%5Bfig%5D--\n@@ -387,16 +387,19 @@\n %0A       \n+ //\n  %7D else \n@@ -403,24 +403,27 @@\n se %7B%0A       \n+ //\n      repetid\n@@ -444,17 +444,20 @@\n     \n+// \n %7D\n-%0A\n %0A    %7D%0A\n+%0A\n     \n@@ -475,18 +475,24 @@\n epetidas\n+%5Bvalor%5D\n )\n-%0A\n %0A    %0A%0A \n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-03-19_17-44-49",
+            "content": "@@ -384,18 +384,18 @@\n das%5Bfig%5D\n-++\n+--\n %0A       \n@@ -422,34 +422,34 @@\n   repetidas%5Bfig%5D\n---\n+++\n %0A        %7D%0A%0A    \n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-19_17-45-21",
+            "content": "@@ -388,10 +388,10 @@\n fig%5D\n---\n+++\n %0A   \n@@ -422,34 +422,34 @@\n   repetidas%5Bfig%5D\n-++\n+--\n %0A        %7D%0A%0A    \n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-19_17-45-59",
+            "content": "@@ -102,18 +102,16 @@\n el)%0A    \n-//\n valor :=\n@@ -295,24 +295,141 @@\n t %7B%0A        \n+%0A        valor, _ = repetidas%5Bfig%5D%0A%0A        if valor %3E 0 %7B%0A            repetidas%5Bfig%5D--%0A        %7D else %7B%0A            \n repetidas%5Bfi\n@@ -433,30 +433,36 @@\n %5Bfig%5D++%0A    \n+   \n-%7D\n+ %7D%0A\n %0A    \n+%7D\n %0A    fmt.Pri\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-19_17-50-50",
+            "content": "@@ -259,27 +259,24 @@\n   %7D%0A    %0A   \n- //\n  for _, fig \n@@ -292,27 +292,24 @@\n figVet %7B%0A   \n- //\n      repetid\n@@ -325,137 +325,15 @@\n %0A   \n- //\n  %7D%0A\n-%0A\n     \n-conRepetidas := 0%0A%0A    for _, qtd := range repetidas %7B%0A        if qtd %3E 1 %7B%0A            conRepetidas++%0A        %7D%0A    %7D\n %0A   \n@@ -347,12 +347,9 @@\n int(\n-conR\n+r\n epet\n",
+            "lines": "97"
+        },
+        {
+            "label": "2026-03-19_17-52-45",
+            "content": "@@ -259,24 +259,27 @@\n   %7D%0A    %0A   \n+ //\n  for _, fig \n@@ -295,24 +295,27 @@\n figVet %7B%0A   \n+ //\n      repetid\n@@ -327,16 +327,19 @@\n g%5D++%0A   \n+ //\n  %7D%0A%0A    \n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-19_17-52-54",
+            "content": "@@ -156,20 +156,23 @@\n el)%0A    \n-unic\n+repetid\n as := ma\n@@ -186,55 +186,11 @@\n int%5D\n-bool)%0A    repetidos := make(%5B%5Dint, 0, figBaruel\n+int\n )%0A  \n@@ -293,25 +293,24 @@\n igVet %7B%0A\n-%0A\n         \n _, exist\n@@ -305,147 +305,138 @@\n     \n-_, existe := unic\n+repetid\n as%5Bfig%5D\n+++\n %0A    \n+%7D%0A%0A\n     \n-if existe %7B%0A            repetidos = append(repetidos, fig)%0A        %7D else %7B%0A            unicas%5Bfig%5D = true\n+conRepetidas := 0%0A%0A    for _, qtd := range repetidas %7B%0A        if qtd %3E 1 %7B%0A            conRepetidas++\n %0A   \n@@ -442,24 +442,22 @@\n       %7D%0A\n-%0A\n     %7D%0A\n-%0A\n     fmt.\n@@ -466,12 +466,18 @@\n int(\n-unic\n+conRepetid\n as)%0A\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-19_18-12-17",
+            "content": "@@ -525,19 +525,8 @@\n icas\n-, repetidos\n )%0A%0A \n",
+            "lines": "105"
+        },
+        {
+            "label": "2026-03-19_18-12-58",
+            "content": "@@ -509,36 +509,8 @@\n     \n-fmt.Print(repetidos)%0A%0A    //\n fmt.\n",
+            "lines": "105"
+        },
+        {
+            "label": "2026-03-19_18-13-49",
+            "content": "@@ -508,35 +508,19 @@\n %0A   \n- saida :=\n  fmt.\n-Sp\n+P\n rint(\n-%22&v%22, \n repe\n@@ -529,29 +529,8 @@\n dos)\n-%0A    fmt.Print(saida)\n %0A%0A  \n",
+            "lines": "107"
+        },
+        {
+            "label": "2026-03-19_18-18-29",
+            "content": "@@ -524,17 +524,16 @@\n t.Sprint\n-f\n (%22&v%22, r\n@@ -538,25 +538,24 @@\n  repetidos)%0A\n-%0A\n     fmt.Prin\n@@ -555,18 +555,16 @@\n mt.Print\n-ln\n (saida)%0A\n",
+            "lines": "108"
+        },
+        {
+            "label": "2026-03-19_18-19-08",
+            "content": "@@ -531,9 +531,9 @@\n tf(%22\n-%25\n+&\n v%22, \n",
+            "lines": "109"
+        },
+        {
+            "label": "2026-03-19_18-19-20",
+            "content": "@@ -569,27 +569,8 @@\n aida\n-%5B1: len(saida) - 1%5D\n )%0A%0A \n",
+            "lines": "109"
+        },
+        {
+            "label": "2026-03-19_18-20-20",
+            "content": "@@ -548,69 +548,8 @@\n s)%0A%0A\n-    if len(saida) == 0 %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A    %0A\n     \n",
+            "lines": "109"
+        },
+        {
+            "label": "2026-03-19_18-21-33",
+            "content": "@@ -552,213 +552,114 @@\n     \n-fmt.Println(saida%5B1: len(saida) - 1%5D)%0A%0A    faltantes := make(%5B%5Dint, 0, figAlb)%0A%0A    for i := 1; i %3C= figAlb; i++ %7B%0A        if !unicas%5Bi%5D %7B\n+if len(saida) == 0 %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A    \n-    \n+%0A\n     f\n-altantes = append(faltantes, i)%0A        %7D%0A    %7D\n+mt.Println(saida%5B1: len(saida) - 1%5D)\n %0A%0A    \n+//\n fmt.\n@@ -668,16 +668,24 @@\n int(\n-faltante\n+unicas, repetido\n s)%0A%0A\n",
+            "lines": "113"
+        },
+        {
+            "label": "2026-03-19_18-27-20",
+            "content": "@@ -752,37 +752,23 @@\n   %7D%0A\n- \n+%0A\n    \n-sai :=\n  fmt.\n-Sp\n+P\n rint\n-f(%22%25v%22, \n+(\n falt\n@@ -779,30 +779,8 @@\n s)%0A%0A\n-    fmt.Println(sai)%0A%0A\n     \n",
+            "lines": "117"
+        },
+        {
+            "label": "2026-03-19_18-28-15",
+            "content": "@@ -812,24 +812,8 @@\n (sai\n-%5B1:len(sai) - 1%5D\n )%0A%0A \n",
+            "lines": "118"
+        },
+        {
+            "label": "2026-03-19_18-28-42",
+            "content": "@@ -546,60 +546,8 @@\n dos)\n-%0A    if saida == %22%22 %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%0A  \n@@ -747,22 +747,16 @@\n  %7D%0A    %7D\n-%0A%0A    \n %0A    sai\n@@ -793,59 +793,8 @@\n s)%0A%0A\n-    if sai == %22%22 %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A%0A\n     \n",
+            "lines": "118"
+        },
+        {
+            "label": "2026-03-19_18-31-31",
+            "content": "@@ -556,26 +556,24 @@\n f saida == %22\n-%5B%5D\n %22 %7B%0A        \n@@ -594,33 +594,22 @@\n %22)%0A    %7D\n- else %7B\n %0A%0A    \n- \n-   \n fmt.Prin\n@@ -634,31 +634,24 @@\n aida) - 1%5D)%0A\n-    %7D%0A%0A\n %0A    faltant\n@@ -862,18 +862,16 @@\n sai == %22\n-%5B%5D\n %22 %7B%0A    \n@@ -900,25 +900,14 @@\n    %7D\n- else %7B\n %0A%0A    \n- \n-   \n fmt.\n@@ -935,23 +935,16 @@\n ) - 1%5D)%0A\n-    %7D%0A%0A\n %0A    %0A%0A \n",
+            "lines": "127"
+        },
+        {
+            "label": "2026-03-19_18-31-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var figAlb, figBaruel int\n    fmt.Scan(&figAlb, &figBaruel)\n    //valor := 0\n    figVet := make([]int, figBaruel)\n    unicas := make(map[int]bool)\n    repetidos := make([]int, 0, figBaruel)\n    \n    for i := range figVet {\n        fmt.Scan(&figVet[i])\n    }\n    \n    for _, fig := range figVet {\n\n        _, existe := unicas[fig]\n        if existe {\n            repetidos = append(repetidos, fig)\n        } else {\n            unicas[fig] = true\n        }\n\n    }\n\n    saida := fmt.Sprintf(\"%v\", repetidos)\n    if saida == \"[]\" {\n        fmt.Println(\"N\")\n    } else {\n\n        fmt.Println(saida[1: len(saida) - 1])\n    }\n\n\n    faltantes := make([]int, 0, figAlb)\n\n    for i := 1; i <= figAlb; i++ {\n        if !unicas[i] {\n            faltantes = append(faltantes, i)\n        }\n    }\n\n    \n    sai := fmt.Sprintf(\"%v\", faltantes)\n\n    if sai == \"[]\" {\n        fmt.Println(\"N\")\n    } else {\n\n        fmt.Println(sai[1:len(sai) - 1])\n    }\n\n\n    \n\n    // var figAlb, figBaruel int\n    // fmt.Scan(&figAlb, &figBaruel)\n    // var i int\n    // var j int\n    // var k int\n    // var apareceu bool\n    // var figVet []int\n    // primeiro := true\n    // var contador int\n    // var aux []int\n    // //var aux2 []int\n    \n    // for i = 0; i < figBaruel; i++{\n    //     var fig int\n    //     fmt.Scan(&fig)\n    //     figVet = append(figVet, fig)\n        \n    // }\n    \n    // for i = 0; i < len(figVet); i++ {\n    //     apareceu = false\n    //     for  j = 0; j <= i - 1; j++{\n    //         if figVet[i] == figVet[j] {\n    //             apareceu = true\n    //             break\n    //         }\n            \n    //     } \n            \n    //     if !apareceu{\n    //         contador := 0\n\n    //         for k = 0; k < len(figVet); k++{\n    //         if figVet[i] == figVet[k] {\n    //             //aux = append(aux, figVet[k])\n    //              contador++\n    //             }\n    //         }\n    //         extras := contador - 1\n\n    //          for x := 0; x < extras; x++ {\n\n    //             if !primeiro {\n    //                 fmt.Print(\" \")\n    //             }\n\n    //             fmt.Print(figVet[i])\n    //             primeiro = false\n    //         }\n\n    //     }\n        \n        \n    // }\n\n    // fmt.Println()\n\n    // for y := 0; y < figAlb; y++ {\n    //     contador++\n    //     aux = append(aux, contador)\n    // }\n\n    // for i := 0; i < len(figVet); i++ {\n    //     for j := 0; j < len(aux); j++ {\n    //         if figVet[i] != aux[j] {\n    //             fmt.Print(aux[j])\n    //             break\n    //         }\n    //     }\n\n    // }\n\n\n\n}\n",
+            "lines": "131"
         }
     ]
 }
