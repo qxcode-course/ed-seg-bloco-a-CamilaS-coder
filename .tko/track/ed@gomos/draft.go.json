@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_19-24-06",
+            "content": "@@ -37,591 +37,8 @@\n ) %7B%0A\n-    var Q int%0A    var D string%0A%0A    fmt.Scan(&Q, &D)%0A%0A    x := make(%5B%5Dint, Q)%0A    y := make(%5B%5Dint, Q)%0A%0A    for i := 0; i %3C Q; i++ %7B%0A        fmt.Scan(&x%5Bi%5D, &y%5Bi%5D)%0A    %7D%0A%0A    %0A    oldX := make(%5B%5Dint, Q)%0A    oldY := make(%5B%5Dint, Q)%0A%0A    copy(oldX, x)%0A    copy(oldY, y)%0A%0A    %0A    switch D %7B%0A    case %22L%22:%0A        x%5B0%5D--%0A    case %22R%22:%0A        x%5B0%5D++%0A    case %22U%22:%0A        y%5B0%5D--%0A    case %22D%22:%0A        y%5B0%5D++%0A    %7D%0A%0A    %0A    for i := 1; i %3C Q; i++ %7B%0A        x%5Bi%5D = oldX%5Bi-1%5D%0A        y%5Bi%5D = oldY%5Bi-1%5D%0A    %7D%0A%0A    %0A    for i := 0; i %3C Q; i++ %7B%0A        fmt.Printf(%22%25d %25d%5Cn%22, x%5Bi%5D, y%5Bi%5D)%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_19-40-11",
+            "content": "@@ -624,10 +624,8 @@\n     \n-//\n fmt.\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-22_19-41-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var Q int\n    var D string\n\n    fmt.Scan(&Q, &D)\n\n    x := make([]int, Q)\n    y := make([]int, Q)\n\n    for i := 0; i < Q; i++ {\n        fmt.Scan(&x[i], &y[i])\n    }\n\n    \n    oldX := make([]int, Q)\n    oldY := make([]int, Q)\n\n    copy(oldX, x)\n    copy(oldY, y)\n\n    \n    switch D {\n    case \"L\":\n        x[0]--\n    case \"R\":\n        x[0]++\n    case \"U\":\n        y[0]--\n    case \"D\":\n        y[0]++\n    }\n\n    \n    for i := 1; i < Q; i++ {\n        x[i] = oldX[i-1]\n        y[i] = oldY[i-1]\n    }\n\n    \n    for i := 0; i < Q; i++ {\n        fmt.Printf(\"%d %d\\n\", x[i], y[i])\n    }\n    //fmt.Println(\"qxcode\")\n}\n",
+            "lines": "46"
+        }
+    ]
+}
