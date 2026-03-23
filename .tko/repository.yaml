@@ -13,8 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@análise
+- ed@revisão
 - ed@main-quest
+- ed@análise
 tasks:
   sandbox@user_001: '{self:1, rate:100, study:10, friend:NO}'
   ed@pintando: '{self:1, rate:100, study:10, friend:No}'
@@ -24,6 +25,7 @@ tasks:
   ed@casais: '{self:1, rate:100, study:30, friend:No, concept:1, problem:1}'
   ed@baruel: '{self:1, rate:100, study:120, guided:1, concept:1}'
   ed@gomos: '{self:1, rate:100, study:20, guided:1}'
+  ed@apagando: '{self:1, rate:100, study:40, concept:1}'
 flags:
   painel: 1
   quests: 2
@@ -32,4 +34,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@revisão
+selected: ed@apagando
