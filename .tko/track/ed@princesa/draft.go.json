@@ -1,0 +1,184 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_10-12-10",
+            "content": "@@ -139,17 +139,17 @@\n (&vetor%5B\n-N\n+i\n %5D)%0A    %7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-11-04",
+            "content": "@@ -139,17 +139,17 @@\n (&vetor%5B\n-i\n+N\n %5D)%0A    %7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-11-26",
+            "content": "@@ -110,18 +110,9 @@\n i %3C \n-len(vetor)\n+N\n ; i+\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-11-56",
+            "content": "@@ -40,16 +40,19 @@\n %0A    var\n+ N,\n  E int%0A \n@@ -76,16 +76,19 @@\n %5B%5Dint, 0\n+, N\n )%0A    %0A \n@@ -128,26 +128,8 @@\n + %7B%0A\n-        var N int%0A\n     \n@@ -148,17 +148,17 @@\n (&vetor%5B\n-N\n+i\n %5D)%0A    %7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-12-47",
+            "content": "@@ -44,11 +44,8 @@\n  var\n- N,\n  E i\n@@ -77,13 +77,19 @@\n t, 0\n-, N)%0A\n+)%0A    %0A    \n for \n@@ -104,17 +104,26 @@\n i %3C \n-N\n+len(vetor)\n ; i++ %7B%0A\n     \n@@ -118,16 +118,38 @@\n ; i++ %7B%0A\n+        var N int%0A    \n     fmt.\n@@ -164,24 +164,59 @@\n tor%5B\n-i%5D)%0A%7D%0Afmt.Scan(&\n+N%5D)%0A    %7D%0A%0A    fmt.Scan(&E)%0A    fmt.Println(vetor, \n E)%0A%7D\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_10-14-45",
+            "content": "@@ -149,26 +149,6 @@\n &E)%0A\n-fmt.Print(vetor, E)%0A\n %7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-30_10-15-02",
+            "content": "@@ -119,16 +119,17 @@\n mt.Scan(\n+&\n vetor%5Bi%5D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_10-15-10",
+            "content": "@@ -114,31 +114,25 @@\n     \n-vetor = append\n+fmt.Scan\n (vetor\n-, i\n+%5Bi%5D\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_10-15-28",
+            "content": "@@ -110,25 +110,8 @@\n + %7B%0A\n-    fmt.Scan(&N)%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_10-16-12",
+            "content": "@@ -149,17 +149,17 @@\n (vetor, \n-N\n+i\n )%0A%7D%0Afmt.\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_10-17-57",
+            "content": "@@ -54,25 +54,8 @@\n int%0A\n-    fmt.Scan(&N)%0A\n     \n@@ -106,16 +106,33 @@\n ; i++ %7B%0A\n+    fmt.Scan(&N)%0A\n     veto\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_10-16-54",
+            "content": "@@ -131,34 +131,8 @@\n     \n-fmt.Scan(&vetor%5Bi%5D)%0A    //\n veto\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_10-17-24",
+            "content": "@@ -111,15 +111,14 @@\n  := \n-1\n+0\n ; i %3C\n-=\n  N; \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-17-42",
+            "content": "@@ -117,14 +117,11 @@\n  i %3C\n+=\n  N\n- - 1\n ; i+\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-18-01",
+            "content": "@@ -91,16 +91,19 @@\n e(%5B%5Dint,\n+ 0,\n  N)%0Afor \n@@ -115,16 +115,20 @@\n 1; i %3C N\n+ - 1\n ; i++ %7B%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-19-30",
+            "content": "@@ -108,9 +108,9 @@\n  := \n-0\n+1\n ; i \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-19-47",
+            "content": "@@ -140,17 +140,17 @@\n (&vetor%5B\n-N\n+i\n %5D)%0A    /\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-20-43",
+            "content": "@@ -140,17 +140,17 @@\n (&vetor%5B\n-i\n+N\n %5D)%0A    /\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-20-51",
+            "content": "@@ -50,17 +50,16 @@\n , E int%0A\n-%0A\n     fmt.\n@@ -67,17 +67,16 @@\n can(&N)%0A\n-%0A\n     veto\n@@ -95,21 +95,16 @@\n int, N)%0A\n-%0A    \n for i :=\n@@ -124,20 +124,16 @@\n + %7B%0A    \n- \n-   \n fmt.Scan\n@@ -152,15 +152,37 @@\n     \n-%7D%0A%0A    \n+//vetor = append(vetor, N)%0A%7D%0A\n fmt.\n@@ -190,21 +190,16 @@\n can(&E)%0A\n-%0A    \n fmt.Prin\n@@ -203,10 +203,8 @@\n rint\n-ln\n (vet\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_10-22-40",
+            "content": "@@ -70,12 +70,8 @@\n n(&N\n-, &E\n )%0A%0A \n@@ -170,10 +170,8 @@\n     \n-//\n fmt.\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_10-23-26",
+            "content": "@@ -101,11 +101,8 @@\n int,\n- 0,\n  N)%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_10-23-45",
+            "content": "@@ -146,35 +146,8 @@\n     \n-vetor%5Bi%5D = i + 1%0A        //\n fmt.\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_10-24-41",
+            "content": "@@ -97,16 +97,19 @@\n e(%5B%5Dint,\n+ 0,\n  N)%0A%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_10-24-49",
+            "content": "@@ -22,277 +22,8 @@\n fmt%22\n-%0A%0Afunc matar(elem %5B%5Dint, size int, pos int) %5B%5Dint%7B%0A    morto := (pos + 1) %25 size%0A%0A    for i := pos - 1; size %3E 1; i++ %7B%0A        if elem%5Bi + 1%5D == morto%7B%0A            elem = append(elem%5B:morto%5D,  elem%5Bmorto + 1:%5D...)%0A        %7D%0A    %7D%0A    return elem%0A    //int elem%5Bsize%5D%0A%7D\n %0Afun\n@@ -168,117 +168,61 @@\n     \n-%0A    %7D%0A%0A    matar(vetor, N, E)%0A    for i := 0; i %3C len(vetor); i++  %7B%0A        fmt.Println(vetor)%0A    %7D\n+//fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    //fmt.Scan(&E)%0A\n %0A    \n-//\n fmt.\n@@ -243,13 +243,6 @@\n  E)%0A\n-%0A    %0A%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_10-59-19",
+            "content": "@@ -460,25 +460,24 @@\n etor, N, E)%0A\n-%0A\n     for i :=\n@@ -481,15 +481,14 @@\n  := \n-1\n+0\n ; i %3C\n-=\n  len\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-03-30_10-59-39",
+            "content": "@@ -468,19 +468,16 @@\n  E)%0A%0A   \n- //\n  for i :\n@@ -508,19 +508,16 @@\n +  %7B%0A   \n- //\n      fmt\n@@ -540,18 +540,16 @@\n     \n-// %7D%0A\n+%7D\n %0A    \n+//\n fmt.\n@@ -556,21 +556,24 @@\n Println(\n-matar\n+vetor, E\n )%0A%0A    %0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-03-30_11-00-06",
+            "content": "@@ -448,16 +448,8 @@\n %0A   \n- vetor =\n  mat\n@@ -564,20 +564,20 @@\n Println(\n-veto\n+mata\n r)%0A%0A    \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-30_11-00-44",
+            "content": "@@ -42,16 +42,26 @@\n m %5B%5Dint,\n+ size int,\n  pos int\n@@ -66,20 +66,13 @@\n nt) \n-(\n %5B%5Dint\n-, int)\n %7B%0A  \n@@ -94,31 +94,101 @@\n  + 1) %25 \n-len(elem)\n+size%0A%0A    for i := pos - 1; size %3E 1; i++ %7B%0A        if elem%5Bi + 1%5D == morto%7B\n %0A    \n-%0A\n+    \n     elem\n@@ -237,90 +237,23 @@\n ..)%0A\n-%0A\n     \n-pos = pos %25 len(elem)%0A    %0A    pos= (pos + 1) %25 len(elem)%0A    %0A%0A        %0A    \n+    %7D%0A    %7D\n %0A   \n@@ -264,21 +264,16 @@\n urn elem\n-, pos\n %0A    //i\n@@ -288,17 +288,16 @@\n size%5D%0A%7D%0A\n-%0A\n func mai\n@@ -440,24 +440,59 @@\n  %0A    %7D%0A%0A   \n+ vetor = matar(vetor, N, E)%0A%0A    //\n  for i := 0;\n@@ -489,22 +489,23 @@\n or i := \n-0\n+1\n ; i %3C\n+=\n  len(vet\n@@ -524,43 +524,44 @@\n     \n+//\n     \n-vetor, E = matar\n+ fmt.Println\n (vetor\n-, E\n )%0A    \n+// %7D%0A%0A\n     \n@@ -578,28 +578,16 @@\n n(vetor)\n-%0A    %7D%0A%0A    \n %0A%0A    %0A%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-03-30_11-30-27",
+            "content": "@@ -460,17 +460,16 @@\n = 0; i %3C\n-=\n  len(vet\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-30_11-32-19",
+            "content": "@@ -460,16 +460,17 @@\n = 0; i %3C\n+=\n  len(vet\n@@ -488,16 +488,27 @@\n %0A       \n+ vetor, E =\n  matar(v\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-30_11-31-26",
+            "content": "@@ -292,339 +292,8 @@\n %0A%7D%0A%0A\n-func main() %7B%0A package main%0A%0Aimport %22fmt%22%0A%0Afunc matar(elem %5B%5Dint, pos int) (%5B%5Dint, int) %7B%0A    morto := (pos + 1) %25 len(elem)%0A%0A    // remove o morto%0A    elem = append(elem%5B:morto%5D, elem%5Bmorto+1:%5D...)%0A%0A    // normaliza posi%C3%A7%C3%A3o%0A    pos = pos %25 len(elem)%0A%0A    // passa a espada%0A    pos = (pos + 1) %25 len(elem)%0A%0A    return elem, pos%0A%7D%0A%0A\n func\n@@ -319,16 +319,17 @@\n , E int%0A\n+%0A\n     fmt.\n@@ -346,33 +346,8 @@\n E)%0A%0A\n-    // cria vetor %5B1..N%5D%0A\n     \n@@ -370,16 +370,17 @@\n int, N)%0A\n+%0A\n     for \n@@ -433,114 +433,39 @@\n     \n-%7D%0A%0A\n     \n-// posi%C3%A7%C3%A3o inicial (E come%C3%A7a em 1)%0A    pos := E - 1%0A%0A    // enquanto houver mais de um vivo%0A    for\n+%0A    %7D%0A%0A    for i := 0; i %3C\n  len\n@@ -475,12 +475,14 @@\n tor)\n- %3E 1\n+; i++ \n  %7B%0A \n@@ -491,21 +491,8 @@\n     \n- vetor, pos =\n  mat\n@@ -501,19 +501,17 @@\n (vetor, \n-pos\n+E\n )%0A      \n@@ -546,73 +546,13 @@\n     \n-// resultado final%0A    //fmt.Println(%22Sobrevivente:%22, vetor%5B0%5D)%0A%7D\n+%0A%0A   \n  %0A%0A%7D\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-03-30_11-33-08",
+            "content": "@@ -1048,12 +1048,14 @@\n tor%5B0%5D)%0A\n+%7D \n %0A%0A%7D%0A\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-03-30_11-33-21",
+            "content": "@@ -288,16 +288,346 @@\n ize%5D%0A%7D%0A%0A\n+func main() %7B%0A package main%0A%0Aimport %22fmt%22%0A%0Afunc matar(elem %5B%5Dint, pos int) (%5B%5Dint, int) %7B%0A    morto := (pos + 1) %25 len(elem)%0A%0A    // remove o morto%0A    elem = append(elem%5B:morto%5D, elem%5Bmorto+1:%5D...)%0A%0A    // normaliza posi%C3%A7%C3%A3o%0A    pos = pos %25 len(elem)%0A%0A    // passa a espada%0A    pos = (pos + 1) %25 len(elem)%0A%0A    return elem, pos%0A%7D%0A\n %0Afunc ma\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-03-30_11-34-15",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -64,17 +64,16 @@\n nt, int)\n- \n %7B%0A    mo\n@@ -97,24 +97,29 @@\n %25 len(elem)%0A\n+    %0A\n     elem = a\n@@ -137,16 +137,17 @@\n :morto%5D,\n+ \n  elem%5Bmo\n@@ -153,17 +153,19 @@\n orto\n-+\n+ + \n 1:%5D...)%0A\n     \n@@ -160,16 +160,17 @@\n 1:%5D...)%0A\n+%0A\n     pos \n@@ -187,24 +187,28 @@\n n(elem)%0A\n+    %0A\n     pos\n- \n = (pos +\n@@ -231,28 +231,70 @@\n     \n-return elem, pos\n+%0A%0A        %0A    %0A    return elem, pos%0A    //int elem%5Bsize%5D\n %0A%7D%0A%0A\n+%0A\n func\n@@ -342,16 +342,41 @@\n N, &E)%0A%0A\n+    // cria vetor %5B1..N%5D%0A\n     veto\n@@ -464,209 +464,164 @@\n     \n-pos := E - 1%0A\n+// posi%C3%A7%C3%A3o inicial (E come%C3%A7a em 1)\n %0A    \n-for len(vetor) %3E 1 %7B%0A        fmt.Print(%22%5B %22)%0A        for i := 0; i %3C len(vetor); i++ %7B%0A            if i == pos %7B%0A                fmt.Print(vetor%5Bi%5D, %22%3E%22)%0A            %7D else %7B%0A        \n+pos := E - 1%0A%0A    // enquanto houver mais de um vivo%0A    for len(vetor) %3E 1 %7B%0A        vetor, pos = matar(vetor, pos)%0A\n     \n@@ -637,130 +637,54 @@\n rint\n+ln\n (vetor\n-%5Bi%5D\n )%0A    \n-        %7D%0A            if i %3C len(vetor)-1 %7B%0A                fmt.Print(%22 %22)%0A            %7D%0A        %7D%0A   \n+%7D%0A%0A    // resultado final%0A\n     \n- \n+//\n fmt.\n@@ -696,129 +696,34 @@\n ln(%22\n- %5D%22)%0A%0A        vetor, pos = matar(vetor, pos)%0A    %7D%0A%0A    fmt.Print(%22%5B %22)%0A    fmt.Print(vetor%5B0%5D, %22%3E%22)%0A    fmt.Println(%22 %5D%22)\n+Sobrevivente:%22, vetor%5B0%5D)%0A%0A\n %0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-30_11-37-42",
+            "content": "@@ -164,21 +164,19 @@\n   pos = \n-morto\n+pos\n  %25 len(e\n@@ -188,10 +188,8 @@\n     \n-//\n pos \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-30_11-41-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc matar(elem []int, pos int) ([]int, int) {\n    morto := (pos + 1) % len(elem)\n    elem = append(elem[:morto], elem[morto+1:]...)\n    pos = morto % len(elem)\n    //pos = (pos + 1) % len(elem)\n    return elem, pos\n}\n\nfunc main() {\n    var N, E int\n    fmt.Scan(&N, &E)\n\n    vetor := make([]int, N)\n    for i := 0; i < N; i++ {\n        vetor[i] = i + 1\n    }\n\n    pos := E - 1\n\n    for len(vetor) > 1 {\n        fmt.Print(\"[ \")\n        for i := 0; i < len(vetor); i++ {\n            if i == pos {\n                fmt.Print(vetor[i], \">\")\n            } else {\n                fmt.Print(vetor[i])\n            }\n            if i < len(vetor)-1 {\n                fmt.Print(\" \")\n            }\n        }\n        fmt.Println(\" ]\")\n\n        vetor, pos = matar(vetor, pos)\n    }\n\n    fmt.Print(\"[ \")\n    fmt.Print(vetor[0], \">\")\n    fmt.Println(\" ]\")\n}\n",
+            "lines": "44"
+        }
+    ]
+}
