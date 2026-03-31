@@ -1,0 +1,399 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_22-34-52",
+            "content": "@@ -98,101 +98,8 @@\n t %7B%0A\n-%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if  vet%5Bi%5D == -vet%5Bi%5D %7B%0A%09%09%09continue%0A%09%09%7D%0A%09%09return vet%0A%09%7D%0A%09%0A\n %09_ =\n",
+            "lines": "106"
+        },
+        {
+            "label": "2026-03-30_22-46-45",
+            "content": "@@ -98,41 +98,8 @@\n t %7B%0A\n-%09vetaux := make(%5B%5Dint, len(vet))%0A\n %09for\n@@ -160,46 +160,8 @@\n %0A%09%09%09\n-vetaux = append(vetaux, -vet%5Bi%5D)%0A%09%09%09//\n cont\n@@ -169,16 +169,29 @@\n nue%0A%09%09%7D%0A\n+%09%09return vet%0A\n %09%7D%0A%09%0A%09_ \n@@ -208,14 +208,11 @@\n urn \n-vetaux\n+nil\n %0A%7D%0A%0A\n",
+            "lines": "113"
+        },
+        {
+            "label": "2026-03-30_22-48-56",
+            "content": "@@ -95,16 +95,163 @@\n %5Dint %7B%0A%09\n+vetaux := make(%5B%5Dint, len(vet))%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if  vet%5Bi%5D == -vet%5Bi%5D %7B%0A%09%09%09vetaux = append(vetaux, -vet%5Bi%5D)%0A%09%09%09//continue%0A%09%09%7D%0A%09%7D\n %0A%09%0A%09_ = \n",
+            "lines": "114"
+        },
+        {
+            "label": "2026-03-30_22-53-32",
+            "content": "@@ -99,155 +99,8 @@\n  %7B%0A%09\n-vetaux := make(%5B%5Dint, len(vet))%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if  vet%5Bi%5D == -vet%5Bi%5D %7B%0A%09%09%09vetaux = append(vetaux, -vet%5Bi%5D)%0A%09%09%09//continue%0A%09%09%7D%0A%09%7D\n %0A%09%0A%09\n@@ -114,24 +114,27 @@\n %0A%09return vet\n+aux\n %0A%7D%0A%0Afunc get\n",
+            "lines": "108"
+        },
+        {
+            "label": "2026-03-30_22-52-23",
+            "content": "@@ -98,17 +98,17 @@\n t %7B%0A%09vet\n-A\n+a\n ux := ma\n@@ -137,34 +137,40 @@\n or i\n-, val := range vet\n+ := 0; i %3C len(vet); i++\n  %7B%0A%09%09if \n vet%5B\n@@ -165,16 +165,17 @@\n  %7B%0A%09%09if \n+ \n vet%5Bi%5D =\n@@ -178,18 +178,21 @@\n i%5D == -v\n-al\n+et%5Bi%5D\n  %7B%0A%09%09%09ve\n@@ -192,17 +192,17 @@\n %7B%0A%09%09%09vet\n-A\n+a\n ux = app\n@@ -212,25 +212,53 @@\n (vet\n-A\n+a\n ux, \n-val)%0A%09%09%7D %0A%09%7D\n+-vet%5Bi%5D)%0A%09%09%09//continue%0A%09%09%7D%0A%09%7D%0A%09%0A%09_ = vet\n %0A%09re\n",
+            "lines": "114"
+        },
+        {
+            "label": "2026-03-30_22-55-04",
+            "content": "@@ -166,19 +166,23 @@\n  vet%5Bi%5D \n-%3E 0\n+== -val\n  %7B%0A%09%09%09ve\n",
+            "lines": "111"
+        },
+        {
+            "label": "2026-03-30_22-55-47",
+            "content": "@@ -170,9 +170,9 @@\n %5Bi%5D \n-%3C\n+%3E\n  0 %7B\n",
+            "lines": "111"
+        },
+        {
+            "label": "2026-03-30_22-56-25",
+            "content": "@@ -120,11 +120,8 @@\n int,\n- 0,\n  len\n@@ -132,17 +132,17 @@\n ))%0A%09for \n-_\n+i\n , val :=\n@@ -164,12 +164,15 @@\n if v\n-al %3E\n+et%5Bi%5D %3C\n  0 %7B\n@@ -223,19 +223,16 @@\n turn vet\n-Aux\n %0A%7D%0A%0Afunc\n",
+            "lines": "111"
+        },
+        {
+            "label": "2026-03-30_23-00-35",
+            "content": "@@ -272,124 +272,15 @@\n  %7B%0A%09\n-vetAux := make(%5B%5Dint, 0, len(vet))%0A%09for _, val := range vet %7B%0A%09%09if val %3C 0 %7B%0A%09%09%09vetAux = append(vetAux, val)%0A%09%09%7D %0A%09%7D\n+_ = vet\n %0A%09re\n@@ -276,38 +276,35 @@\n _ = vet%0A%09return \n-vetAux\n+nil\n %0A%7D%0A%0Afunc sortVet\n",
+            "lines": "111"
+        },
+        {
+            "label": "2026-03-30_23-06-04",
+            "content": "@@ -347,22 +347,8 @@\n %3C 0 \n-& valor %3E -10 \n %7B%0A%09%09\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-03-31_09-58-45",
+            "content": "@@ -348,16 +348,18 @@\n  0 & val\n+or\n  %3E -10 %7B\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-03-31_09-58-57",
+            "content": "@@ -344,17 +344,16 @@\n al %3C 0 &\n-&\n  val %3E -\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-03-31_09-59-13",
+            "content": "@@ -452,10 +452,8 @@\n t %7B%0A\n-%09%0A\n %09_ =\n@@ -618,16 +618,36 @@\n %5B%5Dint %7B%0A\n+%09_ = vet%0A%09return nil\n %0A%7D%0A%0Afunc\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-03-31_10-04-02",
+            "content": "@@ -440,32 +440,34 @@\n  %5B%5Dint) %5B%5Dint %7B%0A\n+%09%0A\n %09_ = vet%0A%09return\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-03-31_10-04-15",
+            "content": "@@ -449,18 +449,16 @@\n %5Dint %7B%0A%09\n-//\n _ = vet%0A\n@@ -462,10 +462,8 @@\n et%0A%09\n-//\n retu\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-03-31_10-06-02",
+            "content": "@@ -441,32 +441,34 @@\n %5B%5Dint) %5B%5Dint %7B%0A%09\n+//\n _ = vet%0A%09return \n@@ -452,32 +452,34 @@\n t %7B%0A%09//_ = vet%0A%09\n+//\n return nil%0A%7D%0A%0Afu\n@@ -622,36 +622,16 @@\n %5B%5Dint %7B%0A\n-%09_ = vet%0A%09return nil\n %0A%7D%0A%0Afunc\n",
+            "lines": "115"
+        },
+        {
+            "label": "2026-03-31_10-04-52",
+            "content": "@@ -453,147 +453,15 @@\n  %7B%0A%09\n-for i := 0; i N len(vet); i++ %7B%0A%09%09for j := 1; j len(vet) - 1; j++ %7B%0A%09%09%09if vet%5Bi%5D %3C vet%5Bj%5D %7B%0A%09%09%09%09vet%5Bi%5D, vet%5Bj%5D = vet%5Bj%5D, vet%5Bi%5D%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D\n+_ = vet\n %0A%09re\n@@ -461,27 +461,27 @@\n vet%0A%09return \n-vet\n+nil\n %0A%7D%0A%0Afunc sor\n",
+            "lines": "116"
+        },
+        {
+            "label": "2026-03-31_10-12-29",
+            "content": "@@ -463,17 +463,17 @@\n := 0; i \n-%3C\n+N\n  len(vet\n@@ -496,18 +496,16 @@\n  := 1; j\n- %3C\n  len(vet\n",
+            "lines": "122"
+        },
+        {
+            "label": "2026-03-31_10-12-49",
+            "content": "@@ -492,17 +492,17 @@\n or j := \n-0\n+1\n ; j %3C le\n@@ -507,16 +507,20 @@\n len(vet)\n+ - 1\n ; j++ %7B%0A\n",
+            "lines": "122"
+        },
+        {
+            "label": "2026-03-31_10-13-27",
+            "content": "@@ -753,146 +753,15 @@\n  %7B%0A%09\n-unicos = make(map%5Bint%5Dint, 0, len(vet))%0A%0A%09for _, valor range vet %7B%0A%09%09_, existe := unicos%5Bvalor%5D%0A%0A%09%09if !existe %7B%0A%09%09%09unicos%5Bvalor%5D++%0A%09%09%7D%0A%09%7D%0A\n+_ = vet\n %0A%09re\n@@ -769,14 +769,11 @@\n urn \n-u\n ni\n-cos\n+l\n %0A%7D%0A%0A\n",
+            "lines": "122"
+        },
+        {
+            "label": "2026-03-31_10-20-29",
+            "content": "@@ -828,16 +828,17 @@\n  existe \n+:\n = unicos\n",
+            "lines": "131"
+        },
+        {
+            "label": "2026-03-31_10-22-14",
+            "content": "@@ -775,12 +775,11 @@\n int%5D\n-bool\n+int\n , 0,\n@@ -851,22 +851,23 @@\n %0A%0A%09%09if !\n-unicos\n+existe \n %7B%0A%09%09%09uni\n@@ -873,32 +873,17 @@\n icos\n- = append(unicos, \n+%5B\n valor\n-)\n+%5D++\n %0A%09%09%7D\n",
+            "lines": "131"
+        },
+        {
+            "label": "2026-03-31_10-32-37",
+            "content": "@@ -748,18 +748,184 @@\n %5B%5Dint %7B%0A\n-%0A\n %09\n+unicos = make(map%5Bint%5Dbool, 0, len(vet))%0A%0A%09for _, valor range vet %7B%0A%09%09_, existe = unicos%5Bvalor%5D%0A%0A%09%09if !unicos%7B%0A%09%09%09unicos = append(unicos, valor)%0A%09%09%7D%0A%09%7D%0A%0A%09return unicos\n %0A%7D%0A%0Afunc\n",
+            "lines": "131"
+        },
+        {
+            "label": "2026-03-31_10-35-13",
+            "content": "@@ -750,35 +750,16 @@\n int %7B%0A%0A%09\n-_ = vet%0A%09return nil\n %0A%7D%0A%0Afunc\n",
+            "lines": "122"
+        },
+        {
+            "label": "2026-03-31_10-33-52",
+            "content": "@@ -752,119 +752,19 @@\n t %7B%0A\n-%09num := make(map%5Bint%5Dbool)%0A%0A%09for _, valor := range vet %7B%0A%0A%09%09num = vet%5Bvalor%5D%0A%09%09%0A%09%7D%0A%09return num%0A%09// _ = vet%0A%09// \n+%0A%09_ = vet%0A%09\n retu\n",
+            "lines": "123"
+        },
+        {
+            "label": "2026-03-31_10-38-59",
+            "content": "@@ -815,22 +815,22 @@\n %09num\n+ = vet\n %5Bvalor%5D\n- = true\n+%0A\n %09%09%0A%09\n",
+            "lines": "130"
+        },
+        {
+            "label": "2026-03-31_10-39-32",
+            "content": "@@ -749,22 +749,19 @@\n %5Dint %7B%0A%09\n-unicos\n+num\n  := make\n@@ -812,83 +812,8 @@\n %0A%0A%09%09\n-_, existe = unicos%5Bvalor%5D%0A%0A%09%09if !unicos %7B%0A%09%09%09unicos%5Bvalor%5D = true%0A%09%09%7D%0A%0A%09%09//\n num%5B\n@@ -843,14 +843,11 @@\n urn \n-unicos\n+num\n %0A%09//\n",
+            "lines": "129"
+        },
+        {
+            "label": "2026-03-31_10-43-18",
+            "content": "@@ -821,17 +821,16 @@\n  existe \n-:\n = unicos\n",
+            "lines": "135"
+        },
+        {
+            "label": "2026-03-31_10-43-34",
+            "content": "@@ -845,22 +845,22 @@\n %0A%0A%09%09if !\n-existe\n+unicos\n  %7B%0A%09%09%09un\n",
+            "lines": "135"
+        },
+        {
+            "label": "2026-03-31_10-43-56",
+            "content": "@@ -781,23 +781,8 @@\n ool)\n-%0A%09var aux %5B%5Dint\n %0A%0A%09f\n@@ -882,36 +882,8 @@\n rue%0A\n-%09%09%09aux = append(aux, valor)%0A\n %09%09%7D%0A\n",
+            "lines": "135"
+        },
+        {
+            "label": "2026-03-31_10-45-02",
+            "content": "@@ -961,19 +961,22 @@\n %09return \n-aux\n+unicos\n %0A%09// _ =\n",
+            "lines": "137"
+        },
+        {
+            "label": "2026-03-31_10-45-14",
+            "content": "@@ -1033,267 +1033,17 @@\n  %7B%0A%09\n-unicos := make(map%5Bint%5Dbool)%0A%09var aux %5B%5Dint%0A%0A%09for _, valor := range vet %7B%0A%0A%09%09_, existe := unicos%5Bvalor%5D%0A%0A%09%09if !existe %7B%0A%09%09%09unicos%5Bvalor%5D = true%0A%09%09%09aux = append(aux, valor)%0A%09%09%7D%0A%0A%09%09//num%5Bvalor%5D = true%09%09%0A%09%7D%0A%09return aux%0A%09// _ = vet%0A%09// return nil%0A%09// _ = vet%0A%09// \n+_ = vet%0A%09\n retu\n",
+            "lines": "137"
+        },
+        {
+            "label": "2026-03-31_10-50-13",
+            "content": "@@ -1063,25 +1063,19 @@\n l)%0A%09var \n-repitidos\n+aux\n  %5B%5Dint%0A%0A\n@@ -1139,16 +1139,17 @@\n %5D%0A%0A%09%09if \n+!\n existe %7B\n@@ -1156,20 +1156,35 @@\n %0A%09%09%09\n-%0A%09%09%09reptidos\n+unicos%5Bvalor%5D = true%0A%09%09%09aux\n  = a\n@@ -1189,25 +1189,19 @@\n  append(\n-repitidos\n+aux\n , valor)\n@@ -1245,17 +1245,11 @@\n urn \n-repitidos\n+aux\n %0A%09//\n",
+            "lines": "154"
+        },
+        {
+            "label": "2026-03-31_10-51-05",
+            "content": "@@ -1164,17 +1164,16 @@\n %09%0A%09%09%09rep\n-i\n tidos = \n",
+            "lines": "154"
+        },
+        {
+            "label": "2026-03-31_10-51-18",
+            "content": "@@ -1157,36 +1157,16 @@\n te %7B%0A%09%09%09\n-unicos%5Bvalor%5D = true\n %0A%09%09%09repi\n",
+            "lines": "154"
+        },
+        {
+            "label": "2026-03-31_10-52-10",
+            "content": "@@ -1154,16 +1154,40 @@\n xiste %7B%0A\n+%09%09%09unicos%5Bvalor%5D = true%0A\n %09%09%09repit\n@@ -1222,44 +1222,8 @@\n or)%0A\n-%09%09%7D else %7B%0A%09%09%09unicos%5Bvalor%5D = true%0A%0A\n %09%09%7D%0A\n",
+            "lines": "154"
+        },
+        {
+            "label": "2026-03-31_10-52-32",
+            "content": "@@ -1283,16 +1283,8 @@\n idos\n-, unicos\n %0A%09//\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-03-31_10-53-07",
+            "content": "@@ -1024,29 +1024,13 @@\n nt) \n-(\n %5B%5Dint\n-, map%5Bint%5Dbool)\n  %7B%0A%09\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-03-31_10-53-55",
+            "content": "@@ -1012,37 +1012,53 @@\n ated(vet %5B%5Dint) \n+(\n %5B%5Dint\n+, map%5Bint%5Dbool)\n  %7B%0A%09unicos := ma\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-03-31_10-54-22",
+            "content": "@@ -1279,16 +1279,24 @@\n epitidos\n+, unicos\n %0A%09// _ =\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-03-31_10-56-10",
+            "content": "@@ -698,97 +698,15 @@\n  %7B%0A%09\n-for i := 0; i %3C len(vet); i++%7B%0A%09%09vet%5Bi%5D, vet%5Blen(vet)-1+i%5D = vet%5Blen(vet)-1+i%5D, vet%5Bi%5D%0A%09%7D\n+_ = vet\n %0A%09re\n@@ -702,35 +702,35 @@\n _ = vet%0A%09return \n-vet\n+nil\n %0A%7D%0A%0Afunc unique(\n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-03-31_10-59-19",
+            "content": "@@ -749,16 +749,18 @@\n n(vet)-1\n++i\n %5D = vet%5B\n@@ -769,16 +769,18 @@\n n(vet)-1\n++i\n %5D, vet%5Bi\n",
+            "lines": "158"
+        },
+        {
+            "label": "2026-03-31_10-59-52",
+            "content": "@@ -689,55 +689,15 @@\n nt) \n-(\n %5B%5Dint\n-, %5B%5Dint)%7B%0A%09vat := %5B%5Dint%7B%7D%0A%09copy(vet, vat)\n+ %7B\n %0A%09fo\n@@ -791,13 +791,8 @@\n turn\n- vat,\n  vet\n",
+            "lines": "158"
+        },
+        {
+            "label": "2026-03-31_11-02-48",
+            "content": "@@ -689,14 +689,55 @@\n nt) \n-%5B%5Dint%7B\n+(%5B%5Dint, %5B%5Dint)%7B%0A%09vat := %5B%5Dint%7B%7D%0A%09copy(vet, vat)\n %0A%09fo\n@@ -789,18 +789,16 @@\n n(vet)-1\n-+i\n %5D = vet%5B\n@@ -811,10 +811,8 @@\n t)-1\n-+i\n %5D, v\n@@ -819,32 +819,37 @@\n et%5Bi%5D%0A%09%7D%0A%09return\n+ vat,\n  vet%0A%7D%0A%0Afunc uni\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-04-20",
+            "content": "@@ -748,17 +748,17 @@\n n(vet)-1\n--\n++\n i%5D = vet\n@@ -768,17 +768,17 @@\n n(vet)-1\n--\n++\n i%5D, vet%5B\n",
+            "lines": "158"
+        },
+        {
+            "label": "2026-03-31_11-04-59",
+            "content": "@@ -696,39 +696,8 @@\n nt%7B%0A\n-%09var aux %5B%5Dint%0A%09copy(aux, vet)%0A\n %09for\n@@ -791,19 +791,19 @@\n %09return \n-aux\n+vet\n %0A%7D%0A%0Afunc\n",
+            "lines": "158"
+        },
+        {
+            "label": "2026-03-31_11-06-44",
+            "content": "@@ -761,19 +761,19 @@\n %7B%0A%09%09\n-aux\n+vet\n %5Bi%5D, \n-aux\n+vet\n %5Blen\n@@ -785,19 +785,19 @@\n -1-i%5D = \n-aux\n+vet\n %5Blen(vet\n@@ -804,19 +804,19 @@\n )-1-i%5D, \n-aux\n+vet\n %5Bi%5D%0A%09%7D%0A%09\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-09-07",
+            "content": "@@ -779,16 +779,18 @@\n n(vet)-1\n+-i\n %5D = aux%5B\n@@ -799,16 +799,18 @@\n n(vet)-1\n+-i\n %5D, aux%5Bi\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-09-23",
+            "content": "@@ -744,19 +744,19 @@\n i %3C len(\n-aux\n+vet\n ); i++%7B%0A\n@@ -769,27 +769,27 @@\n i%5D, aux%5Blen(\n-aux\n+vet\n )-1%5D = aux%5Bl\n@@ -791,19 +791,19 @@\n aux%5Blen(\n-aux\n+vet\n )-1%5D, au\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-09-52",
+            "content": "@@ -740,27 +740,27 @@\n  0; i %3C len(\n-vet\n+aux\n ); i++%7B%0A%09%09au\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-10-15",
+            "content": "@@ -717,16 +717,16 @@\n opy(\n-vet, aux\n+aux, vet\n )%0A%09f\n@@ -744,19 +744,19 @@\n i %3C len(\n-aux\n+vet\n ); i++%7B%0A\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-09-01",
+            "content": "@@ -717,16 +717,16 @@\n opy(\n-aux, vet\n+vet, aux\n )%0A%09f\n@@ -779,18 +779,16 @@\n n(aux)-1\n--i\n %5D = aux%5B\n@@ -801,10 +801,8 @@\n x)-1\n--i\n %5D, a\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-09-45",
+            "content": "@@ -814,35 +814,35 @@\n x%5Bi%5D%0A%09%7D%0A%09return \n-vet\n+aux\n %0A%7D%0A%0Afunc unique(\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-11-22",
+            "content": "@@ -822,19 +822,19 @@\n %09return \n-aux\n+vet\n %0A%7D%0A%0Afunc\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-11-33",
+            "content": "@@ -712,34 +712,8 @@\n nt%0A%09\n-for i := 0;  i %3C len()%0A%09//\n copy\n@@ -759,49 +759,8 @@\n ++%7B%0A\n-%09%09if len(aux - 1 - 1) %3C 2 %7B%0A%09%09%09break%0A%09%09%7D%0A\n %09%09au\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-14-52",
+            "content": "@@ -708,16 +708,42 @@\n  %5B%5Dint%0A%09\n+for i := 0;  i %3C len()%0A%09//\n copy(aux\n",
+            "lines": "164"
+        },
+        {
+            "label": "2026-03-31_11-15-17",
+            "content": "@@ -774,17 +774,17 @@\n x - 1 - \n-i\n+1\n ) %3C 2 %7B%0A\n",
+            "lines": "163"
+        },
+        {
+            "label": "2026-03-31_11-15-26",
+            "content": "@@ -692,16 +692,47 @@\n  %5B%5Dint%7B%0A\n+%09var aux %5B%5Dint%0A%09copy(aux, vet)%0A\n %09for i :\n@@ -740,27 +740,27 @@\n  0; i %3C len(\n-vet\n+aux\n ); i++%7B%0A%09%09ve\n@@ -761,27 +761,68 @@\n %7B%0A%09%09\n-vet\n+if len(aux - 1 - i) %3C 2 %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09aux\n %5Bi%5D, \n-vet\n+aux\n %5Blen(\n-vet\n+aux\n )-1-\n@@ -830,27 +830,27 @@\n %5D = \n-vet\n+aux\n %5Blen(\n-vet\n+aux\n )-1-i%5D, \n vet%5B\n@@ -849,49 +849,17 @@\n i%5D, \n-vet%5Bi%5D%0A%09%7D%0A%09var aux %5B%5Dint%0A%09copy(aux, vet)%0A\n+aux%5Bi%5D%0A%09%7D\n %0A%09re\n",
+            "lines": "163"
+        },
+        {
+            "label": "2026-03-31_11-17-24",
+            "content": "@@ -784,16 +784,46 @@\n %5Bi%5D%0A%09%7D%0A%09\n+var aux %5B%5Dint%0A%09copy(aux, vet)%0A\n %0A%09return\n@@ -815,35 +815,35 @@\n , vet)%0A%0A%09return \n-vet\n+aux\n %0A%7D%0A%0Afunc unique(\n",
+            "lines": "161"
+        },
+        {
+            "label": "2026-03-31_11-17-42",
+            "content": "@@ -748,16 +748,18 @@\n n(vet)-1\n+-i\n %5D = vet%5B\n@@ -768,16 +768,18 @@\n n(vet)-1\n+-i\n %5D, vet%5Bi\n",
+            "lines": "159"
+        },
+        {
+            "label": "2026-03-31_11-18-03",
+            "content": "@@ -784,37 +784,8 @@\n %09%7D%0A%09\n-var aux %5B%5Dint%0A%09copy(aux, vet)\n %0A%09re\n@@ -789,19 +789,19 @@\n %09return \n-aux\n+vet\n %0A%7D%0A%0Afunc\n",
+            "lines": "159"
+        },
+        {
+            "label": "2026-03-31_11-18-56",
+            "content": "@@ -804,16 +804,16 @@\n opy(\n-vet, aux\n+aux, vet\n )%0A%09r\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-19-17",
+            "content": "@@ -748,18 +748,16 @@\n n(vet)-1\n--i\n %5D = vet%5B\n@@ -770,10 +770,8 @@\n t)-1\n--i\n %5D, v\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-21-17",
+            "content": "@@ -721,10 +721,8 @@\n vet)\n-/2\n ; i+\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-23-17",
+            "content": "@@ -696,57 +696,8 @@\n nt%7B%0A\n-%09aux := make(%5B%5Dint, 0, len(vet))%0A%09copy(vet, aux)%0A\n %09for\n@@ -713,19 +713,19 @@\n i %3C len(\n-aux\n+vet\n )/2; i++\n@@ -732,27 +732,27 @@\n %7B%0A%09%09\n-aux\n+vet\n %5Bi%5D, \n-aux\n+vet\n %5Blen(\n-aux\n+vet\n )-1-\n@@ -760,27 +760,27 @@\n %5D = \n-aux\n+vet\n %5Blen(\n-aux\n+vet\n )-1-i%5D, \n aux%5B\n@@ -779,17 +779,48 @@\n i%5D, \n-aux%5Bi%5D%0A%09%7D\n+vet%5Bi%5D%0A%09%7D%0A%09var aux %5B%5Dint%0A%09copy(vet, aux)\n %0A%09re\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-24-59",
+            "content": "@@ -721,24 +721,40 @@\n , len(vet))%0A\n+%09copy(vet, aux)%0A\n %09for i := 0;\n@@ -762,19 +762,19 @@\n i %3C len(\n-vet\n+aux\n )/2; i++\n@@ -781,27 +781,27 @@\n %7B%0A%09%09\n-vet\n+aux\n %5Bi%5D, \n-vet\n+aux\n %5Blen(\n-vet\n+aux\n )-1-\n@@ -809,27 +809,27 @@\n %5D = \n-vet\n+aux\n %5Blen(\n-vet\n+aux\n )-1-i%5D, \n vet%5B\n@@ -828,34 +828,18 @@\n i%5D, \n-vet\n+aux\n %5Bi%5D%0A%09%7D%0A\n-%09copy(vet, aux)%0A\n %09ret\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-27-17",
+            "content": "@@ -711,16 +711,19 @@\n e(%5B%5Dint,\n+ 0,\n  len(vet\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-28-29",
+            "content": "@@ -758,19 +758,41 @@\n  i++%7B%0A%09%09\n-aux\n+vet%5Bi%5D, vet%5Blen(vet)-1-i%5D\n  = vet%5Bl\n@@ -816,18 +816,16 @@\n %5Bi%5D%0A%09%7D%0A%09\n-//\n copy(vet\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-28-48",
+            "content": "@@ -781,16 +781,24 @@\n et)-1-i%5D\n+, vet%5Bi%5D\n %0A%09%7D%0A%09//c\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-29-09",
+            "content": "@@ -722,17 +722,16 @@\n n(vet))%0A\n-%0A\n %09for i :\n@@ -743,24 +743,26 @@\n i %3C len(vet)\n+/2\n ; i++%7B%0A%09%09aux\n@@ -761,19 +761,16 @@\n +%7B%0A%09%09aux\n-%5Bi%5D\n  = vet%5Bl\n",
+            "lines": "160"
+        },
+        {
+            "label": "2026-03-31_11-31-17",
+            "content": "@@ -642,165 +642,15 @@\n  %7B%0A%09\n-aux := make(%5B%5Dint, 0, len(vet))%0A%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if vet%5Bi%5D %3C 0 %7B%0A%09%09%09if vet%5Bi%5D * (-1) %3E vet%5Bi-1%5D%7B%0A%09%09%09%09aux = append(aux, vet%5Bi%5D)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D\n+_ = vet\n %0A%09re\n@@ -646,35 +646,35 @@\n _ = vet%0A%09return \n-aux\n+nil\n %0A%7D%0A%0Afunc reverse\n",
+            "lines": "161"
+        },
+        {
+            "label": "2026-03-31_11-39-27",
+            "content": "@@ -741,19 +741,20 @@\n %5D * \n-- 1\n+(-1)\n  %3E vet%5Bi\n %5D - \n@@ -753,13 +753,11 @@\n et%5Bi\n-%5D - 1\n+-1%5D\n %7B%0A%09%09\n",
+            "lines": "169"
+        },
+        {
+            "label": "2026-03-31_11-39-53",
+            "content": "@@ -752,13 +752,13 @@\n et%5Bi\n+%5D\n  - 1\n-%5D\n %7B%0A%09%09\n@@ -794,20 +794,8 @@\n %09%09%7D%0A\n-%09%09%7D else %7B%0A%0A\n %09%09%7D%0A\n",
+            "lines": "169"
+        },
+        {
+            "label": "2026-03-31_11-41-56",
+            "content": "@@ -749,17 +749,17 @@\n %3E vet%5Bi \n-+\n+-\n  1%5D%7B%0A%09%09%09\n",
+            "lines": "171"
+        },
+        {
+            "label": "2026-03-31_11-42-06",
+            "content": "@@ -748,16 +748,20 @@\n  %3E vet%5Bi\n+ + 1\n %5D%7B%0A%09%09%09%09a\n",
+            "lines": "171"
+        },
+        {
+            "label": "2026-03-31_11-42-17",
+            "content": "@@ -642,55 +642,55 @@\n  %7B%0A%09\n-for i := 0; i %3C len(vet); i++ %7B%0A%09\n+aux := make(%5B%5Dint, 0, len(vet))%0A%0A\n %09for \n-j\n+i\n  := 0; \n-j\n+i\n  %3C l\n@@ -694,33 +694,32 @@\n %3C len(vet); \n-j\n+i\n ++ %7B%0A%09%09\n-%09\n if vet%5Bi%5D %3C \n@@ -722,52 +722,69 @@\n %5D %3C \n-vet%5Bj%5D\n+0\n  %7B%0A%09%09%09\n-%09\n+if \n vet%5Bi%5D\n-, vet%5Bj%5D = vet%5Bj%5D\n+ * - 1 %3E vet%5Bi%5D%7B%0A%09%09%09%09aux = append(aux\n , vet%5Bi%5D\n %0A%09%09%09\n@@ -771,38 +771,51 @@\n pend(aux, vet%5Bi%5D\n+)\n %0A%09%09%09%7D%0A\n+%09%09%7D else %7B%0A%0A\n %09%09%7D%0A%09%7D%0A%09return v\n@@ -805,35 +805,35 @@\n %0A%09%09%7D%0A%09%7D%0A%09return \n-vet\n+aux\n %0A%7D%0A%0Afunc reverse\n",
+            "lines": "171"
+        },
+        {
+            "label": "2026-03-31_11-43-01",
+            "content": "@@ -717,17 +717,17 @@\n  vet%5Bi%5D \n-%3E\n+%3C\n  vet%5Bj%5D \n",
+            "lines": "167"
+        },
+        {
+            "label": "2026-03-31_11-47-41",
+            "content": "@@ -606,79 +606,8 @@\n %0A%7D%0A%0A\n-func abs (num int) int %7B%0A%09if num %3C 0 %7B%0A%09%09return -num%0A%09%7D%0A%09 return num%0A%7D%0A\n func\n@@ -714,33 +714,23 @@\n %09if \n-abs(\n vet%5Bi%5D\n-) %3C abs(\n+ %3E \n vet%5Bj%5D\n-)\n  %7B%0A%09\n",
+            "lines": "167"
+        },
+        {
+            "label": "2026-03-31_11-49-52",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc getMen(vet []int) []int {\n\tvetAux := make([]int, 0, len(vet))\n\tfor _, val := range vet {\n\t\tif val > 0 {\n\t\t\tvetAux = append(vetAux, val)\n\t\t} \n\t}\n\treturn vetAux\n}\n\nfunc getCalmWomen(vet []int) []int {\n\tvetAux := make([]int, 0, len(vet))\n\tfor _, val := range vet {\n\t\tif val < 0 && val > -10 {\n\t\t\tvetAux = append(vetAux, val)\n\t\t} \n\t}\n\treturn vetAux\n}\n\nfunc sortVet(vet []int) []int {\n\tfor i := 0; i < len(vet); i++ {\n\t\tfor j := 0; j < len(vet); j++ {\n\t\t\tif vet[i] < vet[j] {\n\t\t\t\tvet[i], vet[j] = vet[j], vet[i]\n\t\t\t}\n\t\t}\n\t}\n\treturn vet\n}\n\nfunc abs (num int) int {\n\tif num < 0 {\n\t\treturn -num\n\t}\n\t return num\n}\nfunc sortStress(vet []int) []int {\n\tfor i := 0; i < len(vet); i++ {\n\t\tfor j := 0; j < len(vet); j++ {\n\t\t\tif abs(vet[i]) < abs(vet[j]) {\n\t\t\t\tvet[i], vet[j] = vet[j], vet[i]\n\t\t\t}\n\t\t}\n\t}\n\treturn vet\n}\n\nfunc reverse(vet []int) []int{\n\taux := make([]int, len(vet))\n\n\tfor i := 0; i < len(vet); i++{\n\t\taux[i] = vet[len(vet)-1-i]\n\t}\n\t//copy(vet, aux)\n\treturn aux\n}\n\nfunc unique(vet []int) []int {\n\tunicos := make(map[int]bool)\n\tvar aux []int\n\n\tfor _, valor := range vet {\n\n\t\t_, existe := unicos[valor]\n\n\t\tif !existe {\n\t\t\tunicos[valor] = true\n\t\t\taux = append(aux, valor)\n\t\t}\n\n\t\t//num[valor] = true\t\t\n\t}\n\treturn aux\n\t// _ = vet\n\t// return nil\n}\n\nfunc repeated(vet []int) []int {\n\tunicos := make(map[int]bool)\n\tvar repitidos []int\n\n\tfor _, valor := range vet {\n\n\t\t_, existe := unicos[valor]\n\n\t\tif existe {\n\t\t\trepitidos = append(repitidos, valor)\n\t\t} else {\n\t\t\tunicos[valor] = true\n\n\t\t}\n\n\t\t//num[valor] = true\t\t\n\t}\n\treturn repitidos\n\t// _ = vet\n\t// return nil\n\t// _ = vet\n\t// return nil\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tfor {\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tfmt.Print(\"$\")\n\t\tline := scanner.Text()\n\t\targs := strings.Split(line, \" \")\n\t\tfmt.Println(line)\n\n\t\tswitch args[0] {\n\t\tcase \"get_men\":\n\t\t\tprintVec(getMen(str2vet(args[1])))\n\t\tcase \"get_calm_women\":\n\t\t\tprintVec(getCalmWomen(str2vet(args[1])))\n\t\tcase \"sort\":\n\t\t\tprintVec(sortVet(str2vet(args[1])))\n\t\tcase \"sort_stress\":\n\t\t\tprintVec(sortStress(str2vet(args[1])))\n\t\tcase \"reverse\":\n\t\t\tarray := str2vet(args[1])\n\t\t\tother := reverse(array)\n\t\t\tprintVec(array)\n\t\t\tprintVec(other)\n\t\tcase \"unique\":\n\t\t\tprintVec(unique(str2vet(args[1])))\n\t\tcase \"repeated\":\n\t\t\tprintVec(repeated(str2vet(args[1])))\n\t\tcase \"end\":\n\t\t\treturn\n\t\t}\n\t}\n}\n\nfunc printVec(vet []int) {\n\tfmt.Print(\"[\")\n\tfor i, val := range vet {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(val)\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc str2vet(s string) []int {\n\tif s == \"[]\" {\n\t\treturn nil\n\t}\n\ts = s[1 : len(s)-1]\n\tparts := strings.Split(s, \",\")\n\tvar vet []int\n\tfor _, part := range parts {\n\t\tn, _ := strconv.Atoi(part)\n\t\tvet = append(vet, n)\n\t}\n\treturn vet\n}\n\n",
+            "lines": "173"
+        }
+    ]
+}
