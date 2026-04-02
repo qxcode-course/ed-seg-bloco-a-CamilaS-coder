@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-02_14-48-22",
+            "content": "@@ -106,349 +106,61 @@\n t%0A%7D%0A\n-func abs(num int) int %7B%0A%09if num %3C 0 %7B%0A%09%09return -num%0A%09%7D%0A%09return num%0A%7D%0A%0Afunc occurr(vet %5B%5Dint) %5B%5DPair %7B%0A%09ocorre := make(map%5Bint%5Dbool)%0A%09aux := make(%5B%5DPair, len(vet))%0A%09var contador = 0%0A%0A%09for _, num := range vet %7B%0A%09%09_, existe := ocorre%5Bnum%5D%0A%0A%09%09if existe %7B%0A%09%09%09contador++%0A%09%09%7D else %7B%0A%09%09%09aux = append(aux, )%0A%09%09%09ocorre%5Bnum%5D = true%0A%09%09%7D%0A%09%7D%0A%09//return aux\n+%0Afunc occurr(vet %5B%5Dint) %5B%5DPair %7B%0A%09_ = vet%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "132"
+        },
+        {
+            "label": "2026-04-02_15-32-33",
+            "content": "@@ -205,19 +205,16 @@\n Pair %7B%0A%09\n-// \n ocorre :\n@@ -235,19 +235,16 @@\n %5Dbool)%0A%09\n-// \n aux := m\n@@ -266,19 +266,16 @@\n (vet))%0A%09\n-// \n var cont\n@@ -285,19 +285,16 @@\n r = 0%0A%0A%09\n-// \n for _, n\n@@ -312,19 +312,16 @@\n  vet %7B%0A%09\n-// \n %09_, exis\n@@ -340,19 +340,16 @@\n %5Bnum%5D%0A%0A%09\n-// \n %09if exis\n@@ -354,19 +354,16 @@\n iste %7B%0A%09\n-// \n %09%09contad\n@@ -368,19 +368,16 @@\n ador++%0A%09\n-// \n %09%7D else \n@@ -379,19 +379,16 @@\n else %7B%0A%09\n-// \n %09%09aux = \n@@ -402,19 +402,16 @@\n aux, )%0A%09\n-// \n %09%09ocorre\n@@ -428,24 +428,17 @@\n ue%0A%09\n-// \n %09%7D%0A%09\n-// \n %7D%0A%09//\n- \n retu\n@@ -444,37 +444,16 @@\n urn aux%0A\n-%09_ = vet%0A%09return nil%0A\n %7D%0A%0Afunc \n",
+            "lines": "151"
+        },
+        {
+            "label": "2026-04-02_15-32-55",
+            "content": "@@ -205,16 +205,19 @@\n Pair %7B%0A%09\n+// \n ocorre :\n@@ -235,247 +235,278 @@\n int%5D\n-int)%0A%09var pares %5B%5DPair%0A%0A%0A%09for _, num := range vet %7B%0A%09%09if num %3C 0 %7B%0A%09%09%09abs(num)%0A%09%09%09ocorre%5Bnum%5D++%0A%09%09%7D%0A%09%09ocorre%5Bnum%5D++%0A%09%7D%0A%0A%09for num, qtd := range ocorre %7B%0A%09%09pair := Pair %7BOne : num, Two : qtd%7D%0A%09%09pares = append(pares, pair)%0A%0A%09%7D%0A%09return pares%0A%09\n+bool)%0A%09// aux := make(%5B%5DPair, len(vet))%0A%09// var contador = 0%0A%0A%09// for _, num := range vet %7B%0A%09// %09_, existe := ocorre%5Bnum%5D%0A%0A%09// %09if existe %7B%0A%09// %09%09contador++%0A%09// %09%7D else %7B%0A%09// %09%09aux = append(aux, )%0A%09// %09%09ocorre%5Bnum%5D = true%0A%09// %09%7D%0A%09// %7D%0A%09// return aux%0A%09_ = vet%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "153"
+        },
+        {
+            "label": "2026-04-02_15-53-32",
+            "content": "@@ -330,18 +330,16 @@\n +%0A%09%09%7D%0A%09%09\n-//\n ocorre%5Bn\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-04-02_15-53-55",
+            "content": "@@ -330,16 +330,18 @@\n +%0A%09%09%7D%0A%09%09\n+//\n ocorre%5Bn\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-04-02_15-54-13",
+            "content": "@@ -330,18 +330,16 @@\n +%0A%09%09%7D%0A%09%09\n-//\n ocorre%5Bn\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-04-02_15-55-38",
+            "content": "@@ -330,16 +330,18 @@\n +%0A%09%09%7D%0A%09%09\n+//\n ocorre%5Bn\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-04-02_15-56-05",
+            "content": "@@ -302,14 +302,8 @@\n %0A%09%09%09\n-num = \n abs(\n@@ -310,16 +310,29 @@\n num)%0A%09%09%09\n+ocorre%5Bnum%5D++\n %0A%09%09%7D%0A%09%09o\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-04-02_15-57-46",
+            "content": "@@ -64,16 +64,8 @@\n gs%22%0A\n-%09%22sort%22%0A\n )%0A%0At\n@@ -448,98 +448,8 @@\n %0A%0A%09%7D\n-%0A%0A%09sort.Slice(pares, func(i int, j int) bool %7B%0A%09%09return pares%5Bi%5D.One %3C pares%5Bj%5D.One%0A%09%7D)%09%0A%09\n %0A%09re\n",
+            "lines": "155"
+        },
+        {
+            "label": "2026-04-02_16-04-18",
+            "content": "@@ -598,218 +598,27 @@\n  %7B%0A%09\n-ocorre := make(map%5Bint%5Dint)%0A%09var pares %5B%5DPair%0A%0A%09for _, num := range vet %7B%0A%09%09ocorre%5Bnum%5D++%0A%09%7D%0A%0A%09for num, qtd := range ocorre %7B%0A%09%09pair := Pair%7BOne : num, Two : qtd%7D%0A%09%09pares = append(pares, pair)%0A%0A%09%7D%0A%09return pares\n+_ = vet%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "161"
+        },
+        {
+            "label": "2026-04-02_16-08-41",
+            "content": "@@ -795,96 +795,8 @@\n %0A%09%7D%0A\n-%0A%09sort.Slice(pares, func(i int, j int) bool %7B%0A%09%09return pares%5Bi%5D.Two %3E pares%5Bj%5D.Two%0A%09%7D)%0A%0A\n %09ret\n",
+            "lines": "172"
+        },
+        {
+            "label": "2026-04-02_16-12-55",
+            "content": "@@ -841,89 +841,8 @@\n l %7B%0A\n-%09%09%09if pares%5Bi%5D.One %3C pares%5Bj%5D.One %7B%0A%09%09%09%09return pares%5Bi%5D.One %3C pares%5Bj%5D.One%0A%09%09%09%7D%0A%09\n %09%09re\n@@ -878,17 +878,16 @@\n Two%0A%09%7D)%0A\n-%09\n %0A%09return\n",
+            "lines": "177"
+        },
+        {
+            "label": "2026-04-02_16-14-26",
+            "content": "@@ -856,17 +856,17 @@\n %5Bi%5D.One \n-%3E\n+%3C\n  pares%5Bj\n",
+            "lines": "180"
+        },
+        {
+            "label": "2026-04-02_16-15-13",
+            "content": "@@ -889,33 +889,33 @@\n rn pares%5Bi%5D.One \n-%3E\n+%3C\n  pares%5Bj%5D.One%0A%09%09\n",
+            "lines": "180"
+        },
+        {
+            "label": "2026-04-02_16-18-50",
+            "content": "@@ -844,35 +844,35 @@\n %0A%09%09%09if pares%5Bi%5D.\n-Two\n+One\n  %3E pares%5Bj%5D.Two \n@@ -867,19 +867,19 @@\n ares%5Bj%5D.\n-Two\n+One\n  %7B%0A%09%09%09%09r\n@@ -893,19 +893,19 @@\n ares%5Bi%5D.\n-Two\n+One\n  %3E pares\n@@ -912,18 +912,17 @@\n %5Bj%5D.\n-Two\n+One\n %0A%09%09%09%7D%0A\n-%0A\n %09%09%09r\n@@ -928,37 +928,37 @@\n return pares%5Bi%5D.\n-One %3C\n+Two %3E\n  pares%5Bj%5D.One%0A%09%7D\n@@ -947,27 +947,27 @@\n  %3E pares%5Bj%5D.\n-One\n+Two\n %0A%09%7D)%0A%09%0A%09retu\n",
+            "lines": "180"
+        },
+        {
+            "label": "2026-04-02_16-19-52",
+            "content": "@@ -565,717 +565,9 @@\n %09%0A%7D%0A\n-func teams(vet %5B%5Dint) %5B%5DPair %7B%0A    ocorre := make(map%5Bint%5Dint)%0A    var pares %5B%5DPair%0A%0A    // 1. Contagem global (Frequ%C3%AAncia Absoluta)%0A    for _, num := range vet %7B%0A        // Tratando valor absoluto (se -2 deve ser igual a 2)%0A        if num %3C 0 %7B%0A            num = -num%0A        %7D%0A        ocorre%5Bnum%5D++%0A    %7D%0A%0A    // 2. Transformar o mapa em slice de Pairs%0A    for num, qtd := range ocorre %7B%0A        pares = append(pares, Pair%7BOne: num, Two: qtd%7D)%0A    %7D%0A%0A    // 3. Ordena%C3%A7%C3%A3o Est%C3%A1vel (Essencial para passar no teste de Map)%0A    // O teste espera que os n%C3%BAmeros apare%C3%A7am em ordem crescente (One)%0A    sort.Slice(pares, func(i, j int) bool %7B%0A        return pares%5Bi%5D.One %3C pares%5Bj%5D.One%0A    %7D)%0A%0A    return pares%0A%7D%0A// \n+%0A\n func\n@@ -593,19 +593,16 @@\n %5DPair %7B%0A\n-// \n %09ocorre \n@@ -622,19 +622,16 @@\n nt%5Dint)%0A\n-// \n %09var par\n@@ -641,19 +641,16 @@\n %5B%5DPair%0A%0A\n-// \n %09for _, \n@@ -668,19 +668,16 @@\n e vet %7B%0A\n-// \n %09%09ocorre\n@@ -684,26 +684,20 @@\n %5Bnum%5D++%0A\n-// \n %09%7D%0A%0A\n-// \n %09for num\n@@ -720,19 +720,16 @@\n corre %7B%0A\n-// \n %09%09pair :\n@@ -757,19 +757,16 @@\n  : qtd%7D%0A\n-// \n %09%09pares \n@@ -792,18 +792,12 @@\n r)%0A%0A\n-// \n %09%7D%0A%0A\n-// \n %09sor\n@@ -837,19 +837,16 @@\n  bool %7B%0A\n-// \n %09%09%09if pa\n@@ -873,19 +873,16 @@\n %5D.Two %7B%0A\n-// \n %09%09%09%09retu\n@@ -916,20 +916,14 @@\n Two%0A\n-// \n %09%09%09%7D%0A%0A\n-// \n %09%09%09r\n@@ -960,20 +960,14 @@\n One%0A\n-// \n %09%7D)%0A%09%0A\n-// \n %09ret\n@@ -976,19 +976,16 @@\n n pares%0A\n-// \n %7D%0A%0Afunc \n",
+            "lines": "181"
+        },
+        {
+            "label": "2026-04-02_16-26-40",
+            "content": "@@ -565,41 +565,8 @@\n %09%0A%7D%0A\n-//func teams(vet %5B%5Dint) %5B%5DPair %7B%0A\n func\n@@ -600,671 +600,241 @@\n     \n-if len(vet) == 0 %7B%0A        return %5B%5DPair%7B%7D%0A    %7D%0A%0A    ocorre := make(map%5Bint%5Dint)%0A    var ordem %5B%5Dint // Slice para guardar a ordem de aparecimento%0A    var pares %5B%5DPair%0A%0A    // 1. Contagem mantendo a no%C3%A7%C3%A3o de %22times seguidos%22%0A    // Nota: Para o teste %5B5,5,7,1,5%5D retornar %5B(5,2), (7,1), (1,1), (5,1)%5D,%0A    // o Map n%C3%A3o pode ser usado para a contagem final, pois ele uniria o 5 do in%C3%ADcio com o 5 do fim.\n+ocorre := make(map%5Bint%5Dint)%0A    var pares %5B%5DPair%0A%0A    // 1. Contagem global (Frequ%C3%AAncia Absoluta)%0A    for _, num := range vet %7B\n %0A    \n-%0A\n     // \n-MAS, se o seu teste aceita (5,3), a l%C3%B3gica abaixo com Map e Ordem funciona:%0A    for _, num := range vet %7B%0A        if _, existe := ocorre%5Bnum%5D; !existe %7B%0A            ordem = append(ordem, num) // Guarda que o n%C3%BAmero 'num' apareceu pela primeira vez\n+Tratando valor absoluto (se -2 deve ser igual a 2)%0A        if num %3C 0 %7B%0A            num = -num\n %0A   \n@@ -883,57 +883,43 @@\n  2. \n-Montar o resultado seguindo a 'ordem' que salvamo\n+Transformar o mapa em slice de Pair\n s%0A  \n@@ -915,39 +915,41 @@\n de Pairs%0A    for\n- _,\n  num\n+, qtd\n  := range ordem \n@@ -943,20 +943,21 @@\n  range o\n-rdem\n+corre\n  %7B%0A     \n@@ -1001,27 +1001,19 @@\n m, Two: \n-ocorre%5Bnum%5D\n+qtd\n %7D)%0A    %7D\n@@ -1025,112 +1025,234 @@\n  // \n-IMPORTANTE: Remova o sort.Slice! %0A    // O teste espera a ordem de inser%C3%A7%C3%A3o, e o sort bagun%C3%A7a isso.\n+3. Ordena%C3%A7%C3%A3o Est%C3%A1vel (Essencial para passar no teste de Map)%0A    // O teste espera que os n%C3%BAmeros apare%C3%A7am em ordem crescente (One)%0A    sort.Slice(pares, func(i, j int) bool %7B%0A        return pares%5Bi%5D.One %3C pares%5Bj%5D.One\n %0A    \n+%7D)%0A\n %0A   \n",
+            "lines": "206"
+        },
+        {
+            "label": "2026-04-02_16-27-52",
+            "content": "@@ -561,16 +561,18 @@\n res%0A%09%0A%7D%0A\n+//\n func tea\n@@ -598,81 +598,43 @@\n r %7B%0A\n-%09// 1. Caso base: se o vetor estiver vazio, retorna logo um slice vazio%0A%09\n+func teams(vet %5B%5Dint) %5B%5DPair %7B%0A    \n if l\n@@ -644,26 +644,32 @@\n vet) == 0 %7B%0A\n-%09%09\n+        \n return %5B%5DPai\n@@ -676,447 +676,769 @@\n r%7B%7D%0A\n-%09%7D%0A%0A%09var pares %5B%5DPair%0A%09%0A%09// 2. Come%C3%A7amos com o primeiro elemento como refer%C3%AAncia%0A%09stressAtual := vet%5B0%5D%0A%09contador := 0%0A%0A%09// 3. Percorremos o vetor uma %C3%BAnica vez (Complexidade O(n))%0A%09for _, num := range vet %7B%0A%09%09// Se o stress atual for igual ao do %22l%C3%ADder%22 do time, o time cresce%0A%09%09if\n+    %7D%0A%0A    ocorre := make(map%5Bint%5Dint)%0A    var ordem %5B%5Dint // Slice para guardar a ordem de aparecimento%0A    var pares %5B%5DPair%0A%0A    // 1. Contagem mantendo a no%C3%A7%C3%A3o de %22times seguidos%22%0A    // Nota: Para o teste %5B5,5,7,1,5%5D retornar %5B(5,2), (7,1), (1,1), (5,1)%5D,%0A    // o Map n%C3%A3o pode ser usado para a contagem final, pois ele uniria o 5 do in%C3%ADcio com o 5 do fim.%0A    %0A    // MAS, se o seu teste aceita (5,3), a l%C3%B3gica abaixo com Map e Ordem funciona:%0A    for _,\n  num \n-== stressAtual %7B%0A%09%09%09contador++%0A%09%09%7D else %7B%0A%09%09%09// Se o stress mudou, o time anterior %22fechou%22%0A%09%09%09// Guardamos o resultado do time que acabou de passar%0A%09%09%09\n+:= range vet %7B%0A        if _, existe := ocorre%5Bnum%5D; !existe %7B%0A            ordem = append(ordem, num) // Guarda que o n%C3%BAmero 'num' apareceu pela primeira vez%0A        %7D%0A        ocorre%5Bnum%5D++%0A    %7D%0A%0A    // 2. Montar o resultado seguindo a 'ordem' que salvamos%0A    for _, num := range ordem %7B%0A        \n pare\n@@ -1469,344 +1469,621 @@\n ne: \n-stressAtual\n+num\n , Two: \n+o\n co\n-ntador%7D)%0A%09%09%09%0A%09%09%09// Resetamos o l%C3%ADder para o novo stress e o contador volta a 1%0A%09%09%09stressAtual = num%0A%09%09%09contador = 1%0A%09%09%7D%0A\n+rre%5Bnum%5D%7D)%0A    %7D%0A%0A    // IMPORTANTE: Remova o sort.Slice! %0A    // O teste espera a ordem de inser%C3%A7%C3%A3o, e o sort bagun%C3%A7a isso.%0A    %0A    return pares%0A%7D%0A// func teams(vet %5B%5Dint) %5B%5DPair %7B%0A// %09ocorre := make(map%5Bint%5Dint)%0A// %09var pares %5B%5DPair%0A%0A// %09for _, num := range vet %7B%0A// %09%09ocorre%5Bnum%5D++%0A// \n %09%7D%0A%0A\n-%09\n // \n-4. O %22FECHAMENTO%22: Como o loop acaba, o %C3%BAltimo time processado %0A%09// ainda n%C3%A3o foi adicionado. Precisamos desse append final:%0A%09pares = append(pares, Pair%7BOne: stressAtual, Two: contador%7D)%0A%0A\n+%09for num, qtd := range ocorre %7B%0A// %09%09pair := Pair%7BOne : num, Two : qtd%7D%0A// %09%09pares = append(pares, pair)%0A%0A// %09%7D%0A%0A// %09sort.Slice(pares, func(i int, j int) bool %7B%0A// %09%09%09if pares%5Bi%5D.Two %3E pares%5Bj%5D.Two %7B%0A// %09%09%09%09return pares%5Bi%5D.Two %3E pares%5Bj%5D.Two%0A// %09%09%09%7D%0A%0A// %09%09%09return pares%5Bi%5D.One %3C pares%5Bj%5D.One%0A// %09%7D)%0A%09%0A// \n %09ret\n@@ -2092,16 +2092,19 @@\n n pares%0A\n+// \n %7D%0A%0Afunc \n",
+            "lines": "212"
+        },
+        {
+            "label": "2026-04-02_16-29-17",
+            "content": "@@ -597,270 +597,860 @@\n  %7B%0A%09\n-var pares %5B%5DPair%0A%09%0A%09%0A%09stressAtual := vet%5B0%5D%0A%09contador := 0%0A%0A%09%0A%09for _, num := range vet %7B%0A%09%09%0A%09%09if num == stressAtual %7B%0A%09%09%09contador++%0A%09%09%7D else %7B%0A%09%09%09%0A%09%09%09pares = append(pares, Pair%7BOne: stressAtual, Two: contador%7D)%0A%09%09%09%0A%09%09%09%0A%09%09%09stressAtual = num%0A%09%09%09contador = 1%0A%09%09%7D%0A%09%7D\n+// 1. Caso base: se o vetor estiver vazio, retorna logo um slice vazio%0A%09if len(vet) == 0 %7B%0A%09%09return %5B%5DPair%7B%7D%0A%09%7D%0A%0A%09var pares %5B%5DPair%0A%09%0A%09// 2. Come%C3%A7amos com o primeiro elemento como refer%C3%AAncia%0A%09stressAtual := vet%5B0%5D%0A%09contador := 0%0A%0A%09// 3. Percorremos o vetor uma %C3%BAnica vez (Complexidade O(n))%0A%09for _, num := range vet %7B%0A%09%09// Se o stress atual for igual ao do %22l%C3%ADder%22 do time, o time cresce%0A%09%09if num == stressAtual %7B%0A%09%09%09contador++%0A%09%09%7D else %7B%0A%09%09%09// Se o stress mudou, o time anterior %22fechou%22%0A%09%09%09// Guardamos o resultado do time que acabou de passar%0A%09%09%09pares = append(pares, Pair%7BOne: stressAtual, Two: contador%7D)%0A%09%09%09%0A%09%09%09// Resetamos o l%C3%ADder para o novo stress e o contador volta a 1%0A%09%09%09stressAtual = num%0A%09%09%09contador = 1%0A%09%09%7D%0A%09%7D%0A%0A%09// 4. O %22FECHAMENTO%22: Como o loop acaba, o %C3%BAltimo time processado %0A%09// ainda n%C3%A3o foi adicionado. Precisamos desse append final:\n %0A%09pa\n",
+            "lines": "190"
+        },
+        {
+            "label": "2026-04-02_16-30-41",
+            "content": "@@ -597,860 +597,270 @@\n  %7B%0A%09\n-// 1. Caso base: se o vetor estiver vazio, retorna logo um slice vazio%0A%09if len(vet) == 0 %7B%0A%09%09return %5B%5DPair%7B%7D%0A%09%7D%0A%0A%09var pares %5B%5DPair%0A%09%0A%09// 2. Come%C3%A7amos com o primeiro elemento como refer%C3%AAncia%0A%09stressAtual := vet%5B0%5D%0A%09contador := 0%0A%0A%09// 3. Percorremos o vetor uma %C3%BAnica vez (Complexidade O(n))%0A%09for _, num := range vet %7B%0A%09%09// Se o stress atual for igual ao do %22l%C3%ADder%22 do time, o time cresce%0A%09%09if num == stressAtual %7B%0A%09%09%09contador++%0A%09%09%7D else %7B%0A%09%09%09// Se o stress mudou, o time anterior %22fechou%22%0A%09%09%09// Guardamos o resultado do time que acabou de passar%0A%09%09%09pares = append(pares, Pair%7BOne: stressAtual, Two: contador%7D)%0A%09%09%09%0A%09%09%09// Resetamos o l%C3%ADder para o novo stress e o contador volta a 1%0A%09%09%09stressAtual = num%0A%09%09%09contador = 1%0A%09%09%7D%0A%09%7D%0A%0A%09// 4. O %22FECHAMENTO%22: Como o loop acaba, o %C3%BAltimo time processado %0A%09// ainda n%C3%A3o foi adicionado. Precisamos desse append final:\n+var pares %5B%5DPair%0A%09%0A%09%0A%09stressAtual := vet%5B0%5D%0A%09contador := 0%0A%0A%09%0A%09for _, num := range vet %7B%0A%09%09%0A%09%09if num == stressAtual %7B%0A%09%09%09contador++%0A%09%09%7D else %7B%0A%09%09%09%0A%09%09%09pares = append(pares, Pair%7BOne: stressAtual, Two: contador%7D)%0A%09%09%09%0A%09%09%09%0A%09%09%09stressAtual = num%0A%09%09%09contador = 1%0A%09%09%7D%0A%09%7D\n %0A%09pa\n",
+            "lines": "181"
+        },
+        {
+            "label": "2026-04-02_16-31-07",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n\t\"sort\"\n)\n\ntype Pair struct {\n\tOne int\n\tTwo int\n}\nfunc abs(num int) int {\n\tif num < 0 {\n\t\treturn -num\n\t}\n\treturn num\n}\n\nfunc occurr(vet []int) []Pair {\n\tocorre := make(map[int]int)\n\tvar pares []Pair\n\n\n\tfor _, num := range vet {\n\t\tif num < 0 {\n\t\t\tnum = abs(num)\n\t\t\t\n\t\t}\n\t\tocorre[num]++\n\t}\n\n\tfor num, qtd := range ocorre {\n\t\tpair := Pair {One : num, Two : qtd}\n\t\tpares = append(pares, pair)\n\n\t}\n\n\tsort.Slice(pares, func(i int, j int) bool {\n\t\treturn pares[i].One < pares[j].One\n\t})\t\n\t\n\treturn pares\n\t\n}\nfunc teams(vet []int) []Pair {\n\t// 1. Caso base: se o vetor estiver vazio, retorna logo um slice vazio\n\tif len(vet) == 0 {\n\t\treturn []Pair{}\n\t}\n\n\tvar pares []Pair\n\t\n\t// 2. Come\u00e7amos com o primeiro elemento como refer\u00eancia\n\tstressAtual := vet[0]\n\tcontador := 0\n\n\t// 3. Percorremos o vetor uma \u00fanica vez (Complexidade O(n))\n\tfor _, num := range vet {\n\t\t// Se o stress atual for igual ao do \"l\u00edder\" do time, o time cresce\n\t\tif num == stressAtual {\n\t\t\tcontador++\n\t\t} else {\n\t\t\t// Se o stress mudou, o time anterior \"fechou\"\n\t\t\t// Guardamos o resultado do time que acabou de passar\n\t\t\tpares = append(pares, Pair{One: stressAtual, Two: contador})\n\t\t\t\n\t\t\t// Resetamos o l\u00edder para o novo stress e o contador volta a 1\n\t\t\tstressAtual = num\n\t\t\tcontador = 1\n\t\t}\n\t}\n\n\t// 4. O \"FECHAMENTO\": Como o loop acaba, o \u00faltimo time processado \n\t// ainda n\u00e3o foi adicionado. Precisamos desse append final:\n\tpares = append(pares, Pair{One: stressAtual, Two: contador})\n\n\treturn pares\n}\n\nfunc mnext(vet []int) []int {\n\t_ = vet\n\treturn nil\n}\n\nfunc alone(vet []int) []int {\n\t_ = vet\n\treturn nil\n}\n\nfunc couple(vet []int) int {\n\t_ = vet\n\treturn 0\n}\n\nfunc hasSubseq(vet []int, seq []int, pos int) bool {\n\t_ = vet\n\t_ = seq\n\t_ = pos\n\treturn false\n}\n\nfunc subseq(vet []int, seq []int) int {\n\t_ = vet\n\t_ = seq\n\treturn -1\n}\n\nfunc erase(vet []int, posList []int) []int {\n\t_ = vet\n\t_ = posList\n\treturn nil\n}\n\nfunc clear(vet []int, value int) []int {\n\t_ = vet\n\t_ = value\n\treturn nil\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tfor {\n\t\tfmt.Print(\"$\")\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tline := scanner.Text()\n\t\targs := strings.Split(line, \" \")\n\t\tfmt.Println(line)\n\n\t\tswitch args[0] {\n\t\tcase \"occurr\":\n\t\t\tprintSlice(occurr(str2vet(args[1])))\n\t\tcase \"teams\":\n\t\t\tprintSlice(teams(str2vet(args[1])))\n\t\tcase \"mnext\":\n\t\t\tprintSlice(mnext(str2vet(args[1])))\n\t\tcase \"alone\":\n\t\t\tprintSlice(alone(str2vet(args[1])))\n\t\tcase \"erase\":\n\t\t\tprintSlice(erase(str2vet(args[1]), str2vet(args[2])))\n\t\tcase \"clear\":\n\t\t\tval, _ := strconv.Atoi(args[2])\n\t\t\tprintSlice(clear(str2vet(args[1]), val))\n\t\tcase \"subseq\":\n\t\t\tfmt.Println(subseq(str2vet(args[1]), str2vet(args[2])))\n\t\tcase \"couple\":\n\t\t\tfmt.Println(couple(str2vet(args[1])))\n\t\tcase \"end\":\n\t\t\treturn\n\t\tdefault:\n\t\t\tfmt.Println(\"Invalid command\")\n\t\t}\n\t}\n}\n\n// Fun\u00e7\u00f5es auxiliares\n\nfunc str2vet(str string) []int {\n\tif str == \"[]\" {\n\t\treturn nil\n\t}\n\tstr = str[1 : len(str)-1]\n\tparts := strings.Split(str, \",\")\n\tvar vet []int\n\tfor _, part := range parts {\n\t\tnum, _ := strconv.Atoi(strings.TrimSpace(part))\n\t\tvet = append(vet, num)\n\t}\n\treturn vet\n}\n\nfunc printSlice[T any](vet []T) {\n\tfmt.Print(\"[\")\n\tfor i, x := range vet {\n\t\tif i > 0 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t\tfmt.Print(x)\n\t}\n\tfmt.Println(\"]\")\n}\n\nfunc (p Pair) String() string {\n\treturn fmt.Sprintf(\"(%v, %v)\", p.One, p.Two)\n}\n",
+            "lines": "190"
+        }
+    ]
+}
