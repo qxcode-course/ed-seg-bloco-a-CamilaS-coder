@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-15_20-09-36",
+            "content": "@@ -134,18 +134,16 @@\n  %22 %5D%22)%0A%09\n-//\n _ = vet;\n@@ -147,239 +147,8 @@\n et;%0A\n-%09if len(vet) == 1 %7B%0A%09%09return%0A%09%7D%0A%09vetAux := make(%5B%5Dint, 0, len(vet))%0A%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09if i == len(vet) - 1 %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09vet%5Bi%5D += vet%5Bi%5D + 1%0A%0A%09%09var aux = vet%5Bi%5D%0A%0A%09%09vetAux = append(vetAux, aux)%0A%0A%09%7D%0A%09return %0A%09%0A%0A\n %09// \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_20-25-29",
+            "content": "@@ -243,12 +243,8 @@\n vet)\n- - 1\n ; i+\n@@ -253,24 +253,54 @@\n %7B%0A%09%09\n-soma := \n+if i == len(vet) - 1 %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09\n vet%5Bi%5D +\n  vet\n@@ -299,18 +299,39 @@\n i%5D +\n+=\n  vet%5Bi\n+%5D\n  + 1\n+%0A%0A%09%09var aux = vet%5Bi\n %5D%0A%0A%09\n@@ -359,35 +359,25 @@\n ux, \n-soma)\n+aux)%0A\n %0A%09%7D%0A\n-%0A%09processa(vetAux)\n+%09return \n %0A%09%0A%0A\n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-04-15_20-31-35",
+            "content": "@@ -90,16 +90,59 @@\n %5Dint) %7B%0A\n+%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A\n %09//_ = v\n@@ -145,16 +145,16 @@\n  = vet;%0A\n-\n %09if len(\n@@ -213,18 +213,17 @@\n n(vet))%0A\n-%09\n %0A\n+\n %09for i :\n@@ -285,11 +285,9 @@\n  1%5D%0A\n-%09%09\n %0A\n+\n %09%09ve\n@@ -317,17 +317,16 @@\n oma)%0A%09%7D%0A\n-%09\n %0A%09proces\n@@ -341,53 +341,8 @@\n x)%0A%09\n-%0A%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A%09\n %0A%0A%09/\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-04-15_20-31-58",
+            "content": "@@ -94,51 +94,8 @@\n ) %7B%0A\n-%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A\n %09//_\n@@ -134,17 +134,16 @@\n turn%0A%09%7D%0A\n-%0A\n %09vetAux \n@@ -297,16 +297,60 @@\n vetAux)%0A\n+%09%0A%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)\n %0A%09%0A%0A%09// \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-04-15_20-32-24",
+            "content": "@@ -157,25 +157,25 @@\n len(vet) == \n-0\n+1\n  %7B%0A%09%09return%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-04-15_20-32-47",
+            "content": "@@ -90,16 +90,59 @@\n %5Dint) %7B%0A\n+%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)%0A\n %09//_ = v\n@@ -177,17 +177,16 @@\n turn%0A%09%7D%0A\n-%09\n %0A%09vetAux\n@@ -344,53 +344,8 @@\n Aux)\n-%0A%09%0A%09fmt.Println(%22%5B %22 + Join(vet, %22 %22) + %22 %5D%22)\n %0A%0A%09%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-04-15_20-33-12",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc processa(vet []int) {\n\t//_ = vet;\n\tif len(vet) == 0 {\n\t\treturn\n\t}\n\t\n\tvetAux := make([]int, 0, len(vet))\n\t\n\tfor i := 0; i < len(vet) - 1; i++ {\n\t\tsoma := vet[i] + vet[i + 1]\n\t\t\n\t\tvetAux = append(vetAux, soma)\n\t}\n\t\n\tprocessa(vetAux)\n\t\n\tfmt.Println(\"[ \" + Join(vet, \" \") + \" ]\")\n\n\t\n\n\t// 1. defina o ponto de parada\n\t// 2. monte o vetor auxiliar com os resultados das somas\n\t// 3. chame recursivamente a fun\u00e7\u00e3o processa para o vetor auxiliar\n\t// 4. imprima o vetor original\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tline := scanner.Text()\n\tparts := strings.Fields(line)\n\tvet := []int{}\n\tfor _, part := range parts {\n\t\tif value, err := strconv.Atoi(part); err == nil {\n\t\t\tvet = append(vet, value)\n\t\t}\n\t}\n\tprocessa(vet)\n}\n\nfunc Join[T any](v []T, sep string) string {\n\tif len(v) == 0 {\n\t\treturn \"\"\n\t}\n\ts := \"\"\n\tfor i, x := range v {\n\t\tif i > 0 {\n\t\t\ts += sep\n\t\t}\n\t\ts += fmt.Sprintf(\"%v\", x)\n\t}\n\treturn s\n}\n",
+            "lines": "65"
+        }
+    ]
+}

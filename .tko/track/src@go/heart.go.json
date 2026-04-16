@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_16-58-53",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math/rand\"\n)\n\nfunc randInt(min, max int) int {\n\treturn min + rand.Intn(max-min+1)\n}\n\nfunc main() {\n\tpen := NewPen(500, 500)   // cria um canvas de 500 de largura por 500 de altura\n\tpen.SetRGB(0, 0, 0)     // muda a cor do pincel para vermelho\n\tpen.SetPosition(0, 0) // move o pincel para x 250, y 500\n\tpen.SetHeading(90)        // coloca o pincel apontando para cima\n\tpen.DrawRect(500, 500)\n\tpen.FillSquare(500, 500)\n\tpen.SetPosition(250, 500) // move o pincel para x 250, y 500\n\tpen.SetRGB(240, 248, 255)\n\tpen.Walk(125)\n\n\ti := 125.00\n\n\tfor range 11{\n\t\tpen.Left(45)\n\t\tpen.Walk(i)\n\t\tpen.Right(90)\n\t\ti -= 25\n\t}\n\tpen.SetHeading(270)\n\tpen.Walk(125)\n\t//pen.DrawCircle(250)\n\n\n\t// pen.Walk(90)             // anda 100 pixels\n\t// pen.Left(35)              // dobra 30 graus para esquerda\n\t// pen.Walk(150)             // anda 100 pixels\n\t// pen.DrawCircle(0)        // desenha um c\u00edrculo de raio 50\n\t// pen.Right(90)             // gira para direita 60 graus\n\t// pen.Walk(150)\n\t\n\n\t// for range 10 {\n\n\t// \tpen.Up()\n\t// \tpen.Walk(125) // anda sem riscar\n\t// \t// pen.Down()\n\t// \t// pen.Up()\n\t// \t// pen.FillSquare(10, 100)\n\t// \t// pen.Walk(-30) // volta sem riscar\n\t// \t// pen.Down()\n\n\t// \t// pen.Left(90) // gira\n\t// \t//pen.DrawRect(i, j)\t\t\n\t// }\n\n\tpen.SavePNG(\"tree.png\")\n\tfmt.Println(\"PNG file created successfully.\")\n}\n",
+            "lines": "60"
+        }
+    ]
+}

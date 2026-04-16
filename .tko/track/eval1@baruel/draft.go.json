@@ -1,0 +1,159 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_15-54-42",
+            "content": "@@ -254,10 +254,8 @@\n     \n-//\n repe\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-54-52",
+            "content": "@@ -198,19 +198,19 @@\n  i %3C fig\n-Alb\n+Bar\n ; i++ %7B%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-55-17",
+            "content": "@@ -226,16 +226,17 @@\n mt.Scan(\n+&\n figurinh\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-57-35",
+            "content": "@@ -72,20 +72,16 @@\n int%0A    \n-var \n figurinh\n@@ -87,13 +87,30 @@\n has \n-%5B%5Dint\n+:= make(%5B%5Dint, figAlb)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-56-00",
+            "content": "@@ -213,17 +213,16 @@\n mt.Scan(\n-&\n figurinh\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-56-11",
+            "content": "@@ -64,24 +64,49 @@\n  figAlb int%0A\n+    var figurinhas %5B%5Dint%0A\n     repetida\n@@ -200,34 +200,8 @@\n + %7B%0A\n-        var figuras %5B%5Dint%0A\n     \n@@ -219,16 +219,19 @@\n n(&figur\n+inh\n as%5Bi%5D)%0A \n@@ -237,25 +237,18 @@\n         \n-%0A        \n+//\n repetida\n@@ -269,11 +269,61 @@\n   %7D%0A    \n+fmt.Println(qtdfig, figBar, figurinhas, repetidas)\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-13_15-57-16",
+            "content": "@@ -272,85 +272,9 @@\n     \n-    fmt.Print(figuras)%0A    %7D%0A    fmt.Print(qtdfig, figBar, figAlb, repetidas)\n+%7D\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-13_15-58-17",
+            "content": "@@ -223,22 +223,17 @@\n figuras%5B\n-figAlb\n+i\n %5D)%0A     \n@@ -264,17 +264,16 @@\n  = true%0A\n-%0A\n         \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_15-59-56",
+            "content": "@@ -223,17 +223,22 @@\n figuras%5B\n-i\n+figAlb\n %5D)%0A     \n@@ -263,26 +263,45 @@\n das%5B\n-figuras%5B\n i%5D\n-%5D\n  = true\n+%0A%0A        fmt.Print(figuras)\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_16-00-46",
+            "content": "@@ -139,30 +139,8 @@\n Bar)\n-%0A    var figuras %5B%5Dint\n %0A%0A  \n@@ -171,16 +171,42 @@\n ; i++ %7B%0A\n+        var figuras %5B%5Dint%0A\n         \n@@ -247,10 +247,8 @@\n     \n-//\n  rep\n@@ -279,17 +279,16 @@\n e%0A    %7D%0A\n-%0A\n     fmt.\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-13_16-03-06",
+            "content": "@@ -59,13 +59,21 @@\n gBar\n+, figAlb\n  int%0A\n-\n     \n@@ -182,19 +182,19 @@\n  i %3C fig\n-Bar\n+Alb\n ; i++ %7B%0A\n@@ -278,16 +278,16 @@\n %0A    %7D%0A%0A\n-\n     fmt.\n@@ -307,16 +307,24 @@\n  figBar,\n+ figAlb,\n  repetid\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_16-04-45",
+            "content": "@@ -55,19 +55,16 @@\n , figBar\n-uel\n  int%0A   \n@@ -64,18 +64,16 @@\n int%0A    \n-//\n repetida\n@@ -130,49 +130,31 @@\n gBar\n-uel\n )%0A    \n-figVet := make(%5B%5Dint, figBaruel)\n+var figuras %5B%5Dint\n %0A%0A  \n@@ -177,19 +177,16 @@\n %3C figBar\n-uel\n ; i++ %7B%0A\n@@ -202,22 +202,24 @@\n mt.Scan(\n+&\n fig\n-Vet\n+uras\n %5Bi%5D)%0A   \n@@ -302,19 +302,19 @@\n gBar\n-uel, figVet\n+, repetidas\n )%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_16-06-38",
+            "content": "@@ -235,25 +235,17 @@\n (figVet%5B\n-figBaruel\n+i\n %5D)%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_16-06-55",
+            "content": "@@ -85,50 +85,8 @@\n s :=\n- make(%5B%5Dint, 0, figBaruel)%0A    //unicas :=\n  mak\n@@ -102,17 +102,16 @@\n %5Dbool)%0A%0A\n-%0A\n     fmt.\n@@ -198,19 +198,17 @@\n i %3C \n-len(figVet)\n+figBaruel\n ; i+\n@@ -235,17 +235,25 @@\n (figVet%5B\n-i\n+figBaruel\n %5D)%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_16-09-03",
+            "content": "@@ -234,20 +234,32 @@\n  := \n-range figVet\n+0; i %3C len(figVet); i++ \n %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_16-09-29",
+            "content": "@@ -108,24 +108,26 @@\n Baruel)%0A    \n+//\n unicas := ma\n@@ -261,17 +261,16 @@\n mt.Scan(\n-&\n figVet%5Bi\n@@ -292,17 +292,32 @@\n     \n-unic\n+// repetidas%5Bfigur\n as%5Bi%5D\n+%5D\n  = t\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_16-10-16",
+            "content": "@@ -354,16 +354,8 @@\n gVet\n-, unicas\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_16-10-26",
+            "content": "@@ -63,24 +63,26 @@\n uel int%0A    \n+//\n repetidas :=\n@@ -104,24 +104,24 @@\n  figBaruel)%0A\n-\n     unicas :\n@@ -315,18 +315,16 @@\n  %7D%0A%0A    \n-//\n fmt.Prin\n@@ -363,278 +363,8 @@\n cas)\n-%0A%0A    for _, valor := range figVet %7B%0A        %0A        _, existe := unicas%5Bvalor%5D%0A%0A        if !existe %7B%0A            //repetidas = append(repetidas, valor)%0A            unicas%5Bvalor%5D = true %0A        %7D else %7B%0A            repetidas = append(repetidas, valor)%0A        %7D%0A%0A    %7D\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_16-15-25",
+            "content": "@@ -634,41 +634,8 @@\n   %7D%0A\n-    fmt.Print(unicas, repetidas)%0A\n     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-13_16-15-58",
+            "content": "@@ -617,44 +617,8 @@\n or)%0A\n-            //unicas%5Bvalor%5D = true %0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-04-13_16-17-25",
+            "content": "@@ -452,16 +452,17 @@\n      if \n+!\n existe %7B\n@@ -470,24 +470,26 @@\n             \n+//\n repetidas = \n@@ -517,34 +517,32 @@\n or)%0A            \n-//\n unicas%5Bvalor%5D = \n@@ -580,43 +580,8 @@\n     \n-unicas%5Bvalor%5D = true%0A            //\n repe\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-04-13_16-19-02",
+            "content": "@@ -704,31 +704,30 @@\n   %7D%0A\n-%0A\n    \n- sai :=\n  fmt.\n-Sp\n+P\n rint(\n+unicas, \n repe\n@@ -735,141 +735,8 @@\n idas\n-)%0A%0A    if len(repetidas) == 0 %7B%0A        sai = %22N%22%0A        fmt.Print(sai)%0A    %7D else %7B%0A        fmt.Print(sai)%0A    %7D%0A%0A    fmt.Print(sai\n )%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-13_16-26-19",
+            "content": "@@ -726,16 +726,9 @@\n rint\n-f(%22%25v%22, \n+(\n repe\n@@ -746,19 +746,27 @@\n  if \n-sai == %22%5B%5D%22\n+len(repetidas) == 0\n  %7B%0A \n@@ -780,9 +780,8 @@\n sai \n-+\n = %22N\n@@ -852,14 +852,8 @@\n  %7D%0A%0A\n-    %0A%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-04-13_16-29-28",
+            "content": "@@ -372,19 +372,21 @@\n  for _, \n-fig\n+valor\n  := rang\n@@ -433,19 +433,21 @@\n  unicas%5B\n-fig\n+valor\n %5D%0A%0A     \n@@ -510,16 +510,52 @@\n  valor)%0A\n+            //unicas%5Bvalor%5D = true %0A\n         \n@@ -563,17 +563,16 @@\n  else %7B%0A\n-%0A\n         \n@@ -582,19 +582,21 @@\n  unicas%5B\n-fig\n+valor\n %5D = true\n@@ -604,24 +604,97 @@\n             \n+//repetidas = append(repetidas, valor)%0A            //unicas%5Bvalor%5D = true\n  %0A        %7D%0A\n@@ -704,19 +704,16 @@\n   %7D%0A%0A   \n- //\n  sai := \n@@ -745,19 +745,16 @@\n as)%0A%0A   \n- //\n  if sai \n@@ -762,27 +762,24 @@\n = %22%5B%5D%22 %7B%0A   \n- //\n      sai = %22\n@@ -775,16 +775,17 @@\n     sai \n++\n = %22N%22%0A  \n@@ -781,27 +781,24 @@\n i += %22N%22%0A   \n- //\n      fmt.Pri\n@@ -808,19 +808,16 @@\n sai)%0A   \n- //\n  %7D else \n@@ -821,19 +821,16 @@\n se %7B%0A   \n- //\n      fmt\n@@ -844,19 +844,16 @@\n sai)%0A   \n- //\n  %7D%0A%0A    \n@@ -857,19 +857,16 @@\n    %0A%0A   \n- //\n  fmt.Pri\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-13_16-34-32",
+            "content": "@@ -499,19 +499,21 @@\n etidas, \n-fig\n+valor\n )%0A      \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-13_16-34-42",
+            "content": "@@ -588,32 +588,8 @@\n   %7D%0A\n-    fmt.Print(repetidas)\n %0A   \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-13_16-34-59",
+            "content": "@@ -285,18 +285,16 @@\n %0A       \n-//\n unicas%5Bi\n@@ -580,25 +580,24 @@\n    %7D%0A%0A    %7D%0A\n-%0A\n     fmt.Prin\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-13_16-36-26",
+            "content": "@@ -591,18 +591,8 @@\n  %7D%0A%0A\n-    for %0A%0A\n     \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-13_16-37-04",
+            "content": "@@ -587,24 +587,28 @@\n %0A    %7D%0A%0A    \n+for \n %0A%0A    fmt.Pr\n@@ -620,24 +620,16 @@\n epetidas\n-, unicas\n )%0A    //\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-13_16-37-39",
+            "content": "@@ -593,26 +593,24 @@\n %0A%0A    %0A%0A    \n-//\n fmt.Print(re\n@@ -629,16 +629,19 @@\n cas)%0A   \n+ //\n  sai := \n@@ -674,120 +674,8 @@\n s)%0A%0A\n-    if sai == %22%5B%5D%22 %7B%0A        sai = %22N%22%0A    %7D else %7B%0A        sai = sai%5B1:len(sai) - 1%5D%0A    %7D%0A    fmt.Print(sai)%0A%0A\n     \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-04-13_16-39-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtdfig, figBaruel int\n    repetidas := make([]int, 0, figBaruel)\n    unicas := make(map[int]bool)\n\n\n    fmt.Scan(&qtdfig, &figBaruel)\n    figVet := make([]int, figBaruel)\n\n    for i := range figVet{\n        fmt.Scan(&figVet[i])\n        \n       //unicas[i] = true\n    }\n\n    //fmt.Print(qtdfig, figBaruel, figVet, unicas)\n\n    for _, fig := range figVet {\n        \n        _, existe := unicas[fig]\n\n        if existe {\n            repetidas = append(repetidas, fig)\n        } else {\n\n            unicas[fig] = true\n             \n        }\n\n    }\n\n    \n\n    //fmt.Print(repetidas, unicas)\n    sai := fmt.Sprintf(\"%v\", repetidas)\n\n    if sai == \"[]\" {\n        sai = \"N\"\n    } else {\n        sai = sai[1:len(sai) - 1]\n    }\n    fmt.Print(sai)\n\n    // if sai == \"[]\" {\n    //     sai = \"N\"\n    //     fmt.Print(sai)\n    // } else {\n    //     fmt.Print(sai)\n    // }\n\n    \n\n    // fmt.Print(sai)\n    \n}\n",
+            "lines": "57"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+2026-04-06 15:46:55, MOVE, v:1, k:ed@fractais_png, mode:DOWN
+2026-04-06 15:46:55, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-04-06 15:55:54, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-04-06 15:57:33, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:00:23, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:00:48, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:23:38, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:24:53, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:28:37, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:29:53, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:30:51, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:32:07, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:33:09, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:33:27, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:33:51, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:34:11, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:35:27, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:35:45, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:36:20, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:36:55, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:37:10, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:37:42, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:38:01, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:38:11, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:38:35, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:38:53, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:39:05, EXEC, v:1, k:src@go, mode:FREE, size:136
+2026-04-06 16:41:46, EXEC, v:1, k:src@go, mode:FREE, size:143
+2026-04-06 16:42:17, EXEC, v:1, k:src@go, mode:FREE, size:139
+2026-04-06 16:42:23, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:42:28, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:42:31, EXEC, v:1, k:src@go, mode:FREE
+2026-04-06 16:44:07, EXEC, v:1, k:src@go, mode:FREE, size:142
+2026-04-06 16:44:38, EXEC, v:1, k:src@go, mode:FREE, size:145
+2026-04-06 16:45:24, EXEC, v:1, k:src@go, mode:FREE, size:145
+2026-04-06 16:45:46, EXEC, v:1, k:src@go, mode:FREE, size:145
+2026-04-06 16:46:05, EXEC, v:1, k:src@go, mode:FREE, size:145
+2026-04-06 16:46:38, EXEC, v:1, k:src@go, mode:FREE, size:146
+2026-04-06 16:47:00, EXEC, v:1, k:src@go, mode:FREE, size:146
+2026-04-06 16:47:15, EXEC, v:1, k:src@go, mode:FREE, size:146
+2026-04-06 16:47:33, EXEC, v:1, k:src@go, mode:FREE, size:146
+2026-04-06 16:47:44, EXEC, v:1, k:src@go, mode:FREE, size:146
+2026-04-06 16:49:03, EXEC, v:1, k:src@go, mode:FREE, size:147
+2026-04-06 16:49:14, EXEC, v:1, k:src@go, mode:FREE, size:147
+2026-04-06 16:53:52, EXEC, v:1, k:src@go, mode:FREE, size:147
+2026-04-06 16:55:22, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:55:39, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:56:19, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:56:41, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:57:02, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:57:11, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:57:24, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:58:34, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:59:02, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:59:19, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:59:32, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:59:42, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 16:59:51, EXEC, v:1, k:src@go, mode:FREE, size:148
+2026-04-06 17:00:21, EXEC, v:1, k:src@go, mode:FREE, size:149
