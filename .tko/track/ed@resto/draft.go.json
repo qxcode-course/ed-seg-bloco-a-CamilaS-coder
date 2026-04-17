@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-16_13-02-54",
+            "content": "@@ -233,25 +233,8 @@\n int%0A\n-    fmt.Scan(&v)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-16_13-03-51",
+            "content": "@@ -176,10 +176,8 @@\n rint\n-ln\n (v %25\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-16_13-04-06",
+            "content": "package main\nimport \"fmt\"\n\nfunc div(v int) {\n    if v == 0 && v % 2 == 0{\n        return\n    }\n    vAlt := 0\n    vAlt = v / 2\n\n    div(vAlt)\n    fmt.Print(vAlt, \" \")\n    fmt.Println(v % 2)\n    v = vAlt\n\n   \n}\n\nfunc main() {\n    var v int\n    fmt.Scan(&v)\n    div(v)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-17_08-39-26",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc mdc(a, b int) int {\n\tif a == 0 {\n\t\treturn b\n\t}\n\tif b == 0 {\n\t\treturn a\n\t}\n\n\tvar res, quo int\n\tquo = a / b\n\tres = a % b\n\ta = b * quo + res\n\treturn mdc(b, res)\n\t\n}\n\nfunc main() {\n\tvar a, b int\n\tfmt.Scan(&a, &b)\n\tfmt.Println(mdc(a, b))\n}\n",
+            "lines": "27"
+        }
+    ]
+}

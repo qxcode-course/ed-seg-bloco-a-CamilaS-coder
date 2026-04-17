@@ -1,0 +1,3 @@
+2026-04-17 08:39:26, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:27
+2026-04-17 08:41:33, MOVE, v:1, k:ed@mdc, mode:BACK
+2026-04-17 08:40:00, SELF, v:1, k:ed@mdc, self:1, rate:100, study:30, friend:Daniel, refactor:1

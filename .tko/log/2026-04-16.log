@@ -1,0 +1,28 @@
+2026-04-16 12:41:51, MOVE, v:1, k:ed@resto, mode:DOWN
+2026-04-16 12:41:53, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-16 12:42:50, MOVE, v:1, k:ed@resto, mode:BACK
+2026-04-16 12:44:49, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-16 12:47:41, MOVE, v:1, k:ed@resto, mode:EDIT
+2026-04-16 12:49:20, MOVE, v:1, k:ed@resto, mode:EDIT
+2026-04-16 13:00:40, MOVE, v:1, k:ed@resto, mode:EDIT
+2026-04-16 13:02:54, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:22
+2026-04-16 13:03:31, MOVE, v:1, k:ed@resto, mode:PICK
+2026-04-16 13:03:32, EXEC, v:1, k:ed@resto, mode:FULL, rate:0
+2026-04-16 13:03:51, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:23
+2026-04-16 13:04:06, EXEC, v:1, k:ed@resto, mode:FULL, rate:100, size:23
+2026-04-16 13:04:05, MOVE, v:1, k:ed@resto, mode:EDIT
+2026-04-16 13:04:25, MOVE, v:1, k:ed@resto, mode:BACK
+2026-04-16 13:04:55, SELF, v:1, k:ed@resto, self:1, rate:100, study:30, friend:Daniel Monitor
+2026-04-16 13:05:19, MOVE, v:1, k:ed@mdc, mode:DOWN
+2026-04-16 13:05:20, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-04-16 13:04:05, MOVE, v:1, k:ed@resto, mode:EDIT
+2026-04-16 13:05:24, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:05:19, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:05:19, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:05:24, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:05:19, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:05:19, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:27:28, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:27:28, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:34:31, MOVE, v:1, k:ed@mdc, mode:EDIT
+2026-04-16 13:34:31, MOVE, v:1, k:ed@mdc, mode:EDIT
