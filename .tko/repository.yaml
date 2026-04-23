@@ -31,3 +31,4 @@ flags:
   show_time: 'true'
 lang: go
 selected: ed@mdc
+selected_index: 7

@@ -1,0 +1,21 @@
+2026-04-23 20:21:11, MOVE, v:1, k:ed@queimada, mode:DOWN
+2026-04-23 20:21:13, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-23 20:21:11, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-04-23 20:21:11, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-04-23 20:23:26, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-04-23 20:29:47, EXEC, v:1, k:ed@queimada, mode:FULL, rate:42, size:60
+2026-04-23 20:29:44, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-04-23 20:31:06, EXEC, v:1, k:ed@queimada, mode:FULL, rate:14, size:60
+2026-04-23 20:31:26, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-04-23 20:31:01, MOVE, v:1, k:ed@queimada, mode:EDIT
+2026-04-23 20:35:07, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-23 20:35:08, EXEC, v:1, k:ed@queimada, mode:FULL, rate:14
+2026-04-23 20:35:10, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-04-23 20:35:34, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-23 20:35:35, EXEC, v:1, k:ed@queimada, mode:FULL, rate:42, size:60
+2026-04-23 20:35:37, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-04-23 20:36:11, MOVE, v:1, k:ed@queimada, mode:PICK
+2026-04-23 20:36:13, EXEC, v:1, k:ed@queimada, mode:FULL, rate:42
+2026-04-23 20:36:24, EXEC, v:1, k:ed@queimada, mode:FULL, rate:100, size:60
+2026-04-23 20:36:26, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-04-23 20:36:49, SELF, v:1, k:ed@queimada, self:1, rate:100, study:20, guided:1

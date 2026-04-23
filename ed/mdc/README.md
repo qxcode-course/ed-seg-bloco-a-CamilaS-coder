@@ -3,8 +3,7 @@
 Implemente a função que calcula o mdc de dois números de forma recursiva.
 
 O mdc de dois números inteiros é o maior número inteiro que divide ambos sem deixar resto.
-Para calcular o mdc de dois números, você pode usar o algoritmo de Euclides.
-
+Para calcular o mdc de dois números, você pode usar o algoritmo de Euclide
 [LINK](https://pt.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm)
 
 ## O Algoritmo
