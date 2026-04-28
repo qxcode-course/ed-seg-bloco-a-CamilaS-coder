@@ -1,0 +1,66 @@
+2026-04-27 20:25:01, MOVE, v:1, k:ed@vetequals, mode:DOWN
+2026-04-27 20:25:03, MOVE, v:1, k:ed@vetequals, mode:PICK
+2026-04-27 20:25:01, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:25:01, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:25:01, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:40:02, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:42:35, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:46:41, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:0, size:64
+2026-04-27 20:49:38, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:0, size:56
+2026-04-27 20:49:36, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:52:48, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 20:56:52, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:30, size:57
+2026-04-27 21:00:26, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-04-27 21:00:32, MOVE, v:1, k:ed@vetequals, mode:PICK
+2026-04-27 21:00:33, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:30
+2026-04-27 21:05:16, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:57
+2026-04-27 21:05:13, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 21:07:37, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:61
+2026-04-27 21:11:18, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:61
+2026-04-27 21:08:53, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 21:12:15, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-04-27 21:12:17, MOVE, v:1, k:ed@vetequals, mode:PICK
+2026-04-27 21:12:18, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80
+2026-04-27 21:14:32, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:68
+2026-04-27 21:15:52, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:80, size:70
+2026-04-27 21:17:52, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:100, size:70
+2026-04-27 21:17:56, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-04-27 21:17:48, MOVE, v:1, k:ed@vetequals, mode:EDIT
+2026-04-27 21:18:28, SELF, v:1, k:ed@vetequals, self:1, rate:100, study:58, problem:1
+2026-04-27 21:19:30, MOVE, v:1, k:ed@vetequals, mode:PICK
+2026-04-27 21:19:31, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:100
+2026-04-27 21:33:05, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:100
+2026-04-27 21:33:07, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-04-27 21:33:42, MOVE, v:1, k:ed@eh_primo, mode:DOWN
+2026-04-27 21:33:44, MOVE, v:1, k:ed@eh_primo, mode:PICK
+2026-04-27 21:33:42, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:33:42, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:37:54, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:39:08, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:44, size:23
+2026-04-27 21:40:17, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:44, size:27
+2026-04-27 21:41:10, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:55, size:31
+2026-04-27 21:42:16, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:55, size:33
+2026-04-27 21:43:18, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:44:00, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100, size:39
+2026-04-27 21:45:07, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100, size:39
+2026-04-27 21:48:35, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:49:20, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:22, size:41
+2026-04-27 21:52:00, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100, size:39
+2026-04-27 21:53:22, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:55, size:39
+2026-04-27 21:53:52, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:55:02, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:55, size:36
+2026-04-27 21:55:45, EXEC, v:1, k:ed@eh_primo, mode:FULL, rate:100, size:39
+2026-04-27 21:55:48, MOVE, v:1, k:ed@eh_primo, mode:BACK
+2026-04-27 21:56:07, SELF, v:1, k:ed@eh_primo, self:1, rate:100, study:30, concept:1
+2026-04-27 21:57:40, MOVE, v:1, k:ed@escada, mode:DOWN
+2026-04-27 21:57:41, MOVE, v:1, k:ed@escada, mode:PICK
+2026-04-27 21:55:43, MOVE, v:1, k:ed@eh_primo, mode:EDIT
+2026-04-27 21:57:40, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-04-27 21:57:40, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-04-27 21:57:40, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-04-27 22:08:44, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-04-27 22:13:30, EXEC, v:1, k:ed@escada, mode:FULL, rate:0, size:24
+2026-04-27 22:11:35, EXEC, v:1, k:ed@escada, mode:FULL, rate:100, size:24
+2026-04-27 22:13:01, MOVE, v:1, k:ed@escada, mode:EDIT
+2026-04-27 22:15:58, MOVE, v:1, k:ed@escada, mode:BACK
+2026-04-27 22:16:33, SELF, v:1, k:ed@escada, self:1, rate:100, study:20, concept:1

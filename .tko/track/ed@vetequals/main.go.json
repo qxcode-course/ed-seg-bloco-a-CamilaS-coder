@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_20-46-41",
+            "content": "@@ -204,16 +204,26 @@\n r vA, vB\n+, contador\n  int%0A%0A%09v\n@@ -242,16 +242,99 @@\n  = b%5B0%5D%0A\n+%09contador = 0%0A%0A%09if vA == vB %7B%0A%09%09contador++%0A%09%7D%0A%0A%09if contador %3E= 1 %7B%0A%09%09return true%0A%09%7D\n %0A%0A%09equal\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-04-27_20-49-38",
+            "content": "@@ -197,85 +197,72 @@\n l %7B%0A\n-%0A\n %09var vA\n- = EhVazio(a)%0A%09var vB = EhVazio(b)%0A%0A%09if vA == vB %7B%0A%09%09return true%0A%09%7D%0A%09\n+, vB int%0A%0A%09vA = a%5B0%5D%0A%09vB = b%5B0%5D%0A%0A%0A%09equals(a%5BvA:%5D, b%5BvB:%5D)\n %0A%09//\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-04-27_20-56-52",
+            "content": "@@ -251,26 +251,10 @@\n  == \n-true && vB == true\n+vB\n  %7B%0A%09\n@@ -269,16 +269,17 @@\n true%0A%09%7D%0A\n+%09\n %0A%09// n%C3%A3o\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-27_21-05-16",
+            "content": "@@ -290,59 +290,8 @@\n %09%7D%0A%0A\n-%09if vA == true && vB == false %7B%0A%09%09return false%0A%09%7D%0A%0A\n %09// \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-04-27_21-07-37",
+            "content": "@@ -320,36 +320,8 @@\n lse \n-%7C%7C vB == true && vA == false\n %7B%0A%09%09\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-27_21-08-56",
+            "content": "@@ -369,74 +369,8 @@\n %09%7D%0A%0A\n-%09var nA = a%5B0%5D%0A%09var nB = b%5B0%5D%0A%0A%09if nA != nB %7B%0A%09%09return false%0A%09%7D%0A%09%0A\n %09// \n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-27_21-14-32",
+            "content": "@@ -432,31 +432,8 @@\n e%0A%09%7D\n-%0A%0A%09equals(a%5B1:%5D, b%5B1:%5D)\n %0A%09%0A%09\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-04-27_21-15-52",
+            "content": "@@ -431,23 +431,16 @@\n se%0A%09%7D%0A%0A%09\n-return \n equals(a\n@@ -452,16 +452,17 @@\n  b%5B1:%5D)%0A\n+%09\n %0A%09// n%C3%A3o\n@@ -820,18 +820,16 @@\n = a, b%0A%09\n-//\n return f\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-04-27_21-17-52",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc EhVazio(vet []int) bool {\n\treturn fmt.Sprint(vet) == \"[]\"\n}\n\n// n\u00e3o altere a assinatura\nfunc equals(a []int, b []int) bool {\n\n\tvar vA = EhVazio(a)\n\tvar vB = EhVazio(b)\n\n\tif vA == true && vB == true {\n\t\treturn true\n\t}\n\n\tif vA == true && vB == false || vB == true && vA == false{\n\t\treturn false\n\t}\n\n\tvar nA = a[0]\n\tvar nB = b[0]\n\n\tif nA != nB {\n\t\treturn false\n\t}\n\n\treturn equals(a[1:], b[1:])\n\n\t// n\u00e3o use a fun\u00e7\u00e3o len para ver ou comparar os tamanhos\n\t// utilize a fun\u00e7\u00e3o EhVazio para ver se o vetor \u00e9 vazio\n\t// voc\u00ea s\u00f3 pode consultar o primeiro elemento do vetor\n\t// e n\u00e3o pode usar nenhum tipo de la\u00e7o\n\t// Use recursao para consultar os outros elementos equals(a[1:], b[1:])\n\t// n\u00e3o altere o prot\u00f3tipo da fun\u00e7\u00e3o nem crie fun\u00e7\u00f5es auxiliares\n\t// _, _ = a, b\n\t//return false\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tscanner.Scan()\n\tvet1 := str2slice(scanner.Text())\n\tscanner.Scan()\n\tvet2 := str2slice(scanner.Text())\n\tif equals(vet1, vet2) {\n\t\tfmt.Println(\"iguais\")\n\t} else {\n\t\tfmt.Println(\"diferentes\")\n\t}\n}\n\nfunc str2slice(line string) []int {\n\tparts := strings.Fields(line)\n\tnums := make([]int, 0)\n\tfor i := 1; i < len(parts)-1; i++ {\n\t\tvalue, _ := strconv.Atoi(parts[i])\n\t\tnums = append(nums, value)\n\t}\n\treturn nums\n}\n",
+            "lines": "70"
+        }
+    ]
+}

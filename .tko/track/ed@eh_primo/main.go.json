@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_21-39-08",
+            "content": "@@ -167,54 +167,8 @@\n e%0A%09%7D\n-%0A%0A%09if x %25 2 == 0 && x != 2 %7B%0A%09%09return false%0A%09%7D\n %0A%09_,\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-27_21-40-17",
+            "content": "@@ -213,39 +213,8 @@\n e%0A%09%7D\n-%0A%0A%09if x == 2 %7B%0A%09%09return true%0A%09%7D\n %0A%09_,\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-27_21-41-10",
+            "content": "@@ -173,19 +173,17 @@\n %09if x %25 \n-div\n+2\n  == 0 &&\n@@ -188,19 +188,17 @@\n && x != \n-div\n+2\n  %7B%0A%09%09ret\n@@ -220,19 +220,17 @@\n if x == \n-div\n+2\n  %7B%0A%09%09ret\n@@ -241,18 +241,16 @@\n true%0A%09%7D%0A\n-%0A%0A\n %09_, _ = \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-27_21-42-16",
+            "content": "@@ -252,74 +252,8 @@\n %09%7D%0A%0A\n-%09var num = x %25 div%0A%0A%09if num != 0 %7B%0A%09%09return true%0A%09%7D%0A%0A%09//eh_primo()\n %0A%09_,\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-04-27_21-44-00",
+            "content": "@@ -302,16 +302,18 @@\n ue%0A%09%7D%0A%0A%09\n+//\n eh_primo\n@@ -313,22 +313,16 @@\n h_primo(\n-x, div\n )%0A%09_, _ \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-27_21-45-07",
+            "content": "@@ -253,37 +253,8 @@\n %7D%0A%0A%09\n-return eh_primo(x, div)%0A%0A%09// \n var \n@@ -269,19 +269,16 @@\n %25 div%0A%0A%09\n-// \n if num !\n@@ -289,19 +289,25 @@\n %7B%0A%09%09\n-%0A%09// \n+return true%0A%09\n %7D%0A%0A%09\n-//\n eh_p\n@@ -320,19 +320,16 @@\n , div)%0A%09\n-// \n _, _ = x\n@@ -335,19 +335,16 @@\n x, div%0A%09\n-// \n return f\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-27_21-49-20",
+            "content": "@@ -249,16 +249,45 @@\n ue%0A%09%7D%0A%0A%09\n+return eh_primo(x, div)%0A%0A%09// \n var num \n@@ -298,16 +298,19 @@\n %25 div%0A%0A%09\n+// \n if num !\n@@ -321,26 +321,19 @@\n %7B%0A%09%09\n-div++%0A%09%7D%0A%0A%09return \n+%0A%09// %7D%0A%0A%09//\n eh_p\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-27_21-52-00",
+            "content": "@@ -168,16 +168,32 @@\n %0A%09%7D%0A%0A%09if\n+ x %25 div == 0 &&\n  x != di\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-27_21-53-22",
+            "content": "@@ -137,30 +137,8 @@\n l %7B%0A\n-%09%0A%09var num = x %25 div%0A%0A\n %09if \n@@ -172,20 +172,8 @@\n %0A%09if\n- num != 0 &&\n  x !\n@@ -232,16 +232,63 @@\n rue%0A%09%7D%0A%0A\n+%09var num = x %25 div%0A%0A%09if num != 0 %7B%0A%09%09div++%0A%09%7D%0A%0A\n %09return \n@@ -306,12 +306,8 @@\n  div\n- + 1\n )%0A%09/\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-04-27_21-55-02",
+            "content": "@@ -133,16 +133,38 @@\n  bool %7B%0A\n+%09%0A%09var num = x %25 div%0A%0A\n %09if x ==\n@@ -195,17 +195,13 @@\n %09if \n-x %25 div =\n+num !\n = 0 \n@@ -270,66 +270,8 @@\n %09%7D%0A%0A\n-%09//var num = x %25 div%0A%0A%09// if num != 0 %7B%0A%09// %09div++%0A%09// %7D%0A%0A\n %09ret\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-04-27_21-55-45",
+            "content": "package main\n\nimport \"fmt\"\n\n// x: n\u00famero que est\u00e1 sendo testado\n// div: divisor que est\u00e1 sendo testado\nfunc eh_primo(x int, div int) bool {\n\tif x == 1 {\n\t\treturn false\n\t}\n\n\tif x % div == 0 && x != div {\n\t\treturn false\n\t}\n\n\tif x == div {\n\t\treturn true\n\t}\n\n\t//var num = x % div\n\n\t// if num != 0 {\n\t// \tdiv++\n\t// }\n\n\treturn eh_primo(x, div + 1)\n\t// _, _ = x, div\n\t// return false;\n}\n\nfunc main() {\n\tvar x int\n\tfmt.Scan(&x)\n\tif eh_primo(x, 2) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n}\n",
+            "lines": "39"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-27_22-11-07",
+            "content": "@@ -273,25 +273,27 @@\n Println(\n-op_degraus(a)\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-27_22-11-35",
+            "content": "package main\nimport \"fmt\"\n\nfunc op_degraus(a int) int {\n\n    if a == 1 || a == 2 {\n        return 1\n    }\n\n    if a == 3 {\n        return 2\n    }\n\n\n    return op_degraus(a - 1) + op_degraus(a - 3)\n}\n\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    op_degraus(a)\n    fmt.Println(op_degraus(a))\n}\n",
+            "lines": "24"
+        }
+    ]
+}
