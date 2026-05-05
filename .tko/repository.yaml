@@ -22,15 +22,13 @@ sources:
   quests: null
   tasks: null
 expanded:
-- ed@vector
 - ed@list
-- ed@backtrack
 flags:
   inbox: all
-  panel: graph
+  panel: logs
   show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@lista_d1
-selected_index: 18
+selected: ed@editorint
+selected_index: 14
