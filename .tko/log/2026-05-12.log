@@ -1,0 +1,12 @@
+2026-05-12 15:50:30, SELF, v:1, k:ed@editorint, self:1, rate:60, study:60, concept:1, refactor:1
+2026-05-12 15:51:22, MOVE, v:1, k:ed@lista_d2, mode:DOWN
+2026-05-12 15:54:06, MOVE, v:1, k:ed@lista_d2, mode:PICK
+2026-05-12 15:52:17, MOVE, v:1, k:ed@lista_d2, mode:BACK
+2026-05-12 15:56:52, MOVE, v:1, k:ed@lista_d2, mode:PICK
+2026-05-12 15:58:32, EXEC, v:1, k:ed@lista_d2, mode:FULL, rate:0, size:93
+2026-05-12 15:56:55, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-05-12 16:10:58, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-05-12 16:15:56, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-05-12 16:14:53, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-05-12 16:23:14, MOVE, v:1, k:ed@lista_d2, mode:EDIT
+2026-05-12 16:28:22, MOVE, v:1, k:ed@lista_d2, mode:EDIT
