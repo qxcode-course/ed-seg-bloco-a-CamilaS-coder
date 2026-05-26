@@ -15,7 +15,7 @@ func BetterSearch(slice []int, value int) (bool, int) {
 	//var meio = 0
 
 	for low != high {
-		meio := low + ((high - low) / 2)
+		meio := (low + high) / 2
 
 		if slice[meio] == value {
 			return true, meio
