@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_20-32-44",
+            "content": "@@ -22,77 +22,8 @@\n fmt%22\n-%0A%0Afunc eh_primo(value int) int %7B%0A    if value == 1 %7B%0A        %0A    %7D%0A%7D\n %0Afun\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_20-35-05",
+            "content": "@@ -20,19 +20,16 @@\n  %22fmt%22%0A%0A\n-// \n func eh_\n@@ -51,23 +51,20 @@\n ) int %7B%0A\n-//\n     \n- \n if value\n@@ -75,21 +75,23 @@\n 1 %7B%0A\n-%0A//\n      \n-%7D%0A// \n+   %0A    %7D%0A\n %7D%0Afu\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-26_20-35-15",
+            "content": "@@ -20,16 +20,19 @@\n  %22fmt%22%0A%0A\n+// \n func eh_\n@@ -41,582 +41,62 @@\n imo(\n-x int, div int) bool %7B%0A%09if x == 1 %7B%0A%09%09return false%0A%09%7D%0A%0A%09if x %25 div == 0 && x != div %7B%0A%09%09return false%0A%09%7D%0A%0A%09if x == div %7B%0A%09%09return true%0A%09%7D%0A%0A%09//var num = x %25 div%0A%0A%09// if num != 0\n+value int) int\n  %7B%0A\n-%09\n // \n-%09div++%0A%09// %7D%0A%0A%09return eh_primo(x, div + 1)%0A%09// _, _ = x, div%0A%09// return false;%0A%7D%0A%0A%0Afunc aux_primo(n int, atual int, contador int) int %7B%0A    if contador == n %7B%0A        return atual - 1%0A    %7D%0A%0A    if eh_primo(atual,  2) %7B%0A        return aux_primo(n, atual + 1, contador + 1)%0A    %7D%0A    %0A    return aux_primo(n, atual + 1, contador)%0A%7D%0A%0Afunc enesimo_primo(n int) int %7B%0Areturn aux_primo(n, 2, 0)%0A%7D%0A\n+    if value == 1 %7B%0A%0A//     %7D%0A// %7D\n %0Afun\n@@ -110,72 +110,11 @@\n ) %7B%0A\n-%0A\n    \n- var n int%0A    fmt.Scan(&n)%0A    %0A    enesimo_primo(n)%0A%0A   //\n  fmt\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-05-26_21-22-26",
+            "content": "@@ -659,25 +659,17 @@\n &n)%0A\n+    \n %0A    \n-fmt.Println(\n enes\n@@ -680,17 +680,16 @@\n primo(n)\n-)\n %0A%0A   // \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-26_21-23-08",
+            "content": "package main\nimport \"fmt\"\n\nfunc eh_primo(x int, div int) bool {\n\tif x == 1 {\n\t\treturn false\n\t}\n\n\tif x % div == 0 && x != div {\n\t\treturn false\n\t}\n\n\tif x == div {\n\t\treturn true\n\t}\n\n\t//var num = x % div\n\n\t// if num != 0 {\n\t// \tdiv++\n\t// }\n\n\treturn eh_primo(x, div + 1)\n\t// _, _ = x, div\n\t// return false;\n}\n\n\nfunc aux_primo(n int, atual int, contador int) int {\n    if contador == n {\n        return atual - 1\n    }\n\n    if eh_primo(atual,  2) {\n        return aux_primo(n, atual + 1, contador + 1)\n    }\n    \n    return aux_primo(n, atual + 1, contador)\n}\n\nfunc enesimo_primo(n int) int {\nreturn aux_primo(n, 2, 0)\n}\n\nfunc main() {\n\n    var n int\n    fmt.Scan(&n)\n\n    fmt.Println(enesimo_primo(n))\n\n   // fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "53"
+        }
+    ]
+}
