@@ -1,0 +1,199 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_11-43-58",
+            "content": "@@ -208,17 +208,16 @@\n pEsp(k)%0A\n-%0A\n     fmt.\n@@ -356,11 +356,8 @@\n %0A   \n- //\n  fmt\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-41-03",
+            "content": "@@ -349,20 +349,11 @@\n ra, \n-len(palavra)\n+100\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-41-18",
+            "content": "@@ -226,18 +226,11 @@\n rint\n-f(%22%25s%5Cn%22, \n+ln(\n s%5B0%5D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-41-54",
+            "content": "@@ -226,17 +226,17 @@\n rintf(%22%25\n-v\n+s\n %5Cn%22, s%5B0\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-42-19",
+            "content": "@@ -194,24 +194,34 @@\n %0A    %7D%0A%0A    \n+impEsp(k)%0A\n %0A    fmt.Pri\n@@ -238,20 +238,16 @@\n , s%5B0%5D)%0A\n-    \n %0A    dia\n@@ -265,30 +265,16 @@\n , k + 1)\n-%0A    impEsp(k)\n %0A%0A%7D%0Afunc\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-42-32",
+            "content": "@@ -237,22 +237,8 @@\n    %0A\n-    impEsp(k)%0A\n     \n@@ -259,16 +259,30 @@\n , k + 1)\n+%0A    impEsp(k)\n %0A%0A%7D%0Afunc\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-42-43",
+            "content": "@@ -186,32 +186,37 @@\n   return%0A    %7D%0A%0A\n+    %0A\n     fmt.Printf(%22\n@@ -229,24 +229,38 @@\n  s%5B0%5D)%0A    %0A\n+    impEsp(k)%0A\n     diagonal\n@@ -273,30 +273,16 @@\n , k + 1)\n-%0A    impEsp(k)\n %0A%0A%7D%0Afunc\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-43-05",
+            "content": "@@ -111,17 +111,17 @@\n mpEsp(k \n-+\n+-\n  1)%0A%7D%0Afu\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-43-21",
+            "content": "@@ -92,18 +92,16 @@\n mt.Print\n-ln\n (%22 %22)%0A  \n@@ -115,9 +115,9 @@\n p(k \n--\n++\n  1)%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-44-05",
+            "content": "@@ -92,16 +92,18 @@\n mt.Print\n+ln\n (%22 %22)%0A  \n@@ -251,16 +251,20 @@\n s%5B1:%5D, k\n+ + 1\n )%0A    im\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-44-37",
+            "content": "@@ -253,12 +253,8 @@\n %5D, k\n- + 1\n )%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-48-04",
+            "content": "@@ -213,21 +213,21 @@\n ntf(\n-string(\n+%22%25v%5Cn%22, \n s%5B0%5D)\n-)\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-45-58",
+            "content": "@@ -198,22 +198,8 @@\n  %7D%0A%0A\n-    impEsp(k)%0A\n     \n@@ -254,16 +254,30 @@\n , k + 1)\n+%0A    impEsp(k)\n %0A%0A%7D%0Afunc\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-46-12",
+            "content": "@@ -221,18 +221,17 @@\n mt.Print\n-ln\n+f\n (string(\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-46-29",
+            "content": "@@ -186,32 +186,46 @@\n   return%0A    %7D%0A%0A\n+    impEsp(k)%0A\n     fmt.Println(\n@@ -238,16 +238,21 @@\n (s%5B0%5D))%0A\n+    %0A\n     diag\n@@ -269,35 +269,16 @@\n , k + 1)\n-%0A    impEsp(k)%0A    \n %0A%0A%7D%0Afunc\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-47-04",
+            "content": "@@ -228,22 +228,8 @@\n %5D))%0A\n-    impEsp(k)%0A\n     \n@@ -251,16 +251,30 @@\n  k + 1)%0A\n+    impEsp(k)%0A\n     %0A%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-47-17",
+            "content": "@@ -263,17 +263,13 @@\n %5D, k\n-)%0A    k++\n+ + 1)\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-50-53",
+            "content": "@@ -224,16 +224,30 @@\n (s%5B0%5D))%0A\n+    impEsp(k)%0A\n     diag\n@@ -263,27 +263,17 @@\n %5D, k\n- + 1\n )%0A    \n-impEsp(k)\n+k++\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-52-43",
+            "content": "@@ -356,17 +356,28 @@\n alavra, \n-0\n+len(palavra)\n )%0A    //\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-50-30",
+            "content": "@@ -207,16 +207,18 @@\n mt.Print\n+ln\n (string(\n@@ -269,26 +269,8 @@\n (k)%0A\n-    fmt.Println()%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-52-06",
+            "content": "@@ -376,20 +376,9 @@\n ra, \n-len(palavra)\n+0\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-52-18",
+            "content": "@@ -92,18 +92,16 @@\n mt.Print\n-ln\n (%22 %22)%0A  \n@@ -263,16 +263,34 @@\n pEsp(k)%0A\n+    fmt.Println()%0A\n     %0A%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-52-45",
+            "content": "@@ -92,16 +92,18 @@\n mt.Print\n+ln\n (%22 %22)%0A  \n@@ -228,22 +228,8 @@\n %5D))%0A\n-    impEsp(k)%0A\n     \n@@ -251,16 +251,30 @@\n  k + 1)%0A\n+    impEsp(k)%0A\n     %0A%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-54-37",
+            "content": "@@ -267,22 +267,8 @@\n  1)%0A\n-    println()%0A\n     \n@@ -354,17 +354,28 @@\n alavra, \n-0\n+len(palavra)\n )%0A    //\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-01_11-58-12",
+            "content": "@@ -236,30 +236,16 @@\n pEsp(k)%0A\n-    println()%0A\n     diag\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-55-19",
+            "content": "@@ -236,16 +236,30 @@\n pEsp(k)%0A\n+    println()%0A\n     diag\n@@ -382,17 +382,17 @@\n alavra, \n-1\n+0\n )%0A    //\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-55-36",
+            "content": "@@ -236,34 +236,16 @@\n pEsp(k)%0A\n-    fmt.Println()%0A\n     diag\n@@ -263,29 +263,25 @@\n  k + 1)%0A    \n-fmt.P\n+p\n rintln()%0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_11-56-22",
+            "content": "@@ -240,18 +240,16 @@\n (k)%0A    \n-//\n fmt.Prin\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-56-30",
+            "content": "@@ -236,24 +236,26 @@\n pEsp(k)%0A    \n+//\n fmt.Println(\n@@ -283,26 +283,24 @@\n  k + 1)%0A    \n-//\n fmt.Println(\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_12-00-00",
+            "content": "@@ -281,24 +281,26 @@\n  k + 1)%0A    \n+//\n fmt.Println(\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_12-00-07",
+            "content": "@@ -285,18 +285,16 @@\n  1)%0A    \n-//\n fmt.Prin\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-56-59",
+            "content": "@@ -236,26 +236,24 @@\n pEsp(k)%0A    \n-//\n fmt.Println(\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-57-10",
+            "content": "@@ -92,18 +92,16 @@\n mt.Print\n-ln\n (%22 %22)%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-57-28",
+            "content": "@@ -238,24 +238,26 @@\n pEsp(k)%0A    \n+//\n fmt.Println(\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-57-42",
+            "content": "@@ -242,18 +242,16 @@\n (k)%0A    \n-//\n fmt.Prin\n@@ -283,24 +283,26 @@\n  k + 1)%0A    \n+//\n fmt.Println(\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-57-55",
+            "content": "@@ -122,22 +122,8 @@\n  1)%0A\n-    println()%0A\n %7D%0Afu\n@@ -285,26 +285,24 @@\n  k + 1)%0A    \n-//\n fmt.Println(\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_11-58-18",
+            "content": "@@ -96,14 +96,16 @@\n rint\n+ln\n (%22 %22)%0A\n-\n     \n@@ -122,18 +122,16 @@\n  1)%0A    \n-//\n println(\n@@ -252,24 +252,26 @@\n pEsp(k)%0A    \n+//\n fmt.Println(\n@@ -410,17 +410,17 @@\n alavra, \n-0\n+1\n )%0A    //\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_12-03-05",
+            "content": "@@ -214,22 +214,8 @@\n  %7D%0A%0A\n-    impEsp(k)%0A\n     \n@@ -238,16 +238,30 @@\n (s%5B0%5D))%0A\n+    impEsp(k)%0A\n     fmt.\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_12-00-27",
+            "content": "package main\nimport \"fmt\"\n\nfunc impEsp(k int) {\n    if k == 0 {\n        return\n    }\n\n    fmt.Print(\" \")\n    impEsp(k - 1)\n    //println()\n}\nfunc diagonal(s string, k int) {\n    if len(s) == 0 {\n        return\n    }\n\n    impEsp(k)\n    fmt.Print(string(s[0]))\n    fmt.Println()\n    diagonal(s[1:], k + 1)\n    //fmt.Println()\n    \n\n}\nfunc main() {\n    var palavra string\n    fmt.Scan(&palavra)\n\n    diagonal(palavra, 0)\n    // fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "32"
+        }
+    ]
+}
