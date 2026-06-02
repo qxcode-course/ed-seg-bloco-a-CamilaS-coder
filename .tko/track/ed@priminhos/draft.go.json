@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-02_11-40-05",
+            "content": "@@ -598,28 +598,16 @@\n &n)%0A    \n-fmt.Println(\n priminho\n@@ -610,17 +610,16 @@\n inhos(n)\n-)\n %0A    //f\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-02_11-40-44",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -20,17 +20,16 @@\n  %22fmt%22%0A%0A\n-%0A\n func eh_\n@@ -57,17 +57,20 @@\n  bool %7B%0A\n-%09\n+    \n if n == \n@@ -73,18 +73,24 @@\n  == 1 %7B%0A\n-%09%09\n+        \n return f\n@@ -98,18 +98,26 @@\n lse%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n if n\n-%25\n+ %25 \n div \n@@ -131,26 +131,32 @@\n  n != div %7B%0A\n-%09%09\n+        \n return false\n@@ -156,21 +156,27 @@\n n false%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n if n == \n@@ -181,18 +181,24 @@\n = div %7B%0A\n-%09%09\n+        \n return t\n@@ -201,21 +201,27 @@\n rn true%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n return e\n@@ -238,16 +238,17 @@\n  div\n-+\n+ + \n 1)%0A%7D%0A%0A\n-%0A\n func\n@@ -280,78 +280,87 @@\n nt, \n-primos %5B%5D\n+contador \n int) \n-%5B%5D\n int %7B%0A\n-%09%0A%09if len(primos) == n %7B%0A%09%09return primos%0A%09%7D%0A%0A%09%0A%09\n+    if contador == n %7B%0A        return atual - 1%0A    %7D%0A%0A    \n if e\n@@ -377,16 +377,23 @@\n ual,\n+ \n  2) %7B%0A\n-%09%09\n+        \n retu\n@@ -417,42 +417,43 @@\n tual\n-+1, append(primos, atual))%0A%09%7D%0A%0A%09%0A%09\n+ + 1, contador + 1)%0A    %7D%0A    %0A    \n retu\n@@ -477,24 +477,27 @@\n tual\n-+1, primos\n+ + 1, contador\n )%0A%7D%0A%0A\n-%0A\n func\n@@ -518,17 +518,14 @@\n nt) \n-%5B%5D\n int %7B%0A\n-%09\n retu\n@@ -547,15 +547,9 @@\n  2, \n-%5B%5Dint%7B%7D\n+0\n )%0A%7D%0A\n@@ -563,17 +563,20 @@\n ain() %7B%0A\n-%09\n+    \n var n in\n@@ -577,17 +577,20 @@\n r n int%0A\n-%09\n+    \n fmt.Scan\n@@ -598,13 +598,12 @@\n &n)%0A\n-%09%0A%09%0A%09\n+    \n fmt.\n@@ -624,10 +624,45 @@\n hos(n))%0A\n+    //fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-02_11-46-24",
+            "content": "@@ -544,65 +544,34 @@\n %0A%09%0A%09\n-resultado := priminhos(n)%0A%09fmt.Printf(%22%25v%5Cn%22, resultado)%0A%09\n+%0A%09fmt.Println(priminhos(n))\n %0A%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-02_11-47-09",
+            "content": "@@ -570,12 +570,9 @@\n (n)%0A\n-    \n+%09\n fmt.\n@@ -580,133 +580,28 @@\n rint\n+f\n (%22\n-%5B%22)%0A%09for i, v := range resultado %7B%0A%09%09fmt.Print(v)%0A%09%09if i %3C len(resultado)-1 %7B%0A%09%09%09fmt.Print(%22, %22)%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22%5D%22)%0A%09\n+%25v%5Cn%22, resultado)\n %0A%09%0A%7D\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-06-02_11-47-56",
+            "content": "package main\n\nimport \"fmt\"\n\n\nfunc eh_primo(n int, div int) bool {\n\tif n == 1 {\n\t\treturn false\n\t}\n\n\tif n%div == 0 && n != div {\n\t\treturn false\n\t}\n\n\tif n == div {\n\t\treturn true\n\t}\n\n\treturn eh_primo(n, div+1)\n}\n\n\nfunc aux_primo(n int, atual int, primos []int) []int {\n\t\n\tif len(primos) == n {\n\t\treturn primos\n\t}\n\n\t\n\tif eh_primo(atual, 2) {\n\t\treturn aux_primo(n, atual+1, append(primos, atual))\n\t}\n\n\t\n\treturn aux_primo(n, atual+1, primos)\n}\n\n\nfunc priminhos(n int) []int {\n\treturn aux_primo(n, 2, []int{})\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\t\n\tresultado := priminhos(n)\n    fmt.Print(\"[\")\n\tfor i, v := range resultado {\n\t\tfmt.Print(v)\n\t\tif i < len(resultado)-1 {\n\t\t\tfmt.Print(\", \")\n\t\t}\n\t}\n\tfmt.Println(\"]\")\n\t\n\t\n}\n",
+            "lines": "58"
+        }
+    ]
+}

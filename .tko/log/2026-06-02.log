@@ -1,0 +1,75 @@
+2026-06-02 10:53:43, SELF, v:1, k:ed@diagonal, self:1, refactor:1
+2026-06-02 10:53:45, MOVE, v:1, k:ed@diagonal, mode:PICK
+2026-06-02 10:53:47, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:100
+2026-06-02 10:53:51, MOVE, v:1, k:ed@diagonal, mode:BACK
+2026-06-02 10:54:01, SELF, v:1, k:ed@diagonal, self:1, rate:100, study:60, refactor:1
+2026-06-02 10:54:28, MOVE, v:1, k:ed@sufixos, mode:DOWN
+2026-06-02 10:54:28, MOVE, v:1, k:ed@sufixos, mode:PICK
+2026-06-02 10:54:31, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:5
+2026-06-02 10:54:31, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:5
+2026-06-02 10:54:28, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 10:54:28, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 10:54:28, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 11:00:52, MOVE, v:1, k:ed@sufixos, mode:BACK
+2026-06-02 11:00:56, MOVE, v:1, k:ed@diagonal, mode:PICK
+2026-06-02 11:00:30, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 11:06:39, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:100
+2026-06-02 11:06:40, MOVE, v:1, k:ed@diagonal, mode:BACK
+2026-06-02 11:06:44, MOVE, v:1, k:ed@sufixos, mode:PICK
+2026-06-02 11:06:45, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:07:46, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:08:00, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:08:43, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:08:41, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 11:09:15, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:09:25, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:10:58, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:11:14, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:14:54, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:11:54, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:12:47, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0
+2026-06-02 11:12:49, MOVE, v:1, k:ed@sufixos, mode:BACK
+2026-06-02 11:12:55, MOVE, v:1, k:ed@sufixos, mode:PICK
+2026-06-02 11:12:56, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0
+2026-06-02 11:16:09, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 11:16:45, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:17:05, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:17:21, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:17:53, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:18:20, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:18:44, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:18:45, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0
+2026-06-02 11:22:58, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:23:08, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:23:24, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:23:35, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:23:48, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:24:06, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:19
+2026-06-02 11:24:00, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 11:26:09, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:21
+2026-06-02 11:26:24, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:100, size:21
+2026-06-02 11:26:25, MOVE, v:1, k:ed@sufixos, mode:BACK
+2026-06-02 11:26:36, SELF, v:1, k:ed@sufixos, self:1, rate:100, study:30, concept:1, refactor:1
+2026-06-02 11:26:49, SELF, v:1, k:ed@sufixos, self:1, rate:100, study:30, concept:1, refactor:1
+2026-06-02 11:30:39, MOVE, v:1, k:ed@sufixos, mode:PICK
+2026-06-02 11:30:41, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:100
+2026-06-02 11:30:42, MOVE, v:1, k:ed@sufixos, mode:BACK
+2026-06-02 11:26:22, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-06-02 11:31:09, MOVE, v:1, k:ed@priminhos, mode:DOWN
+2026-06-02 11:31:09, MOVE, v:1, k:ed@priminhos, mode:PICK
+2026-06-02 11:31:34, MOVE, v:1, k:ed@priminhos, mode:BACK
+2026-06-02 11:31:40, MOVE, v:1, k:ed@enesimo, mode:PICK
+2026-06-02 11:31:09, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-02 11:31:09, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-02 11:35:48, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-02 11:40:00, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:100
+2026-06-02 11:40:02, MOVE, v:1, k:ed@enesimo, mode:BACK
+2026-06-02 11:40:04, MOVE, v:1, k:ed@priminhos, mode:PICK
+2026-06-02 11:40:05, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:0, size:41
+2026-06-02 11:40:44, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:0, size:41
+2026-06-02 11:42:17, MOVE, v:1, k:ed@priminhos, mode:EDIT
+2026-06-02 11:46:24, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:25, size:49
+2026-06-02 11:47:09, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:25, size:50
+2026-06-02 11:47:56, EXEC, v:1, k:ed@priminhos, mode:FULL, rate:100, size:58
+2026-06-02 11:47:57, MOVE, v:1, k:ed@priminhos, mode:BACK
+2026-06-02 11:48:05, SELF, v:1, k:ed@priminhos, self:1, rate:100, study:30
