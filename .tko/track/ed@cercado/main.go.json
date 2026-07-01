@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_13-01-08",
+            "content": "@@ -89,19 +89,21 @@\n ve%0Afunc \n-dfs\n+solve\n (board %5B\n@@ -113,276 +113,22 @@\n byte\n-, l, c int\n ) %7B%0A\n-%0A%09if(l %3C 0 %7C%7C l %3E= len(board) %7C%7C c %3C 0 %7C%7C c %3E= len(board%5B0%5D) %7C%7C board%5Bl%5D%5Bc%5D != 'O') %7B%0A%09%09return%0A%09%7D%0A%0A%09board%5Bl%5D%5Bc%5D = 'T'%0A%0A%09dfs(board, l + 1, c)%0A%09dfs(board, l - 1, c)%0A%09dfs(board, l, c + 1)%0A%09dfs(board, l, c - 1)%0A%0A%09// _ = board%0A%7D%0A%0Afunc solve(board %5B%5D%5B%5Dbyte) %7B%0A\n+%09_ = board\n %0A%7D%0A%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-01_13-27-31",
+            "content": "@@ -377,438 +377,10 @@\n te) \n-%5B%5D%5B%5Dbyte%7B%0A%0A%09nlinhas, ncolunas := len(board), len(board%5B0%5D)%0A%09for i := 0; i %3C nlinhas; i++ %7B%0A%09%09for j := 0; j %3C ncolunas; j++ %7B%0A%09%09%09if(i == 0 %7C%7C i == nlinhas - 1 %7C%7C j == 0 %7C%7C j == ncolunas - 1 && board%5Bi%5D%5Bj%5D == 'O') %7B%0A%09%09%09%09dfs(board, i, j)%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%09for i := 0; i %3C nlinhas; i++ %7B%0A%09%09for j := 0; j %3C ncolunas; j++ %7B%0A%09%09%09if(board%5Bi%5D%5Bj%5D == 'O') %7B%0A%09%09%09%09board%5Bi%5D%5Bj%5D = 'X'%0A%09%09%09%7D else if board%5Bi%5D%5Bj%5D == 'T'%7B%0A%09%09%09%09board%5Bi%5D%5Bj%5D = 'O'%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D\n+%7B%0A\n %0A%7D%0A%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-01_13-46-26",
+            "content": "@@ -372,16 +372,25 @@\n %5D%5B%5Dbyte)\n+ %5B%5D%5B%5Dbyte\n %7B%0A%0A%09nlin\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-01_13-46-53",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00c3O ALTERE A ASSINATURA DA FUN\u00c7\u00c3O solve\nfunc dfs(board [][]byte, l, c int) {\n\n\tif(l < 0 || l >= len(board) || c < 0 || c >= len(board[0]) || board[l][c] != 'O') {\n\t\treturn\n\t}\n\n\tboard[l][c] = 'T'\n\n\tdfs(board, l + 1, c)\n\tdfs(board, l - 1, c)\n\tdfs(board, l, c + 1)\n\tdfs(board, l, c - 1)\n\n\t// _ = board\n}\n\nfunc solve(board [][]byte){\n\n\tnlinhas, ncolunas := len(board), len(board[0])\n\tfor i := 0; i < nlinhas; i++ {\n\t\tfor j := 0; j < ncolunas; j++ {\n\t\t\tif(i == 0 || i == nlinhas - 1 || j == 0 || j == ncolunas - 1 && board[i][j] == 'O') {\n\t\t\t\tdfs(board, i, j)\n\t\t\t}\n\t\t}\n\t}\n\n\tfor i := 0; i < nlinhas; i++ {\n\t\tfor j := 0; j < ncolunas; j++ {\n\t\t\tif(board[i][j] == 'O') {\n\t\t\t\tboard[i][j] = 'X'\n\t\t\t} else if board[i][j] == 'T'{\n\t\t\t\tboard[i][j] = 'O'\n\t\t\t}\n\t\t}\n\t}\n}\n\n// N\u00c3O ALTERE A MAIN\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tvar nrows, ncols int\n\tfmt.Sscanf(scanner.Text(), \"%d %d\", &nrows, &ncols)\n\tboard := make([][]byte, nrows)\n\tfor i := 0; i < nrows; i++ {\n\t\tscanner.Scan()\n\t\tboard[i] = []byte(scanner.Text())\n\t}\n\tsolve(board)\n\tfor _, row := range board {\n\t\tfmt.Println(string(row))\n\t}\n}\n",
+            "lines": "63"
+        }
+    ]
+}
