@@ -1,0 +1,13 @@
+2026-07-03 13:21:16, MOVE, v:1, k:ed@prin_list1, mode:PICK
+2026-07-03 13:38:13, MOVE, v:1, k:ed@prin_list1, mode:BACK
+2026-07-03 13:38:34, MOVE, v:1, k:ed@prin_list1, mode:PICK
+2026-07-03 13:38:36, EXEC, v:1, k:ed@prin_list1, mode:FULL, fail:COMP
+2026-07-03 13:48:29, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-07-03 13:45:36, EXEC, v:1, k:ed@prin_list1, mode:FULL, size:181, fail:COMP
+2026-07-03 13:45:36, EXEC, v:1, k:ed@prin_list1, mode:FULL, size:181, fail:COMP
+2026-07-03 13:48:33, EXEC, v:1, k:ed@prin_list1, mode:FULL, size:190, fail:COMP
+2026-07-03 13:48:28, MOVE, v:1, k:ed@prin_list1, mode:EDIT
+2026-07-03 13:52:03, EXEC, v:1, k:ed@prin_list1, mode:FULL, rate:0, size:190
+2026-07-03 13:52:19, EXEC, v:1, k:ed@prin_list1, mode:FULL, rate:100, size:190
+2026-07-03 13:52:21, MOVE, v:1, k:ed@prin_list1, mode:BACK
+2026-07-03 13:52:31, SELF, v:1, k:ed@prin_list1, self:1, rate:100, study:50, refactor:1
