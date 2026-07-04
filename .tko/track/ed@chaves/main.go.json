@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_18-46-23",
+            "content": "@@ -152,304 +152,8 @@\n %09%7D%0A%0A\n-%09scanner := bufio.NewScanner(os.Stdin)%0A%09head := 0%0A%0A%09%0A%09for len(queue)-head %3E 1 %7B%0A%09%09if !scanner.Scan() %7B%0A%09%09%09break%0A%09%09%7D%0A%09%09line := scanner.Text()%0A%09%09parts := strings.Fields(line)%0A%09%09if len(parts) %3C 2 %7B%0A%09%09%09continue%0A%09%09%7D%0A%09%7D%0A%0A%09golsLeft, _ := strconv.Atoi(parts%5B0%5D)%0A%09golsRight, _ := strconv.Atoi(parts%5B1%5D)%0A%0A%0A\n %09for\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-04_18-51-04",
+            "content": "@@ -22,106 +22,29 @@\n (%0A%09%22\n-bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A%09%22strconv%22%0A%09%22strings%22%0A)%0A%0Afunc main() %7B%0A%09// Inicializa a fila com as 16 equipes\n+fmt%22%0A)%0A%0Afunc main() %7B\n %0A%09fi\n@@ -191,86 +191,46 @@\n in)%0A\n-%0A%09// Ser%C3%A3o exatamente 15 jogos para definir o campe%C3%A3o%0A%09for i := 0; i %3C 15; i++\n+%09head := 0%0A%0A%09%0A%09for len(queue)-head %3E 1\n  %7B%0A%09\n@@ -325,87 +325,8 @@\n ne)%0A\n-%09%09%0A%09%09// Se achar alguma linha em branco inv%C3%A0lida, ignora e reajusta o contador%0A\n %09%09if\n@@ -347,15 +347,8 @@\n 2 %7B%0A\n-%09%09%09i--%0A\n %09%09%09c\n@@ -363,58 +363,21 @@\n %09%09%7D%0A\n-%0A%09%09// Converte os gols com seguran%C3%A7a%0A%09%09golEsquerda\n+%09%7D%0A%0A%09golsLeft\n , _ \n@@ -406,21 +406,18 @@\n 0%5D)%0A\n-%09\n %09gols\n-Direita\n+Right\n , _ \n@@ -447,272 +447,163 @@\n %5D)%0A%0A\n-%09%09// 1. Salva quem s%C3%A3o os dois times que v%C3%A3o jogar agora%0A%09%09teamEsquerda := fila%5B0%5D%0A%09%09teamDireita := fila%5B1%5D%0A%0A%09%09// 2. DESENFILEIRA: Remove esses dois da frente da fila%0A%09%09fila = fila%5B2:%5D%0A%0A%09%09// 3. ENFILEIRA: Quem ganhou vai para o final da fila esperar a pr%C3%B3xima fase\n+%0A%09for i := 0; i %3C 15; i++ %7B%0A%09%09var golEsquerda, golsDireita int%0A%0A%09%09fmt.Scan(&golEsquerda, &golsDireita)%0A%0A%09%09teamEsquerda := fila%5B0%5D%0A%09%09teamDireita := fila%5B1%5D%0A\n %0A%09%09i\n@@ -728,82 +728,8 @@\n %09%7D%0A%0A\n-%09// Ap%C3%B3s as 15 partidas, s%C3%B3 restar%C3%A1 1 elemento na fila: o grande campe%C3%A3o!%0A\n %09fmt\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-04_18-52-36",
+            "content": "@@ -78,16 +78,54 @@\n in() %7B%0A%09\n+// Inicializa a fila com as 16 equipes\n %0A%09fila :\n@@ -266,16 +266,67 @@\n tdin)%0A%0A%09\n+// Ser%C3%A3o exatamente 15 jogos para definir o campe%C3%A3o\n %0A%09for i \n@@ -443,16 +443,89 @@\n e)%0A%09%09%0A%09%09\n+// Se achar alguma linha em branco inv%C3%A0lida, ignora e reajusta o contador\n %0A%09%09if le\n@@ -565,16 +565,49 @@\n %0A%09%09%7D%0A%0A%09%09\n+// Converte os gols com seguran%C3%A7a\n %0A%09%09golEs\n@@ -692,84 +692,270 @@\n %0A%0A%09%09\n-%0A%09%09teamEsquerda := fila%5B0%5D%0A%09%09teamDireita := fila%5B1%5D%0A%0A%09%0A%09%09fila = fila%5B2:%5D%0A%0A%09%09\n+// 1. Salva quem s%C3%A3o os dois times que v%C3%A3o jogar agora%0A%09%09teamEsquerda := fila%5B0%5D%0A%09%09teamDireita := fila%5B1%5D%0A%0A%09%09// 2. DESENFILEIRA: Remove esses dois da frente da fila%0A%09%09fila = fila%5B2:%5D%0A%0A%09%09// 3. ENFILEIRA: Quem ganhou vai para o final da fila esperar a pr%C3%B3xima fase\n %0A%09%09i\n@@ -1076,16 +1076,89 @@\n %09%09%7D%0A%09%7D%0A%0A\n+%09// Ap%C3%B3s as 15 partidas, s%C3%B3 restar%C3%A1 1 elemento na fila: o grande campe%C3%A3o!\n %0A%09fmt.Pr\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-07-04_18-54-36",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc main() {\n\t\n\tfila := []string{\n\t\t\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \n\t\t\"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\",\n\t}\n\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\t\n\tfor i := 0; i < 15; i++ {\n\t\tif !scanner.Scan() {\n\t\t\tbreak\n\t\t}\n\t\tline := scanner.Text()\n\t\tparts := strings.Fields(line)\n\t\t\n\t\t\n\t\tif len(parts) < 2 {\n\t\t\ti--\n\t\t\tcontinue\n\t\t}\n\n\t\t\n\t\tgolEsquerda, _ := strconv.Atoi(parts[0])\n\t\tgolsDireita, _ := strconv.Atoi(parts[1])\n\n\t\t\n\t\tteamEsquerda := fila[0]\n\t\tteamDireita := fila[1]\n\n\t\n\t\tfila = fila[2:]\n\n\t\t\n\t\tif golEsquerda > golsDireita {\n\t\t\tfila = append(fila, teamEsquerda)\n\t\t} else {\n\t\t\tfila = append(fila, teamDireita)\n\t\t}\n\t}\n\n\n\tfmt.Println(fila[0])\n}\n",
+            "lines": "55"
+        }
+    ]
+}

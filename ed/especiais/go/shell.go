@@ -82,43 +82,135 @@ func teams(vet []int) []Pair {
 }
 
 func mnext(vet []int) []int {
-	_ = vet
-	return nil
+	res := make([]int, len(vet))
+	for i := 0; i < len(vet); i++ {
+		if vet[i] > 0 {
+			hasWomanNei := false
+			if i > 0 && vet[i - 1] < 0 {
+				hasWomanNei = true
+			}
+
+			if i < len(vet)- 1 && vet[i + 1] < 0 {
+				hasWomanNei = true
+			}
+
+			if hasWomanNei {
+				res[i] = 1
+			}
+		}
+	}
+	
+	return res
 }
 
 func alone(vet []int) []int {
-	_ = vet
-	return nil
+	res := make([]int, len(vet))
+	for i := 0; i < len(vet); i++ {
+		if vet[i] > 0 {
+			hasWomanNei := false
+			if i > 0 && vet[i-1] < 0 {
+				hasWomanNei = true
+			}
+
+			if i <len(vet) - 1 && vet[i+1] < 0 {
+				hasWomanNei = true
+			}
+
+			if !hasWomanNei {
+				res[i] = 1
+			}
+		}
+	}
+	
+	return res
 }
 
 func couple(vet []int) int {
-	_ = vet
-	return 0
+	man := make(map[int]int)
+	woman := make(map[int]int)
+
+	for _, x := range vet {
+		if x > 0 {
+			man[x]++
+		}else if x < 0 {
+			woman[-x]++
+		}
+	}
+
+
+	totalcasais := 0
+
+	for stress, qtdHomens := range man {
+		qtdMulheres := woman[stress]
+
+		if qtdHomens < qtdMulheres {
+			totalcasais += qtdHomens
+		} else {
+			totalcasais += qtdMulheres
+		}
+	}
+	
+	return totalcasais
 }
 
 func hasSubseq(vet []int, seq []int, pos int) bool {
-	_ = vet
-	_ = seq
-	_ = pos
-	return false
+
+	if pos + len(seq) > len(vet) {
+		return false
+
+	}
+
+	for i := 0; i < len(seq); i++ {
+		if vet[pos + i] != seq[i] {
+			return false
+		}
+
+	}
+
+	return true
 }
 
 func subseq(vet []int, seq []int) int {
-	_ = vet
-	_ = seq
+
+	for i := 0; i <= len(vet) - len(seq); i++ {
+		if hasSubseq(vet, seq, i ) {
+			return i
+		}
+	}
+	
 	return -1
 }
 
 func erase(vet []int, posList []int) []int {
-	_ = vet
-	_ = posList
-	return nil
+
+	remover := make(map[int]bool)
+
+	for _, pos := range posList {
+		remover[pos] = true
+	}
+
+	var res []int
+
+	for i, val := range vet {
+		if !remover[i] {
+			res = append(res, val)
+		}
+	}
+
+	return res
 }
 
 func clear(vet []int, value int) []int {
-	_ = vet
-	_ = value
-	return nil
+
+	var res []int
+
+	for _, val := range vet {
+		if val != value {
+			res = append(res, val)
+		}
+	}
+	
+	return res
 }
 
 func main() {
