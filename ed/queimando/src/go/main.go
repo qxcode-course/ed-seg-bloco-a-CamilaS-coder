@@ -6,17 +6,64 @@ import (
 	"os"
 )
 
-func burnTrees(grid [][]rune, l, c int) {
-	stack := NewStack[Pos]()
-	_ , _ , _ = mat, l, c
+type Pos struct {
+	L, C int
+}
 
-	// Essa função deve usar uma list como pilha
-	// e marcar as árvores na matriz como queimados
-	// Uma sugestão de como fazer isso é:
-	// - adicionar a primeira posição na pilha
-	// - enquanto a pilha não estiver vazia:
-	//   - retirar o elemento do topo
-	//   - se puder ser queimado, queime e adicione seus vizinhos à pilha
+// type Stack[T any] struct {
+// 	data []T
+// }
+
+// func NewStack[T any]() *Stack[T] {
+// 	return &Stack[T] {
+// 		data: []T{},
+// 	}
+// }
+
+// func (s *Stack[T]) Push(v T) {
+// 	s.data = append(s.data, v)
+// }
+
+// func (s *Stack[T]) Pop() T {
+// 	index := len(s.data) - 1
+// 	v := s.data[index]
+// 	s.data = s.data[:index]
+// 	return v
+// }
+
+// func (s *Stack[T]) IsEmpty() bool {
+// 	return len(s.data) == 0
+// }
+
+
+func burnTrees(grid [][]rune, l, c int) {
+
+	nl := len(grid)
+	if nl == 0 {
+		return
+	}
+
+	nc := len(grid[0])
+
+	stack := NewStack[Pos]()
+	stack.Push(Pos{L:l, C: c})
+
+	for !stack.IsEmpty() {
+		curr := stack.Pop()
+
+		if curr.L < 0 || curr.L >= nl || curr.C < 0 || curr.C >= nc {
+			continue
+		}
+
+		if grid[curr.L][curr.C] == '#' {
+			grid[curr.L][curr.C] = 'o'
+
+			stack.Push(Pos{L: curr.L - 1, C: curr.C})
+			stack.Push(Pos{L: curr.L + 1, C: curr.C})
+			stack.Push(Pos{L: curr.L, C: curr.C - 1})
+			stack.Push(Pos{L: curr.L, C: curr.C + 1})
+		}
+	}
 
 }
 

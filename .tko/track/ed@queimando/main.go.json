@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-04_19-44-13",
+            "content": "@@ -45,394 +45,8 @@\n %0A)%0A%0A\n-typw Pos struct %7B%0A%09L, C int%0A%7D%0A%0Atype Stack%5BT any%5D struct %7B%0A%09data %5B%5DT%0A%7D%0A%0Afunc NewStack%5BT any%5D() *Stack%5BT%5D %7B%0A%09return &Stack%5BT%5D %7B%0A%09%09data: %5B%5DT%7B%7D%0A%09%7D%0A%7D%0A%0Afunc (s *Stack%5BT%5D) Push(v T) %7B%0A%09s.data = append(s.data, v)%0A%7D%0A%0Afunc (s *Stack%5BT%5D) Pop() T %7B%0A%09index := len(s.data) - 1%0A%09v := s.data%5Bindex%5D%0A%09s.data = s.data%5B:index%5D%0A%09return v%0A%7D%0A%0Afunc (s *Stack%5BT%5D) IsEmpty() bool %7B%0A%09return len(s.data) == 0%0A%7D%0A%0A%0A\n func\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-04_19-57-53",
+            "content": "@@ -473,509 +473,383 @@\n ) %7B%0A\n-%0A%09nl := len(grid)%0A%09if nl == 0 %7B%0A%09%09return%0A%09%7D%0A%0A%09nc := len(grid%5B0%5D)%0A%0A%09stack := NewStack%5BPos%5D()%0A%09stack.Push(Pos%7BL:l, C: c%7D)%0A%0A%09for !stack.IsEmpty() %7B%0A%09%09curr := stack.Pop()%0A%0A%09%09if curr.L %3C 0 %7C%7C curr.L %3E= nl %7C%7C curr.C %3C 0 %7C%7C curr.C %3E= nc %7B%0A%09%09%09continue%0A%09%09%7D%0A%0A%09%09if grid%5Bcurr.L%5D%5Bcurr.C%5D == '#' %7B%0A%09%09%09grid%5Bcurr.L%5D%5Bcurr.C%5D = 'o'%0A%0A%09%09%09stack.Push(Pos%7BL: curr.L - 1, C: curr.C%7D)%0A%09%09%09stack.Push(Pos%7BL: curr.L + 1, C: curr.C%7D)%0A%09%09%09stack.Push(Pos%7BL: curr.L, C: curr.C - 1%7D)%0A%09%09%09stack.Push(Pos%7BL: curr.L, C: curr.C + 1%7D)%0A%09%09%7D%0A%09%7D\n+%09stack := NewStack%5BPos%5D()%0A%09_ , _ , _ = mat, l, c%0A%0A%09// Essa fun%C3%A7%C3%A3o deve usar uma list como pilha%0A%09// e marcar as %C3%A1rvores na matriz como queimados%0A%09// Uma sugest%C3%A3o de como fazer isso %C3%A9:%0A%09// - adicionar a primeira posi%C3%A7%C3%A3o na pilha%0A%09// - enquanto a pilha n%C3%A3o estiver vazia:%0A%09//   - retirar o elemento do topo%0A%09//   - se puder ser queimado, queime e adicione seus vizinhos %C3%A0 pilha\n %0A%0A%7D%0A\n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-07-04_20-12-34",
+            "content": "@@ -44,17 +44,17 @@\n %22%0A)%0A%0Atyp\n-e\n+w\n  Pos str\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-07-04_20-17-01",
+            "content": "@@ -180,17 +180,16 @@\n a: %5B%5DT%7B%7D\n-,\n %0A%09%7D%0A%7D%0A%0Af\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-07-04_20-17-24",
+            "content": "@@ -72,19 +72,16 @@\n  int%0A%7D%0A%0A\n-// \n type Sta\n@@ -99,19 +99,16 @@\n truct %7B%0A\n-// \n %09data %5B%5D\n@@ -109,25 +109,19 @@\n ata %5B%5DT%0A\n-// %7D%0A%0A// \n+%7D%0A%0A\n func New\n@@ -147,19 +147,16 @@\n ck%5BT%5D %7B%0A\n-// \n %09return \n@@ -167,19 +167,16 @@\n ck%5BT%5D %7B%0A\n-// \n %09%09data: \n@@ -186,23 +186,14 @@\n %7B%7D,%0A\n-// %09%7D%0A// %7D%0A%0A// \n+%09%7D%0A%7D%0A%0A\n func\n@@ -219,19 +219,16 @@\n (v T) %7B%0A\n-// \n %09s.data \n@@ -247,25 +247,19 @@\n ata, v)%0A\n-// %7D%0A%0A// \n+%7D%0A%0A\n func (s \n@@ -279,19 +279,16 @@\n p() T %7B%0A\n-// \n %09index :\n@@ -305,19 +305,16 @@\n ta) - 1%0A\n-// \n %09v := s.\n@@ -325,19 +325,16 @@\n %5Bindex%5D%0A\n-// \n %09s.data \n@@ -350,19 +350,16 @@\n :index%5D%0A\n-// \n %09return \n@@ -364,17 +364,11 @@\n n v%0A\n-// %7D%0A%0A// \n+%7D%0A%0A\n func\n@@ -399,19 +399,16 @@\n  bool %7B%0A\n-// \n %09return \n@@ -428,11 +428,8 @@\n = 0%0A\n-// \n %7D%0A%0A%0A\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-07-04_20-20-47",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\ntype Pos struct {\n\tL, C int\n}\n\n// type Stack[T any] struct {\n// \tdata []T\n// }\n\n// func NewStack[T any]() *Stack[T] {\n// \treturn &Stack[T] {\n// \t\tdata: []T{},\n// \t}\n// }\n\n// func (s *Stack[T]) Push(v T) {\n// \ts.data = append(s.data, v)\n// }\n\n// func (s *Stack[T]) Pop() T {\n// \tindex := len(s.data) - 1\n// \tv := s.data[index]\n// \ts.data = s.data[:index]\n// \treturn v\n// }\n\n// func (s *Stack[T]) IsEmpty() bool {\n// \treturn len(s.data) == 0\n// }\n\n\nfunc burnTrees(grid [][]rune, l, c int) {\n\n\tnl := len(grid)\n\tif nl == 0 {\n\t\treturn\n\t}\n\n\tnc := len(grid[0])\n\n\tstack := NewStack[Pos]()\n\tstack.Push(Pos{L:l, C: c})\n\n\tfor !stack.IsEmpty() {\n\t\tcurr := stack.Pop()\n\n\t\tif curr.L < 0 || curr.L >= nl || curr.C < 0 || curr.C >= nc {\n\t\t\tcontinue\n\t\t}\n\n\t\tif grid[curr.L][curr.C] == '#' {\n\t\t\tgrid[curr.L][curr.C] = 'o'\n\n\t\t\tstack.Push(Pos{L: curr.L - 1, C: curr.C})\n\t\t\tstack.Push(Pos{L: curr.L + 1, C: curr.C})\n\t\t\tstack.Push(Pos{L: curr.L, C: curr.C - 1})\n\t\t\tstack.Push(Pos{L: curr.L, C: curr.C + 1})\n\t\t}\n\t}\n\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tvar nl, nc, lfire, cfire int\n\tfmt.Sscanf(line, \"%d %d %d %d\", &nl, &nc, &lfire, &cfire)\n\n\tgrid := make([][]rune, 0, nl)\n\tfor range nl {\n\t\tscanner.Scan()\n\t\tline := []rune(scanner.Text())\n\t\tgrid = append(grid, line)\n\t}\n\tburnTrees(grid, lfire, cfire)\n\tshowGrid(grid)\n}\n\nfunc showGrid(mat [][]rune) {\n\tfor _, linha := range mat {\n\t\tfmt.Println(string(linha))\n\t}\n}\n",
+            "lines": "91"
+        }
+    ]
+}
