@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_11-56-36",
+            "content": "@@ -17,113 +17,13 @@\n ort \n-(%0A    %22bufio%22%0A    %22fmt%22%0A    %22os%22%0A    %0A)%0A%0Afunc ehValidos(pos int, d rune, str %5B%5Drune, L int) bool %7B%0A    %0A%7D\n+%22fmt%22\n %0Afun\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_12-04-35",
+            "content": "@@ -120,195 +120,8 @@\n     \n-for i := 1; i %3C= L; i++ %7B%0A        vizinhosEsquerda := pos - 1%0A%0A        if vizinhosEsquerda %3E= 0 %7B%0A            if str%5BvizinhosEsquerda%5D ==d %7B%0A                %0A            %7D%0A        %7D%0A    %7D\n %0A%7D%0Af\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-07-06_12-10-32",
+            "content": "@@ -277,20 +277,8 @@\n     \n-return false\n %0A   \n@@ -301,65 +301,14 @@\n    %7D\n- else %7B%0A            break%0A        %7D%0A    %7D%0A    return true\n+%0A    %7D\n %0A%7D%0Af\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-07-06_12-11-06",
+            "content": "@@ -372,185 +372,8 @@\n ue%0A%7D\n-%0A%0Afunc resolver(pos int, str %5B%5Drune, L rune) bool %7B%0A    if pos == len(str) %7B%0A        return true%0A    %7D%0A%0A    if str%5Bpos%5D != '.' %7B%0A        return resolver(pos + 1, str, L)%0A    %7D%0A%7D\n %0Afun\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-07-06_12-12-42",
+            "content": "@@ -547,200 +547,8 @@\n    %7D\n-%0A%0A    for d := 0; d %3C= L; d++ %7B%0A        charDigito := rune('0' + d)%0A%0A        if ehValido(pos, charDigito, str, L) %7B%0A            str%5Bpos%5D = charDigito%0A%0A            if resolver()%0A        %7D%0A    %7D\n %0A%7D%0Af\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-06_12-14-37",
+            "content": "@@ -722,68 +722,9 @@\n ver(\n-pos + 1, str, L) %7B%0A                return true%0A            %7D\n+)\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-06_12-15-05",
+            "content": "@@ -783,35 +783,8 @@\n   %7D%0A\n-            str%5Bpos%5D = '.'%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-07-06_12-19-40",
+            "content": "@@ -822,33 +822,16 @@\n %7D%0A    %7D%0A\n-    return false%0A\n %7D%0Afunc m\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-07-06_12-15-42",
+            "content": "@@ -859,140 +859,8 @@\n ) %7B%0A\n-    scanner := bufio.New.NewScanner(os.Stdin)%0A%0A    if !scanner.Scan() %7B%0A        return%0A    %7D%0A%0A    sequencia := scanner.Text()%0A%0A    %0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-07-06_12-32-21",
+            "content": "@@ -990,133 +990,8 @@\n     \n-if !scanner.Scan()%7B%0A        return%0A    %7D%0A%0A    L, _ := strconv.Atoi(scanner.Text())%0A%0A    srtRunes := %5B%5Drune(sequencia)%0A%0A    if\n %0A   \n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-06_12-33-46",
+            "content": "@@ -1115,84 +1115,8 @@\n   if\n- resolver(0, srtRunes, L) %7B%0A        fmt.Println(string(strRunes))%0A    %7D%0A    \n %0A   \n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-07-06_12-34-34",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import (\n@@ -19,17 +19,20 @@\n t (%0A\n-%09\n+    \n %22bufio%22%0A\n %09%22fm\n@@ -31,104 +31,34 @@\n io%22%0A\n-%09\n+    \n %22fmt%22%0A\n-%09%22os%22%0A%09%22strconv%22%0A)%0A%0A// Fun%C3%A7%C3%A3o que valida se o d%C3%ADgito d pode ser colocado na posi%C3%A7%C3%A3o 'pos'\n+    %22os%22%0A    %0A)%0A\n %0Afun\n@@ -63,24 +63,25 @@\n unc ehValido\n+s\n (pos int, d \n@@ -116,63 +116,12 @@\n l %7B%0A\n-%09// Verifica os vizinhos %C3%A0 esquerda at%C3%A9 a dist%C3%A2ncia L%0A%09\n+    \n for \n@@ -146,17 +146,24 @@\n + %7B%0A\n-%09%09\n+        \n vizinho\n+s\n Esqu\n@@ -180,12 +180,19 @@\n s - \n-i%0A%09%09\n+1%0A%0A        \n if v\n@@ -193,24 +193,25 @@\n   if vizinho\n+s\n Esquerda %3E= \n@@ -214,19 +214,28 @@\n  %3E= 0 %7B%0A\n-%09%09%09\n+            \n if str%5Bv\n@@ -240,16 +240,17 @@\n %5Bvizinho\n+s\n Esquerda\n@@ -257,221 +257,124 @@\n %5D ==\n- \n d %7B%0A\n-%09%09%09%09return false // Encontrou o mesmo d%C3%ADgito perto demais!%0A%09%09%09%7D%0A%09%09%7D else %7B%0A%09%09%09break // Sai se passarmos do in%C3%ADcio da string%0A%09%09%7D%0A%09%7D%0A%09return true%0A%7D%0A%0A// Fun%C3%A7%C3%A3o de Backtracking que resolve a string recursivamente\n+                return false%0A            %7D%0A        %7D else %7B%0A            break%0A        %7D%0A    %7D%0A    return true%0A%7D%0A\n %0Afun\n@@ -399,35 +399,36 @@\n , str %5B%5Drune, L \n-int\n+rune\n ) bool %7B%0A%09// Cas\n@@ -424,83 +424,12 @@\n l %7B%0A\n-%09// Caso Base: se preenchemos toda a string, encontramos a solu%C3%A7%C3%A3o %C3%BAnica!%0A%09\n+    \n if p\n@@ -441,26 +441,32 @@\n  len(str) %7B%0A\n-%09%09\n+        \n return true%0A\n@@ -469,82 +469,19 @@\n rue%0A\n-%09%7D%0A%0A%09// Se a posi%C3%A7%C3%A3o atual j%C3%A1 possui um d%C3%ADgito fixo, pula para a pr%C3%B3xima%0A%09\n+    %7D%0A%0A    \n if s\n@@ -497,18 +497,24 @@\n = '.' %7B%0A\n-%09%09\n+        \n return r\n@@ -516,33 +516,35 @@\n urn resolver(pos\n-+\n+ + \n 1, str, L)%0A%09%7D%0A%0A%09\n@@ -542,60 +542,19 @@\n  L)%0A\n-%09%7D%0A%0A%09// Tentamos colocar os d%C3%ADgitos de '0' at%C3%A9 'L'%0A%09\n+    %7D%0A%0A    \n for \n@@ -575,18 +575,24 @@\n ; d++ %7B%0A\n-%09%09\n+        \n charDigi\n@@ -612,18 +612,24 @@\n ' + d)%0A%0A\n-%09%09\n+        \n if ehVal\n@@ -659,19 +659,28 @@\n r, L) %7B%0A\n-%09%09%09\n+            \n str%5Bpos%5D\n@@ -696,42 +696,22 @@\n gito\n- // Escolha (coloca o d%C3%ADgito)%0A%0A%09%09%09\n+%0A%0A            \n if r\n@@ -721,17 +721,19 @@\n lver(pos\n-+\n+ + \n 1, str, \n@@ -741,199 +741,112 @@\n ) %7B%0A\n-%09%09%09%09return true // Se o caminho deu certo, propaga o sucesso%0A%09%09%09%7D%0A%0A%09%09%09str%5Bpos%5D = '.' // Desfaz a escolha (Backtrack)%0A%09%09%7D%0A%09%7D%0A%0A%09return false // Nenhuma op%C3%A7%C3%A3o funcionou para essa ramifica%C3%A7%C3%A3o\n+                return true%0A            %7D%0A            str%5Bpos%5D = '.'%0A        %7D%0A    %7D%0A    return false\n %0A%7D%0A\n-%0A\n func\n@@ -855,17 +855,20 @@\n ain() %7B%0A\n-%09\n+    \n scanner \n@@ -876,16 +876,20 @@\n = bufio.\n+New.\n NewScann\n@@ -906,68 +906,59 @@\n n)%0A%0A\n-%09// 1. Lendo a sequ%C3%AAncia%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D%0A%09\n+    if !scanner.Scan() %7B%0A        return%0A    %7D%0A%0A    \n sequ\n@@ -986,35 +986,12 @@\n ()%0A%0A\n-%09// 2. Lendo o valor de L%0A%09\n+    \n if !\n@@ -1008,24 +1008,36 @@\n an()\n- \n %7B%0A\n-%09%09return%0A%09%7D%0A%09\n+        return%0A    %7D%0A%0A    \n L, _\n@@ -1074,176 +1074,47 @@\n ))%0A%0A\n-%09// Convertendo para slice de runes para podermos modificar os caracteres inline%0A%09strRunes := %5B%5Drune(sequencia)%0A%0A%09// 3. Executando o Backtracking a partir do %C3%ADndice 0%0A%09\n+    srtRunes := %5B%5Drune(sequencia)%0A%0A    \n if r\n@@ -1125,18 +1125,18 @@\n ver(0, s\n-t\n r\n+t\n Runes, L\n@@ -1143,10 +1143,16 @@\n ) %7B%0A\n-%09%09\n+        \n fmt.\n@@ -1181,9 +1181,50 @@\n s))%0A\n-%09%7D\n+    %7D%0A    %0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-06_12-37-17",
+            "content": "@@ -52,16 +52,86 @@\n onv%22%0A)%0A%0A\n+// Fun%C3%A7%C3%A3o que valida se o d%C3%ADgito d pode ser colocado na posi%C3%A7%C3%A3o 'pos'%0A\n func ehV\n@@ -186,11 +186,8 @@\n %0A%09//\n- 1.\n  Ver\n@@ -196,33 +196,30 @@\n ica \n-para a esquerda (passado)\n+os vizinhos %C3%A0 esquerda\n  at%C3%A9\n@@ -371,276 +371,123 @@\n alse\n-%0A%09%09%09%7D%0A%09%09%7D else %7B%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A%09// 2. Verifica para a direita (futuro/fixos) at%C3%A9 a dist%C3%A2ncia L%0A%09for i := 1; i %3C= L; i++ %7B%0A%09%09vizinhoDireita := pos + i%0A%09%09if vizinhoDireita %3C len(str) %7B%0A%09%09%09if str%5BvizinhoDireita%5D == d %7B%0A%09%09%09%09return false%0A%09%09%09%7D%0A%09%09%7D else %7B%0A%09%09%09break\n+ // Encontrou o mesmo d%C3%ADgito perto demais!%0A%09%09%09%7D%0A%09%09%7D else %7B%0A%09%09%09break // Sai se passarmos do in%C3%ADcio da string\n %0A%09%09%7D%0A%09%7D%0A\n %0A%09re\n@@ -474,33 +474,32 @@\n a string%0A%09%09%7D%0A%09%7D%0A\n-%0A\n %09return true%0A%7D%0A%0A\n@@ -502,99 +502,301 @@\n %0A%7D%0A%0A\n-func resolver(pos int, str %5B%5Drune, L int) bool %7B%0A%0A%09if pos == len(str) %7B%0A%09%09return true%0A%09%7D%0A%0A%09\n+// Fun%C3%A7%C3%A3o de Backtracking que resolve a string recursivamente%0Afunc resolver(pos int, str %5B%5Drune, L int) bool %7B%0A%09// Caso Base: se preenchemos toda a string, encontramos a solu%C3%A7%C3%A3o %C3%BAnica!%0A%09if pos == len(str) %7B%0A%09%09return true%0A%09%7D%0A%0A%09// Se a posi%C3%A7%C3%A3o atual j%C3%A1 possui um d%C3%ADgito fixo, pula para a pr%C3%B3xima\n %0A%09if\n@@ -851,16 +851,62 @@\n  L)%0A%09%7D%0A%0A\n+%09// Tentamos colocar os d%C3%ADgitos de '0' at%C3%A9 'L'\n %0A%09for d \n@@ -1022,16 +1022,44 @@\n rDigito \n+// Escolha (coloca o d%C3%ADgito)\n %0A%0A%09%09%09if \n@@ -1104,56 +1104,179 @@\n rue \n-%0A%09%09%09%7D%0A%0A%09%09%09str%5Bpos%5D = '.' %0A%09%09%7D%0A%09%7D%0A%0A%09return false \n+// Se o caminho deu certo, propaga o sucesso%0A%09%09%09%7D%0A%0A%09%09%09str%5Bpos%5D = '.' // Desfaz a escolha (Backtrack)%0A%09%09%7D%0A%09%7D%0A%0A%09return false // Nenhuma op%C3%A7%C3%A3o funcionou para essa ramifica%C3%A7%C3%A3o\n %0A%7D%0A%0A\n@@ -1329,16 +1329,40 @@\n Stdin)%0A%0A\n+%09// 1. Lendo a sequ%C3%AAncia\n %0A%09if !sc\n@@ -1418,16 +1418,41 @@\n Text()%0A%0A\n+%09// 2. Lendo o valor de L\n %0A%09if !sc\n@@ -1521,42 +1521,174 @@\n ))%0A%0A\n-%0A%09strRunes := %5B%5Drune(sequencia)%0A%0A%09\n+%09// Convertendo para slice de runes para podermos modificar os caracteres inline%0A%09strRunes := %5B%5Drune(sequencia)%0A%0A%09// 3. Executando o Backtracking a partir do %C3%ADndice 0\n %0A%09if\n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-07-06_12-39-44",
+            "content": "@@ -109,16 +109,75 @@\n  bool %7B%0A\n+%09// 1. Verifica para a esquerda (passado) at%C3%A9 a dist%C3%A2ncia L\n %0A%09for i \n@@ -333,24 +333,87 @@\n eak%0A%09%09%7D%0A%09%7D%0A%0A\n+%09// 2. Verifica para a direita (futuro/fixos) at%C3%A9 a dist%C3%A2ncia L\n %0A%09for i := 1\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-07-06_12-40-01",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n)\n\nfunc ehValido(pos int, d rune, str []rune, L int) bool {\n\n\tfor i := 1; i <= L; i++ {\n\t\tvizinhoEsquerda := pos - i\n\t\tif vizinhoEsquerda >= 0 {\n\t\t\tif str[vizinhoEsquerda] == d {\n\t\t\t\treturn false\n\t\t\t}\n\t\t} else {\n\t\t\tbreak\n\t\t}\n\t}\n\n\n\tfor i := 1; i <= L; i++ {\n\t\tvizinhoDireita := pos + i\n\t\tif vizinhoDireita < len(str) {\n\t\t\tif str[vizinhoDireita] == d {\n\t\t\t\treturn false\n\t\t\t}\n\t\t} else {\n\t\t\tbreak\n\t\t}\n\t}\n\n\treturn true\n}\n\nfunc resolver(pos int, str []rune, L int) bool {\n\n\tif pos == len(str) {\n\t\treturn true\n\t}\n\n\t\n\tif str[pos] != '.' {\n\t\treturn resolver(pos+1, str, L)\n\t}\n\n\n\tfor d := 0; d <= L; d++ {\n\t\tcharDigito := rune('0' + d)\n\n\t\tif ehValido(pos, charDigito, str, L) {\n\t\t\tstr[pos] = charDigito \n\n\t\t\tif resolver(pos+1, str, L) {\n\t\t\t\treturn true \n\t\t\t}\n\n\t\t\tstr[pos] = '.' \n\t\t}\n\t}\n\n\treturn false \n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tsequencia := scanner.Text()\n\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tL, _ := strconv.Atoi(scanner.Text())\n\n\n\tstrRunes := []rune(sequencia)\n\n\t\n\tif resolver(0, strRunes, L) {\n\t\tfmt.Println(string(strRunes))\n\t}\n}\n",
+            "lines": "89"
+        }
+    ]
+}

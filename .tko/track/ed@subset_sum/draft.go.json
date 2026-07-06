@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_10-56-18",
+            "content": "@@ -17,413 +17,27 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A    %22strconv%22%0A    %22strings%22%0A)%0A%0Afunc podeSomar (index int, alvo int, elementos %5B%5Dint) bool %7B%0A    if alvo == 0 %7B%0A        return true%0A    %7D%0A%0A    if alvo %3C 0 %7C%7C index %3E= len(elementos) %7B%0A        return false%0A    %7D%0A%0A    if podeSomar(INDEX + 1, alvo - elementos%5Bindex%5D, elementos) %7B%0A        return true%0A    %7D%0A%0A    return podeSomar(index + 1, alvo, elementos)%0A%0A%7D%0A%0A%0Afunc main() %7B%0A\n+%22fmt%22%0Afunc main() %7B\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_11-19-45",
+            "content": "@@ -90,16 +90,17 @@\n podeSoma\n+r\n  (index \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-06_11-20-04",
+            "content": "@@ -90,17 +90,16 @@\n podeSoma\n-r\n  (index \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-06_11-20-16",
+            "content": "@@ -422,217 +422,8 @@\n ) %7B%0A\n-    scanner := bufio.NewScanner(os.Stdin)%0A%0A    if !scanner.Scan() %7B%0A        return%0A    %7D%0A%0A    linha1 := scanner.Text()%0A    partes1 := strings.Fiels(linha1)%0A%0A    if len(partes1) %3C 2 %7B%0A        return%0A    %7D%0A%0A    \n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-06_11-24-59",
+            "content": "@@ -627,80 +627,8 @@\n  %7D%0A%0A\n-    n, _ := strconv.Atoi(partes%5B0%5D)%0A    k, _ := strconv.Atoi(partes%5B1%5D)%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-07-06_11-25-59",
+            "content": "@@ -699,124 +699,8 @@\n 1%5D)%0A\n-%0A    if !scanner.Scan() %7B%0A        return%0A    %7D%0A%0A    linha2 := scanner.Text()%0A    partes2 := strings.Fields(linha2)%0A%0A\n     \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-07-06_11-27-08",
+            "content": "@@ -815,146 +815,8 @@\n 2)%0A%0A\n-    elementos := make(%5B%5Dint, n) %0A    for i := 0; i %3C n && i %3C len(partes2); i++ %7B%0A        elementos%5Bi%5D,  = strconv.Atoi(partes2%5Bi%5D)%0A    %7D%0A\n     \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-07-06_11-29-28",
+            "content": "@@ -945,25 +945,24 @@\n 2%5Bi%5D)%0A    %7D%0A\n-%0A\n     %0A    fmt\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-07-06_11-52-24",
+            "content": "@@ -958,115 +958,8 @@\n     \n-if podeSomar(0, k, elementos) %7B%0A        fmt.Println(%22true%22)%0A    %7D else %7B%0A        fmt.Println(%22false%22)%0A    %7D\n %0A   \n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-07-06_11-53-21",
+            "content": "@@ -915,17 +915,16 @@\n tos%5Bi%5D, \n-_\n  = strco\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-06_11-53-50",
+            "content": "@@ -266,37 +266,37 @@\n    if podeSomar(\n-index\n+INDEX\n  + 1, alvo - ele\n@@ -560,25 +560,24 @@\n strings.Fiel\n-d\n s(linha1)%0A%0A \n@@ -654,17 +654,16 @@\n i(partes\n-1\n %5B0%5D)%0A   \n@@ -690,17 +690,16 @@\n i(partes\n-1\n %5B1%5D)%0A%0A  \n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-06_11-54-49",
+            "content": "@@ -1073,10 +1073,8 @@\n %0A   \n-//\n  fmt\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-07-06_11-54-57",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n    \"strconv\"\n    \"strings\"\n)\n\nfunc podeSomar (index int, alvo int, elementos []int) bool {\n    if alvo == 0 {\n        return true\n    }\n\n    if alvo < 0 || index >= len(elementos) {\n        return false\n    }\n\n    if podeSomar(index + 1, alvo - elementos[index], elementos) {\n        return true\n    }\n\n    return podeSomar(index + 1, alvo, elementos)\n\n}\n\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\n    if !scanner.Scan() {\n        return\n    }\n\n    linha1 := scanner.Text()\n    partes1 := strings.Fields(linha1)\n\n    if len(partes1) < 2 {\n        return\n    }\n\n    n, _ := strconv.Atoi(partes1[0])\n    k, _ := strconv.Atoi(partes1[1])\n\n    if !scanner.Scan() {\n        return\n    }\n\n    linha2 := scanner.Text()\n    partes2 := strings.Fields(linha2)\n\n    elementos := make([]int, n) \n    for i := 0; i < n && i < len(partes2); i++ {\n        elementos[i], _ = strconv.Atoi(partes2[i])\n    }\n\n    if podeSomar(0, k, elementos) {\n        fmt.Println(\"true\")\n    } else {\n        fmt.Println(\"false\")\n    }\n   // fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "63"
+        }
+    ]
+}
