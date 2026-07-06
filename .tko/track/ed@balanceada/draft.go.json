@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_10-15-08",
+            "content": "@@ -17,1179 +17,59 @@\n ort \n-(%0A%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A)%0A%0Atype Stack struct %7B%0A    data %5B%5Drune%0A%7D%0A%0Afunc (s *Stack) Push(val rune) %7B%0A    s.data = appends.data, val%0A%7D%0A%0Afunc (s *Stack) Pop() rune %7B%0A    if len(s.data) == 0 %7B%0A        return 0%0A    %7D%0A%0A    val := s.data%5Blen(s.data) - 1%5D%0A    s.data = s.data%5B:len(s.data) - 1%5D%0A    return val%0A%7D%0A%0Afunc (s *Stack) IsEmpty() bool %7B%0A    return len(s.data) == 0%0A%7D%0A%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    if !scanner.Scan() %7B%0A        return%0A    %7D%0A%0A    text := scanner.Text()%0A%0A    pilha := &Stack%7B%7D%0A    balanceado := true%0A%0A    for _, char := range texto %7B%0A        if char == '(' %7C%7C char == '%5B' %7B%0A            pilha.Push(char)%0A        %7D else if == ')' %7C%7C char == '%5D' %7B%0A            if pilha.IsEmpty() %7B%0A                balanceado = false%0A                break%0A            %7D%0A%0A            topo := pilha.Pop()%0A%0A            if (char == ')' && topo != '(') %7C%7C (char == '%5D' && topo != '%5B') %7B%0A                balanceado = false%0A                break%0A            %7D%0A        %7D%0A    %7D%0A%0A    if !pilha.IsEmpty() %7B%0A        balanceado = false%0A    %7D%0A%0A    if balanceado %7B%0A        fmt.Println(%22balanceado%22)%0A    %7D else %7B%0A        fmt.Println(%22nao balanceada%22)%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_10-43-39",
+            "content": "@@ -683,29 +683,24 @@\n   %7D else if \n-char \n == ')' %7C%7C ch\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-06_10-44-17",
+            "content": "@@ -141,17 +141,16 @@\n = append\n-(\n s.data, \n@@ -152,17 +152,16 @@\n ata, val\n-)\n %0A%7D%0A%0Afunc\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-06_10-45-37",
+            "content": "@@ -598,16 +598,17 @@\n nge text\n+o\n  %7B%0A     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-06_10-45-59",
+            "content": "@@ -1174,28 +1174,28 @@\n n(%22nao balancead\n-o\n+a\n %22)%0A    %7D%0A%7D%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-07-06_10-47-50",
+            "content": "package main\nimport (\n\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\n\ntype Stack struct {\n    data []rune\n}\n\nfunc (s *Stack) Push(val rune) {\n    s.data = append(s.data, val)\n}\n\nfunc (s *Stack) Pop() rune {\n    if len(s.data) == 0 {\n        return 0\n    }\n\n    val := s.data[len(s.data) - 1]\n    s.data = s.data[:len(s.data) - 1]\n    return val\n}\n\nfunc (s *Stack) IsEmpty() bool {\n    return len(s.data) == 0\n}\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    if !scanner.Scan() {\n        return\n    }\n\n    text := scanner.Text()\n\n    pilha := &Stack{}\n    balanceado := true\n\n    for _, char := range text {\n        if char == '(' || char == '[' {\n            pilha.Push(char)\n        } else if char == ')' || char == ']' {\n            if pilha.IsEmpty() {\n                balanceado = false\n                break\n            }\n\n            topo := pilha.Pop()\n\n            if (char == ')' && topo != '(') || (char == ']' && topo != '[') {\n                balanceado = false\n                break\n            }\n        }\n    }\n\n    if !pilha.IsEmpty() {\n        balanceado = false\n    }\n\n    if balanceado {\n        fmt.Println(\"balanceado\")\n    } else {\n        fmt.Println(\"nao balanceado\")\n    }\n}\n",
+            "lines": "69"
+        }
+    ]
+}
